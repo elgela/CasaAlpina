@@ -10,7 +10,7 @@ header {
 }
 body {
     margin: 0;
-    background-image: url("/images/final_exacta_201411101841_resized_2000x475.jpg");
+    background-image: url("/css/images/final_exacta_201411101841_resized_2000x475.jpg");
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -35,7 +35,7 @@ h3 {
     padding-right: 0px;
     padding-left: 0px;
     padding-bottom: 0px;
-    padding-top: 0px;    
+    padding-top: 0px;
 } */
 .menu li {
     font-family: fantasy;
