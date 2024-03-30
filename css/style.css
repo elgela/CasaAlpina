@@ -12,6 +12,7 @@ body {
     margin: 0;
     background-image: url("/images/final_exacta_201411101841_resized_2000x475.jpg");
     background-repeat: no-repeat;
+    background-size: contain;
 }
 a {
     color: rgb(27, 129, 88);
@@ -26,21 +27,23 @@ h3 {
     margin-top: 15px;
     margin-left: 250px;
 }
-.lista {
-    /* text-align: center; */
+.menu {
+    text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.lista ul {
+/* .menu ul {
     padding-right: 0px;
     padding-left: 0px;
     padding-bottom: 0px;
     padding-top: 0px;    
-}
-.lista li {
+} */
+.menu li {
+    font-family: fantasy;
+    font-size: small;
     list-style-type: none;
     display: inline;
     padding-right: 5px;
-
+    background-color: rgba(141, 229, 245, 0.627);
 }
 .title {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
