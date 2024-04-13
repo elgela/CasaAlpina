@@ -1,42 +1,40 @@
-/*tipo*/
-* {
+body {
     padding: 0;
     margin: 0;
 }
 header {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    background-image: url("images/final_exacta_201411101841_resized_2000x475.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     align-items: center;
 }
-body {
-    margin: 0;
-    background-image: url("/css/images/final_exacta_201411101841_resized_2000x475.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-}
 a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5em;
     color: rgb(27, 129, 88);
     text-decoration: none;
 }
 h3 {
     color: #4abc2a;
 }
-/*clases*/
 .logo {
-    display: block;
-    margin-top: 15px;
-    margin-left: 150px;
+    display: flex;
+    margin-top: 1%;
+    margin-left: 11%;
+    background-color: rgba(144, 191, 210, 0.37);
 }
 .menu {
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-/* .menu ul {
+.menu ul {
     padding-right: 0px;
     padding-left: 0px;
     padding-bottom: 0px;
     padding-top: 0px;
-} */
+}
 .menu li {
     font-family: fantasy;
     font-size: small;
@@ -52,7 +50,7 @@ h3 {
     text-align: center;
     color: rgba(241, 214, 10, 0.693);
     background-color: #21252978;
-    font-family: cursive;   
+    font-family: cursive;
      
 }
 .subtitle {
@@ -86,17 +84,11 @@ h3 {
     padding: 10px;
     padding-right: 65px;
 }
-.col-12 {
-    flex: 0 0 auto;
-    width: 100%;
-}
-.blur {
+.fondo-subt {
+    display: flex;
     background-color: rgba(0, 0, 0, .8) !important;
 }
-.p-5 {
-    padding: 20px !important;
-}
-/*hover*/
+/* /*hover*/
 a:hover {
     color: rgba(232, 244, 236, 0.426);
 }
