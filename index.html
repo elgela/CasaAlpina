@@ -3,38 +3,94 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="/images/iconos/favicon.jpg" />
-    <title>Cabañas Casa Alpina</title>
+    <link rel="shortcut icon" href="img/logo-cabaña-removebg-removebg-preview.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <title>Cabañas "Casa Alpina"</title>
 </head>
 
-<body>
+<body class="clear-mode">
+    <button id="mode-toggle">Modo oscuro</button>
     <header>
-        <div class="logo">
-            <img src="/images/logo.png" alt="Casa Alpina logo">
-        </div>
-
-        <nav>
-            <ul class="menu">
-                <li><a href="http://127.0.0.1:5500/index.html">Inicio</a></li>
-                <li><a href="casagrande.html" target="_blank">Cabañas</a></li>
-                <li><a href="">Nuestro predio</a></li>
-                <li><a href="">Servicios</a></li>
-                <li><a href="">Reservas</a></li>
-                <li><a href="">Contacto</a></li>
-            </ul>
-        </nav>
-        <div>
-            <h1 class="title">Casa Alpina</h1>
-            <h4 class="subtitle title">Algo mas que apacibles sierras</h4>
-            <hr>
-        </div>
+        <img src="images/final_exacta_201411101841_resized_2000x475.jpg" alt="cabañas de frente">
+        <h1 class="titulo">Casa Alpina</h1>
+        <label class="btn-menu">
+            <span id="menu-abrir">&#9776;</span>
+            <span id="menu-cerrar">X</span>
+        </label>
     </header>
-    <hr>
-    <div class="fondo-subt">
-        <h3>Cuatro cabañas totalmente equipadas, independientes y de reciente construcción... cada una de ellas con su propio entorno de vegetación. En su interior, numerosos detalles de confort y comodidad. Ubicadas en una de las mejores zonas serranas de Tandil, en las laderas del Cerro El Centinela y a solo 4km. del centro de la ciudad.</h3>
+    <nav class="menu">
+        <ul class="nav">
+            <li class="btn-inicio">Inicio</li>
+            <li class="btn-reserva">Reservas</li>
+            <li class="btn-servicios">Servicios</li>
+            <li class="btn-contacto">Contáctenos</li>
+            <li class="btn-cabanias">Cabañas</li>
+        </ul>
+    </nav>
+    <div class="info">
+        <article>
+            <h2>Algo más que apacibles sierras</h2>
+            <p>Cuatro cabañas totalmente equipadas, independientes y de reciente construcción...cada una de ellas
+                con su propio entorno de vegetación. En su interior, numerosos detalles de confort y comodidad.</p>
+            <div class="gps">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d20385.13928675722!2d-59.16675600000001!3d-37.348288!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2sus!4v1716004032431!5m2!1ses!2sus"
+                    width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </article>
+        <article class="lista-cabañas">
+            <p>Ubicadas en una de las mejores zonas serranas de Tandil, en las laderas del Cerro El Centinela y a
+                solo 4 km. del centro de la ciudad.</p>
+            <section>
+                <label>Del Pinar</label>
+                <img src="img/del_pinar.jpg" alt="Cabaña Del Pinar">
+                <aside class="lateral">
+                    <p>Monoambiente amplio, con capacidad para alojar 2 a 4 personas.</p>
+                </aside>
+            </section>
+            <section>
+                <label>Del Solar</label>
+                <img src="img/del_solar.jpg" alt="Cabaña Del Solar">
+                <aside class="lateral">
+                    <p>Hermosa construcción de dos plantas, con capacidad para alojar 2 a 5 personas.</p>
+                </aside>
+            </section>
+            <section>
+                <label>Del Puente</label>
+                <img src="img/del_puente.jpg" alt="Cabaña Del Puente">
+                <aside class="lateral">
+                    <p>Espléndida y moderna construcción, monoambiente, ideal para 2 personas, o bien para pareja con
+                        bebé...</p>
+                </aside>
+            </section>
+            <section>
+                <label>Casagrande</label>
+                <img src="img/casagrande.jpg" alt="Cabaña Casagrande">
+                <aside class="lateral">
+                    <p>Tiene capacidad para alojar 3 a 6 personas. Posee dos plantas, ideal para un grupo familiar
+                        grande o
+                        para dos familias.</p>
+                </aside>
+            </section>
+            <section>
+                <label>Pileta c/ hidromasaje</label>
+                <img src="img/pileta.jpg" alt="Pileta">
+                <aside class="lateral">
+                    <p>Una piscina de 8 x 4 mts y 1,40 mts. de profundidad, de 45.000 lts de cristalina agua.</p>
+                </aside>
+            </section>
+        </article>
     </div>
+    <footer>
+        <p>Cabañas Sierras de Ensueño® Todos los derechos reservados ©2024</p>
+        <p>Contacto: <a href="https://wa.me/5492494020721" class="whatsapp" target="_blank">Gabriela</a>/ <a
+                href="https://wa.me/5492494357255" class="whatsapp" target="_blank">Marcelo</a></p>
+    </footer>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
