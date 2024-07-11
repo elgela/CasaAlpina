@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="img/logo-cabaña-removebg-removebg-preview.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    
     <title>Cabañas "Casa Alpina"</title>
 </head>
 
@@ -21,26 +23,40 @@
             <span id="menu-cerrar">X</span>
         </label>
     </header>
-    <nav class="menu">
-        <ul class="nav">
-            <li class="btn-inicio">Inicio</li>
-            <li class="btn-reserva">Reservas</li>
-            <li class="btn-servicios">Servicios</li>
-            <li class="btn-contacto">Contáctenos</li>
-            <li class="btn-cabanias">Cabañas</li>
-        </ul>
-    </nav>
-    <div class="info">
+    <div class="menu-bar">
+        <nav class="menu">
+            <ul class="nav">
+                <li class="btn-inicio">
+                    <i class='bx bxs-home'></i>
+                    <span class="nav-text">Inicio</span>
+                </li>
+                <li class="btn-reserva">
+                    <i class='bx bxs-edit'></i>
+                    <span class="nav-text">Reservas</span>
+                </li>
+                <li class="btn-servicios">
+                    <i class='bx bxl-stripe'></i>
+                    <span class="nav-text">Servicios</span>
+                </li>
+                <li class="btn-cabanias">
+                    <i class='bx bxs-institution'></i>
+                    <span class="nav-text">Cabañas</span>
+                </li>
+                <li class="btn-contacto">
+                    <i class='bx bxs-phone-incoming'></i>
+                    <span class="nav-text">Contactenos</span>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="use-ajax">
         <article>
             <h2>Algo más que apacibles sierras</h2>
             <p>Cuatro cabañas totalmente equipadas, independientes y de reciente construcción...cada una de ellas
                 con su propio entorno de vegetación. En su interior, numerosos detalles de confort y comodidad.</p>
-            <div class="gps">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d20385.13928675722!2d-59.16675600000001!3d-37.348288!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2sus!4v1716004032431!5m2!1ses!2sus"
-                    width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+            <aside class="map-responsive">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2506.8436596288775!2d-59.169330524978925!3d-37.34828340757744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2sus!4v1720636131798!5m2!1ses!2sus" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </aside>
         </article>
         <article class="lista-cabañas">
             <p>Ubicadas en una de las mejores zonas serranas de Tandil, en las laderas del Cerro El Centinela y a
@@ -48,21 +64,21 @@
             <section>
                 <label>Del Pinar</label>
                 <img src="img/del_pinar.jpg" alt="Cabaña Del Pinar">
-                <aside class="lateral">
+                <aside class="descripcion">
                     <p>Monoambiente amplio, con capacidad para alojar 2 a 4 personas.</p>
                 </aside>
             </section>
             <section>
                 <label>Del Solar</label>
                 <img src="img/del_solar.jpg" alt="Cabaña Del Solar">
-                <aside class="lateral">
+                <aside class="descripcion">
                     <p>Hermosa construcción de dos plantas, con capacidad para alojar 2 a 5 personas.</p>
                 </aside>
             </section>
             <section>
                 <label>Del Puente</label>
                 <img src="img/del_puente.jpg" alt="Cabaña Del Puente">
-                <aside class="lateral">
+                <aside class="descripcion">
                     <p>Espléndida y moderna construcción, monoambiente, ideal para 2 personas, o bien para pareja con
                         bebé...</p>
                 </aside>
@@ -70,7 +86,7 @@
             <section>
                 <label>Casagrande</label>
                 <img src="img/casagrande.jpg" alt="Cabaña Casagrande">
-                <aside class="lateral">
+                <aside class="descripcion">
                     <p>Tiene capacidad para alojar 3 a 6 personas. Posee dos plantas, ideal para un grupo familiar
                         grande o
                         para dos familias.</p>
@@ -79,11 +95,15 @@
             <section>
                 <label>Pileta c/ hidromasaje</label>
                 <img src="img/pileta.jpg" alt="Pileta">
-                <aside class="lateral">
+                <aside class="descripcion">
                     <p>Una piscina de 8 x 4 mts y 1,40 mts. de profundidad, de 45.000 lts de cristalina agua.</p>
                 </aside>
             </section>
         </article>
+    </div>
+    <div id="top-link">
+        <a class="btn-arriba" role="button" href="#" aria-label="Ir arriba" id="btn-subir">▲</a>
+        
     </div>
     <footer>
         <p>Cabañas Sierras de Ensueño® Todos los derechos reservados ©2024</p>
@@ -92,5 +112,4 @@
     </footer>
     <script src="js/main.js"></script>
 </body>
-
 </html>

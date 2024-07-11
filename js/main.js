@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 /////////////inicio///////////////////
-let paginaInicio = document.querySelector(".info");
+let paginaInicio = document.querySelector(".use-ajax");
 async function inicio(event) {
     event.preventDefault();
     try {
@@ -69,7 +69,7 @@ let ini = document.querySelector(".btn-inicio");
 ini.addEventListener("click", inicio);
 
 //////////////reservas////////////////
-let reserva = document.querySelector(".info");
+let reserva = document.querySelector(".use-ajax");
 async function dispReserva(event) {
     event.preventDefault();
     try {
@@ -86,7 +86,7 @@ let res = document.querySelector(".btn-reserva");
 res.addEventListener("click", dispReserva);
 
 ////////////servicios///////////////
-let servicio = document.querySelector(".info");
+let servicio = document.querySelector(".use-ajax");
 async function servicios(event) {
     event.preventDefault();
     try {
@@ -103,7 +103,7 @@ let servi = document.querySelector(".btn-servicios");
 servi.addEventListener("click", servicios);
 
 ////////contactenos/////////////////
-let contacto = document.querySelector(".info");
+let contacto = document.querySelector(".use-ajax");
 async function contactenos(event) {
     event.preventDefault();
     try {
@@ -119,7 +119,7 @@ async function contactenos(event) {
 let contact = document.querySelector(".btn-contacto");
 contact.addEventListener("click", contactenos);
 /////////////cabañas//////////////////
-let cabs = document.querySelector(".info");
+let cabs = document.querySelector(".use-ajax");
 async function cabanias(event) {
     event.preventDefault();
     try {

@@ -1,18 +1,20 @@
-<div class="info">
-    <h2>Contácto</h2>
+<div class="use-ajax">
+    <h2>Contacto</h2>
     <div class="consulta">
         <form method="post">
             <label>Nombre:</label>
             <input type="text" name="nombre" id="nombre" placeholder="Nombre..." required>
             <label>Apellido:</label>
-            <input type="text" name="apellido" id="apellido" placeholder="Apellido...">
+            <input type="text" name="apellido" id="apellido" placeholder="Apellido..." required>
             <label>Email:</label>
-            <input type="email" name="email" id="email" placeholder="Correo electrónico...">
+            <input type="email" name="email" id="email" placeholder="Correo electrónico..." required>
             <label>Repetir Email:</label>
-            <input type="email" name="repeatemail" id="repeatemail" placeholder="Correo electrónico...">
+            <input type="email" name="repeatemail" id="repeatemail" placeholder="Correo electrónico..." required>
             <label>Teléfono:</label>
-            <input type="number" name="telefono" id="telefono" placeholder="Teléfono...">
+            <input type="number" name="telefono" id="telefono" placeholder="Teléfono..." required>
+            <div>
+                <input type="button" id="envioConsulta" value="Enviar">
+            </div>
         </form>
-        <input type="button" id="envioConsulta" value="Enviar">
     </div>
 </div>
