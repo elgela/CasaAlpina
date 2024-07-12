@@ -1,5 +1,6 @@
  .container {
      display: block;
+     flex-direction: column;
      grid-template-areas:
          "header"
          "formulario"
@@ -109,8 +110,10 @@
      }
 
      .menu {
+         width: auto;
          background-color: rgba(23, 17, 3, 0.68);
-         border-radius: 300px;
+         border-bottom-left-radius: 10px;
+         border-bottom-right-radius: 10px;
          border-color: rgb(48, 43, 43);
      }
 
@@ -122,21 +125,31 @@
  }
 
  .menu {
-     border: 1px solid rgb(171, 173, 41);
+     /* border: 1px solid rgba(171, 173, 41, 0.187); */
      border-radius: 1px;
      width: 100%;
      display: flex;
-     background-color: rgba(228, 229, 211, 0.689);
+     background-color: rgba(195, 183, 124, 0.121);
  }
 
- img.logo {
+
+ h1 img {
+     display: flex;
+     text-align: center;
+     padding-top: 30px ;
+     margin: 0;
+     width: 40%;
+     height: 50%;
+ }
+
+ /* img.logo {
      display: flex;
      text-align: left;
      width: 5%;
      border-top-left-radius: 40%;
      border-top-right-radius: 40%;
      position: relative;
- }
+ } */
 
  .titulo {
      margin: 0;
@@ -175,15 +188,15 @@
 
  ul.nav li {
      list-style: none;
-     padding: 5px 5px;
+     padding: 1px 5px;
  }
 
- ul.nav li a {
+ /* ul.nav li a {
      margin: 0;
      padding: 0 4px;
      color: rgb(79, 115, 64);
      box-shadow: 2px 2px 2px;
- }
+ } */
 
  .btn-menu {
      display: block;
@@ -428,6 +441,7 @@
  @media (width >=660px) {
      .container {
          display: grid;
+         flex-direction: row;
          grid-template-columns: 1fr 2fr;
          grid-template-areas:
              "header header"
@@ -440,7 +454,7 @@
      }
 
      .menu {
-         background-color: rgba(241, 215, 110, 0.276);
+         /* background-color: rgba(241, 215, 110, 0.276); */
      }
 
      .titulo {
