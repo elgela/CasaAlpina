@@ -102,22 +102,6 @@ async function servicios(event) {
 let servi = document.querySelector(".btn-servicios");
 servi.addEventListener("click", servicios);
 
-////////contactenos/////////////////
-let contacto = document.querySelector(".use-ajax");
-async function contactenos(event) {
-    event.preventDefault();
-    try {
-        let response = await fetch("contactenos.html")
-        if (response.ok) {
-            let text = await response.text()
-            contacto.innerHTML = text;
-        }
-    } catch (error) {
-        contacto.innerHTML = "<h2>Error!</h2>";
-    }
-}
-let contact = document.querySelector(".btn-contacto");
-contact.addEventListener("click", contactenos);
 /////////////cabañas//////////////////
 let cabs = document.querySelector(".use-ajax");
 async function cabanias(event) {
@@ -134,6 +118,22 @@ async function cabanias(event) {
 }
 let cab = document.querySelector(".btn-cabanias");
 cab.addEventListener("click", cabanias);
+////////contactenos/////////////////
+let contacto = document.querySelector(".use-ajax");
+async function contactenos(event) {
+    event.preventDefault();
+    try {
+        let response = await fetch("contactenos.html")
+        if (response.ok) {
+            let text = await response.text()
+            contacto.innerHTML = text;
+        }
+    } catch (error) {
+        contacto.innerHTML = "<h2>Error!</h2>";
+    }
+}
+let contact = document.querySelector(".btn-contacto");
+contact.addEventListener("click", contactenos);
 //////////botones nav/////////////////
 let botonInicio = document.querySelector(".btn-inicio");
 let botonReserva = document.querySelector(".btn-reserva");
