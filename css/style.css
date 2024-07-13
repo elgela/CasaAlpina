@@ -1,148 +1,155 @@
- .container {
-     display: block;
-     flex-direction: column;
-     grid-template-areas:
-         "header"
-         "formulario"
-         "lateralDer"
-         "footer"
-     ;
- }
+.container {
+    display: grid;
+    flex-direction: row;
+    grid-template-areas:
+        "header"
+        "formulario"
+        "lateralDer"
+        "footer"
+    ;
+}
 
- body.clear-mode {
-     background-color: white;
-     color: black;
+body.clear-mode {
+    background-color: white;
+    color: black;
 
-     h2 {
-         display: grid;
-         background-color: rgb(153, 131, 69);
-         text-align: center;
-         color: white;
-     }
+    h2 {
+        display: grid;
+        background-color: rgb(153, 131, 69);
+        text-align: center;
+        color: white;
+    }
 
-     .container {
-         background-color: bisque;
-     }
+    .container {
+        background-color: bisque;
+    }
 
-     .btn-inicio,
-     .btn-reserva,
-     .btn-servicios,
-     .btn-contacto,
-     .btn-cabanias {
-         /* display: block; */
-         color: rgb(43, 91, 4);
-         text-decoration: none;
-         background-color: rgb(205, 210, 203);
-         border-radius: 13px;
-         margin: 2px;
-         border: 1px ridge chartreuse;
-     }
+    .btn-inicio,
+    .btn-reserva,
+    .btn-servicios,
+    .btn-contacto,
+    .btn-cabanias {
+        /* display: block; */
+        color: rgb(43, 91, 4);
+        text-decoration: none;
+        background-color: rgb(205, 210, 203);
+        border-radius: 13px;
+        margin: 2px;
+        border: 1px ridge chartreuse;
+    }
 
-     .btn-inicio:hover,
-     .btn-reserva:hover,
-     .btn-servicios:hover,
-     #btn-agregar:hover,
-     #btn-consulta:hover,
-     #btn-averiguar:hover,
-     .btn-contacto:hover,
-     .btn-cabanias:hover {
-         transform: scale(1);
-         cursor: pointer;
-         font-weight: bold;
-         background-color: rgba(86, 108, 5, 0.578);
-     }
- }
+    .btn-inicio:hover,
+    .btn-reserva:hover,
+    .btn-servicios:hover,
+    #btn-agregar:hover,
+    #btn-consulta:hover,
+    #btn-averiguar:hover,
+    .btn-contacto:hover,
+    .btn-cabanias:hover {
+        transform: scale(1);
+        cursor: pointer;
+        font-weight: bold;
+        background-color: rgba(86, 108, 5, 0.578);
+    }
+}
 
- body.dark-mode {
-     background-color: black;
-     color: rgb(212, 207, 207);
+body.dark-mode {
+    background-color: black;
+    color: rgb(212, 207, 207);
 
-     .titulo {
-         color: rgb(241, 248, 246);
-     }
+    .titulo {
+        color: rgb(241, 248, 246);
+    }
 
-     header {
-         background-color: rgb(62, 55, 55);
-     }
+    header {
+        background-color: rgb(62, 55, 55);
+    }
 
-     h2 {
-         display: grid;
-         background-color: rgb(221, 213, 208);
-         text-align: center;
-         color: black;
-     }
+    h2 {
+        display: grid;
+        background-color: rgb(221, 213, 208);
+        text-align: center;
+        color: black;
+    }
 
-     span {
-         display: flexbox;
-         color: rgb(155, 175, 80);
-     }
+    span {
+        display: flexbox;
+        color: rgb(155, 175, 80);
+    }
 
-     .container {
-         background-color: rgba(143, 143, 141, 0.121);
-     }
+    .container {
+        background-color: rgba(143, 143, 141, 0.121);
+    }
 
-     .btn-inicio,
-     .btn-reserva,
-     .btn-servicios,
-     .btn-contacto,
-     .btn-cabanias {
-         /* display: block; */
-         color: rgb(180, 224, 143);
-         text-decoration: none;
-         background-color: rgb(138, 143, 137);
-         border-radius: 13px;
-         margin: 2px;
-         border: 1px ridge rgb(217, 225, 221);
-     }
+    .btn-inicio,
+    .btn-reserva,
+    .btn-servicios,
+    .btn-contacto,
+    .btn-cabanias {
+        /* display: block; */
+        color: rgb(180, 224, 143);
+        text-decoration: none;
+        background-color: rgb(138, 143, 137);
+        border-radius: 13px;
+        margin: 2px;
+        border: 1px ridge rgb(217, 225, 221);
+    }
 
-     .btn-inicio:hover,
-     .btn-reserva:hover,
-     .btn-servicios:hover,
-     .btn-contacto:hover,
-     .btn-cabanias:hover,
-     #btn-agregar:hover,
-     #btn-consulta:hover,
-     #btn-averiguar:hover {
-         transform: scale(1);
-         cursor: pointer;
-         font-weight: bold;
-         background-color: rgba(86, 108, 5, 0.578);
-     }
+    .btn-inicio:hover,
+    .btn-reserva:hover,
+    .btn-servicios:hover,
+    .btn-contacto:hover,
+    .btn-cabanias:hover,
+    #btn-agregar:hover,
+    #btn-consulta:hover,
+    #btn-averiguar:hover {
+        transform: scale(1);
+        cursor: pointer;
+        font-weight: bold;
+        background-color: rgba(86, 108, 5, 0.578);
+    }
 
-     .menu {
-         width: auto;
-         background-color: rgba(23, 17, 3, 0.68);
-         border-bottom-left-radius: 10px;
-         border-bottom-right-radius: 10px;
-         border-color: rgb(48, 43, 43);
-     }
+    .menu {
+        width: auto;
+        background-color: rgba(23, 17, 3, 0.68);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-color: rgb(48, 43, 43);
+    }
 
- }
+}
 
- /*********************************************************/
- header img {
-     width: 100%;
- }
+/*********************************************************/
+header img {
+    width: 100%;
+}
 
- .menu {
-     /* border: 1px solid rgba(171, 173, 41, 0.187); */
-     border-radius: 1px;
-     width: 100%;
-     display: flex;
-     background-color: rgba(195, 183, 124, 0.121);
- }
+.menu {
+    /* border: 1px solid rgba(171, 173, 41, 0.187); */
+    border-radius: 1px;
+    width: 100%;
+    display: flex;
+    background-color: rgba(195, 183, 124, 0.121);
+}
 
+.logoImagen {
+    display: flex;
+    padding-top: 10px;
+    /* margin: 0; */
+    width: 40%;
+    height: 10%;
+}
 
- h1 img {
-     display: flex;
-     text-align: center;
-     padding-top: 30px ;
-     margin: 0;
-     width: 40%;
-     height: 50%;
- }
+#logo {
+    width: 50%;
+    height: auto;
+}
 
- /* img.logo {
+#imagenFinal {
+    width: 200%;
+}
+
+/* img.logo {
      display: flex;
      text-align: left;
      width: 5%;
@@ -151,84 +158,91 @@
      position: relative;
  } */
 
- .titulo {
-     margin: 0;
-     color: rgb(12, 13, 12);
-     width: 100%;
-     height: 10%;
-     display: grid;
-     text-align: center;
-     font-size: x-large;
-     font-family: cursive;
-     background-color: rgba(132, 183, 44, 0.42);
- }
+.titulo {
+    margin: 0;
+    color: rgb(12, 13, 12);
+    width: 100%;
+    height: 10%;
+    display: grid;
+    text-align: center;
+    font-size: x-large;
+    font-family: cursive;
+    background-color: rgba(132, 183, 44, 0.42);
+}
 
- span {
-     display: flexbox;
-     color: rgb(60, 72, 18);
- }
+span {
+    display: flexbox;
+    color: rgb(60, 72, 18);
+}
 
- ul label {
-     text-align: left;
-     display: grid;
-     font-weight: bolder;
-     font-style: oblique;
-     font-size: large;
-     color: rgb(64, 89, 77);
- }
+ul label {
+    text-align: left;
+    display: grid;
+    font-weight: bolder;
+    font-style: oblique;
+    font-size: large;
+    color: rgb(64, 89, 77);
+}
 
- ul.nav {
-     display: none;
- }
+ul.nav {
+    display: none;
+}
 
- ul.nav.show {
-     display: flex;
-     flex-direction: column;
- }
+ul.nav.show {
+    display: flex;
+    flex-direction: column;
+}
 
- ul.nav li {
-     list-style: none;
-     padding: 1px 5px;
- }
+ul.nav li {
+    list-style: none;
+    padding: 1px 5px;
+}
 
- /* ul.nav li a {
+/* ul.nav li a {
      margin: 0;
      padding: 0 4px;
      color: rgb(79, 115, 64);
      box-shadow: 2px 2px 2px;
  } */
 
- .btn-menu {
-     display: block;
- }
+.btn-menu {
+    display: block;
+}
 
- .btn-menu:hover {
-     cursor: pointer;
- }
+.btn-menu:hover {
+    cursor: pointer;
+}
 
- #menu-cerrar:not(:checked) {
-     display: none;
- }
+#menu-cerrar:not(:checked) {
+    display: none;
+}
 
- #menu-cerrar:checked {
-     display: block;
- }
+#menu-cerrar:checked {
+    display: block;
+}
 
- #menu-abrir {
-     text-align: right;
- }
+#menu-abrir {
+    text-align: right;
+}
 
- .btn-menu a {
-     color: black;
-     background-color: rgba(87, 138, 65, 0.634);
-     margin: 2px;
-     padding: 2px;
-     border: 0;
-     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
- }
+.btn-menu a {
+    color: black;
+    background-color: rgba(87, 138, 65, 0.634);
+    margin: 2px;
+    padding: 2px;
+    border: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
+article.lista-cabañas {
+    text-align: center;
+}
 
- /* .btn-inicio, .btn-reserva, .btn-servicios {
+article h2 {
+    font-size: medium;
+}
+
+/* .btn-inicio, .btn-reserva, .btn-servicios {
     display: block;
     color: rgb(180, 224, 143);
     text-decoration: none;
@@ -237,117 +251,121 @@
     margin: 2px;
     border: 1px ridge seagreen;
 } */
- /* .btn-inicio:hover, .btn-reserva:hover, .btn-servicios:hover, #btn-agregar:hover, #btn-consulta:hover, #btn-averiguar:hover {
+/* .btn-inicio:hover, .btn-reserva:hover, .btn-servicios:hover, #btn-agregar:hover, #btn-consulta:hover, #btn-averiguar:hover {
     transform: scale(1);
     cursor: pointer;
     font-weight: bold;
     background-color: rgba(86, 108, 5, 0.578);
     } */
- #btn-agregar,
- #btn-consulta,
- #btn-averiguar,
- #envioConsulta {
-     border-radius: 4px;
- }
+#btn-agregar,
+#btn-consulta,
+#btn-averiguar,
+#envioConsulta {
+    border-radius: 4px;
+}
 
- #envioConsulta {
-     margin-top: 10px;
- }
+#btn-consulta {
+    margin-left: 15px;
+}
 
- #btn-captcha:hover,
- #envioConsulta:hover {
-     cursor: pointer;
-     background-color: burlywood;
-     font-weight: bold;
- }
+#envioConsulta {
+    margin-top: 10px;
+}
 
- a {
-     display: inline;
-     color: rgb(86, 126, 54);
-     text-decoration: none;
-     background-color: rgb(238, 246, 235);
-     border-radius: 3px;
-     padding: 1px;
-     margin: 2px;
-     border: 1px solid;
- }
+#btn-captcha:hover,
+#envioConsulta:hover {
+    cursor: pointer;
+    background-color: burlywood;
+    font-weight: bold;
+}
 
- a:hover {
-     transform: scale(1);
-     cursor: pointer;
-     font-weight: bold;
-     background-color: rgba(86, 108, 5, 0.578);
- }
+a {
+    display: inline;
+    color: rgb(86, 126, 54);
+    text-decoration: none;
+    background-color: rgb(238, 246, 235);
+    border-radius: 3px;
+    padding: 1px;
+    margin: 2px;
+    border: 1px solid;
+}
 
- h2 {
-     display: grid;
-     background-color: burlywood;
-     text-align: center;
- }
+a:hover {
+    transform: scale(1);
+    cursor: pointer;
+    font-weight: bold;
+    background-color: rgba(86, 108, 5, 0.578);
+}
 
- p {
-     font-family: cursive;
-     font-style: oblique;
-     font-weight: bold;
-     font-size: large;
- }
+h2 {
+    display: grid;
+    background-color: burlywood;
+    text-align: center;
+}
 
- h3 {
-     display: inline;
-     padding: 3px;
-     border-radius: 5px;
- }
+p {
+    font-family: cursive;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: large;
+}
 
- .formulario {
-     display: inline-block;
-     margin: 5%;
-     width: 90%;
-     font-size: small;
-     justify-content: center;
- }
+h3 {
+    display: inline;
+    padding: 3px;
+    border-radius: 5px;
+}
 
- .formulario input {
-     width: 70%;
-     font-size: small;
-     border-radius: 5px;
-     box-shadow: 3px 2px 2px grey;
- }
+.formulario {
+    display: inline-block;
+    margin: 5%;
+    width: 90%;
+    font-size: small;
+    justify-content: center;
+}
 
- .formulario select {
-     font-size: small;
-     border-radius: 5px;
-     box-shadow: 3px 2px 2px grey;
- }
+.formulario input {
+    width: 70%;
+    font-size: small;
+    border-radius: 5px;
+    box-shadow: 3px 2px 2px grey;
+}
+
+.formulario select {
+    font-size: small;
+    border-radius: 5px;
+    box-shadow: 3px 2px 2px grey;
+}
 
 
- label {
-     display: block;
-     font-size: large;
-     font-weight: bold;
-     font-style: oblique;
-     color: darkolivegreen;
- }
+label {
+    display: block;
+    font-size: large;
+    font-weight: bold;
+    font-style: oblique;
+    color: darkolivegreen;
+}
 
- ul label {
-     font-size: xx-small;
- }
+ul label {
+    font-size: xx-small;
+}
 
- div.consulta form {
-     text-align: center;
- }
+div.consulta form {
+    text-align: center;
+}
 
- .formulario button {
-     border-radius: 5px;
-     box-shadow: 3px 2px 2px grey;
- }
+.formulario button {
+    border-radius: 5px;
+    box-shadow: 3px 2px 2px grey;
+}
 
- .informacion {
-     display: inline-block;
-     width: 90%;
-     margin: 5%;
- }
+.informacion {
+    display: inline-block;
+    width: 90%;
+    margin: 5%;
+}
 
- /* .btn-envio {
+/* .btn-envio {
     display: flexbox;
     border-radius: 5px;
     margin: 7px;
@@ -359,125 +377,126 @@
     background-color: burlywood;
     cursor: pointer;
 } */
- .map-responsive {
-     overflow: hidden;
-     padding-bottom: 40%;
-     position: relative;
-     height: 0;
- }
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 40%;
+    position: relative;
+    height: 0;
+}
 
- .map-responsive iframe {
-     right: 70px;
-     top: 0;
-     height: 70%;
-     width: 50%;
-     position: absolute;
- }
+.map-responsive iframe {
+    justify-content: center;
+    right: 100px;
+    top: 0;
+    height: 70%;
+    width: 50%;
+    position: absolute;
+}
 
- .formulario-contacto {
-     display: grid;
-     text-align: center;
-     font-size: small;
- }
+.formulario-contacto {
+    display: grid;
+    text-align: center;
+    font-size: small;
+}
 
- img {
-     width: 50%;
-     opacity: 85%;
- }
+img {
+    width: 50%;
+    opacity: 85%;
+}
 
- .descripcion p {
-     width: 60%;
-     font-weight: bold;
-     font-size: small;
-     color: rgb(52, 59, 65);
-     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
- }
+p.descripcion {
+    width: 60%;
+    font-weight: bold;
+    font-size: small;
+    color: rgb(52, 59, 65);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
- table {
-     display: grid;
-     text-align: left;
-     font-size: small;
-     text-transform: uppercase;
-     border-collapse: collapse;
- }
+table {
+    display: grid;
+    text-align: left;
+    font-size: small;
+    text-transform: uppercase;
+    border-collapse: collapse;
+}
 
- footer {
-     text-align: center;
-     color: grey;
-     background-color: rgba(195, 181, 110, 0.121);
- }
+footer {
+    text-align: center;
+    color: grey;
+    background-color: rgba(195, 181, 110, 0.121);
+}
 
- footer p {
-     margin: 5px;
-     padding: 5px;
- }
+footer p {
+    margin: 5px;
+    padding: 5px;
+}
 
- td {
-     padding: 15px;
- }
+td {
+    padding: 15px;
+}
 
- .menu {
-     display: flex;
-     color: chartreuse;
-     font-size: 1.2em;
-     font-weight: bold;
- }
+.menu {
+    display: flex;
+    color: chartreuse;
+    font-size: 1.2em;
+    font-weight: bold;
+}
 
- #top-link a {
-     position: absolute;
-     right: 0;
-     visibility: visible;
- }
+#top-link a {
+    position: absolute;
+    right: 0;
+    visibility: visible;
+}
 
- .btn-arriba {
-     color: rgb(48, 43, 43);
-     border: none;
-     margin-top: -40px;
-     background-color: rgba(238, 228, 214, 0.791);
-     padding: 4px;
- }
+.btn-arriba {
+    color: rgb(48, 43, 43);
+    border: none;
+    margin-top: -40px;
+    background-color: rgba(238, 228, 214, 0.791);
+    padding: 4px;
+}
 
- /*//////////////////////////////////DESKTOP////////////////////////////////*/
- @media (width >=660px) {
-     .container {
-         display: grid;
-         flex-direction: row;
-         grid-template-columns: 1fr 2fr;
-         grid-template-areas:
-             "header header"
-             "formulario lateralDer"
-             "footer footer";
-     }
+/*//////////////////////////////////DESKTOP////////////////////////////////*/
+@media (width >=660px) {
+    .container {
+        display: grid;
+        flex-direction: row;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas:
+            "header header"
+            "formulario lateralDer"
+            "footer footer";
+    }
 
-     body {
-         background-color: rgb(9, 9, 9);
-     }
+    body {
+        background-color: rgb(9, 9, 9);
+    }
 
-     .titulo {
-         font-family: cursive;
-         font-size: 300%;
-         background-color: rgba(195, 181, 110, 0.121);
-     }
+    .titulo {
+        font-family: cursive;
+        font-size: 300%;
+        background-color: rgba(195, 181, 110, 0.121);
+    }
 
-     .btn-menu {
-         display: none;
-         color: rgb(233, 188, 28);
-         padding: 15px;
-     }
+    .btn-menu {
+        display: none;
+        color: rgb(233, 188, 28);
+        padding: 15px;
+    }
 
-     ul label {
-         font-size: x-large;
-     }
+    ul label {
+        font-size: x-large;
+    }
 
-     ul.nav {
-         width: 100%;
-         margin: 0px;
-         padding: 0px;
-         display: flex;
-         justify-content: center;
-     }
+    ul.nav {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+    }
 
-     /* a {
+    /* a {
     display: inline-table;
     color: rgb(115, 125, 54);
     text-decoration: solid;
@@ -486,65 +505,73 @@
     border: 1px solid;
     font-family: cursive;
 } */
-     a:hover {
-         background-color: rgb(185, 190, 167);
+    a:hover {
+        background-color: rgb(185, 190, 167);
 
-     }
+    }
 
-     .formulario,
-     .registro {
-         margin: 50px;
-         display: inline;
-         font-size: medium;
-         box-shadow: 5px 5px 5px 5px gray;
-     }
+    .formulario,
+    .registro {
+        margin: 50px;
+        display: inline;
+        font-size: medium;
+        box-shadow: 5px 5px 5px 5px gray;
+    }
 
-     .registro label {
-         text-align: left;
-         margin-left: 10px;
-     }
+    .registro label {
+        text-align: left;
+        margin-left: 10px;
+    }
 
-     .formulario input,
-     .formulario select {
-         display: flex;
-         font-size: large;
-         border-radius: 5px;
-         box-shadow: 3px 2px 2px grey;
-         cursor: pointer;
-     }
+    .formulario input,
+    .formulario select {
+        display: flex;
+        font-size: large;
+        border-radius: 5px;
+        box-shadow: 3px 2px 2px grey;
+        cursor: pointer;
+    }
 
-     /* .formulario-contacto {
+    /* .formulario-contacto {
     display: grid;
     text-align: center;
     font-size: small;
 } */
-     .formulario-contacto input,
-     textarea {
-         display: flexbox;
-         font-size: large;
-         border-radius: 10px;
-         box-shadow: 3px 2px 2px rgb(155, 134, 126);
-     }
+    .formulario-contacto input,
+    textarea {
+        display: flexbox;
+        font-size: large;
+        border-radius: 10px;
+        box-shadow: 3px 2px 2px rgb(155, 134, 126);
+    }
 
-     label {
-         font-size: xx-large;
-         display: block;
-         color: rgb(165, 77, 42);
-     }
+    label {
+        font-size: xx-large;
+        display: block;
+        color: rgb(165, 77, 42);
+    }
 
-     .descripcion p {
-         width: 50%;
-         font-size: large;
-         font-weight: bold;
-     }
+    .descripcion p {
+        width: 50%;
+        font-size: large;
+        font-weight: bold;
+    }
 
-     .tabla-servicios {
-         text-align: center;
-         font-size: large;
-         justify-content: center;
-     }
+    article.lista-cabañas {
+        text-align: left;
+    }
 
-     /* .btn-envio {
+    article h2 {
+        font-size: x-large;
+    }
+
+    .tabla-servicios {
+        text-align: center;
+        font-size: large;
+        justify-content: center;
+    }
+
+    /* .btn-envio {
     display: block;
     border-radius: 5px;
     text-align: right;
@@ -555,39 +582,37 @@
     background-color: burlywood;
     cursor: pointer;
 } */
-     footer {
-         text-align: center;
-         color: grey;
-         background-color: rgba(195, 181, 110, 0.121);
-     }
+    footer {
+        text-align: center;
+        color: grey;
+        background-color: rgba(195, 181, 110, 0.121);
+    }
 
-     section h2,
-     .registro h2 {
-         /*nuevo, para que termine antes*/
-         margin: 10px;
-     }
+    section h2,
+    .registro h2 {
+        margin: 10px;
+    }
 
-     section form div ul {
-         margin-left: -30px;
-         /*nuevo, dejar form mas al centro del div*/
-     }
+    section form div ul {
+        margin-left: -30px;
+    }
 
-     .map-responsive {
-         overflow: hidden;
-         padding-bottom: 40%;
-         position: relative;
-         height: 0;
-     }
+    .map-responsive {
+        overflow: hidden;
+        padding-bottom: 40%;
+        position: relative;
+        height: 0;
+    }
 
-     .map-responsive iframe {
-         left: 0;
-         top: 0;
-         height: 70%;
-         width: 50%;
-         position: absolute;
-     }
+    .map-responsive iframe {
+        left: 0;
+        top: 0;
+        height: 70%;
+        width: 50%;
+        position: absolute;
+    }
 
-     .btn-arriba {
-         padding: 8px;
-     }
- }
+    .btn-arriba {
+        padding: 8px;
+    }
+}
