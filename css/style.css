@@ -7,6 +7,7 @@
         "lateralDer"
         "footer"
     ;
+
 }
 
 body.clear-mode {
@@ -28,7 +29,8 @@ body.clear-mode {
     .btn-reserva,
     .btn-servicios,
     .btn-contacto,
-    .btn-cabanias {
+    .btn-cabanias,
+    .btn-predio {
         /* display: block; */
         color: rgb(43, 91, 4);
         text-decoration: none;
@@ -45,7 +47,8 @@ body.clear-mode {
     #btn-consulta:hover,
     #btn-averiguar:hover,
     .btn-contacto:hover,
-    .btn-cabanias:hover {
+    .btn-cabanias:hover,
+    .btn-predio:hover {
         transform: scale(1);
         cursor: pointer;
         font-weight: bold;
@@ -85,9 +88,10 @@ body.dark-mode {
     .btn-reserva,
     .btn-servicios,
     .btn-contacto,
-    .btn-cabanias {
-        /* display: block; */
-        color: rgb(180, 224, 143);
+    .btn-cabanias,
+    .btn-predio {
+        display: block;
+        color: rgb(37, 39, 36);
         text-decoration: none;
         background-color: rgb(138, 143, 137);
         border-radius: 13px;
@@ -100,6 +104,7 @@ body.dark-mode {
     .btn-servicios:hover,
     .btn-contacto:hover,
     .btn-cabanias:hover,
+    .btn-predio:hover,
     #btn-agregar:hover,
     #btn-consulta:hover,
     #btn-averiguar:hover {
@@ -298,7 +303,6 @@ a:hover {
 }
 
 h2 {
-    display: grid;
     background-color: burlywood;
     text-align: center;
 }
@@ -360,9 +364,8 @@ div.consulta form {
 }
 
 .informacion {
-    display: inline-block;
+    display: inline;
     width: 90%;
-    margin: 5%;
 }
 
 /* .btn-envio {
@@ -459,7 +462,7 @@ td {
 /*//////////////////////////////////DESKTOP////////////////////////////////*/
 @media (width >=660px) {
     .container {
-        display: grid;
+        display: flex;
         flex-direction: row;
         grid-template-columns: 1fr 2fr;
         grid-template-areas:

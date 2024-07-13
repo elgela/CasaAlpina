@@ -6,9 +6,7 @@ function menu() {
     document.querySelector(".nav").classList.toggle("show");
 }
 
-
 function mostrarNumero() {
-
     let num1 = Math.floor(Math.random() * 10) + 1;
     let num2 = Math.floor(Math.random() * 10) + 1;
     let num3 = Math.floor(Math.random() * 10) + 1;
@@ -103,21 +101,39 @@ let servi = document.querySelector(".btn-servicios");
 servi.addEventListener("click", servicios);
 
 /////////////cabañas//////////////////
-let cabs = document.querySelector(".use-ajax");
+let cabania = document.querySelector(".use-ajax");
 async function cabanias(event) {
     event.preventDefault();
     try {
         let response = await fetch("cabanias.html")
         if (response.ok) {
             let text = await response.text()
-            cabs.innerHTML = text;
+            cabania.innerHTML = text;
         }
     } catch (error) {
-        cabs.innerHTML = "<h2>Error!</h2>";
+        cabania.innerHTML = "<h2>Error!</h2>";
     }
 }
 let cab = document.querySelector(".btn-cabanias");
 cab.addEventListener("click", cabanias);
+
+///////////predio//////////////////
+let elPredio = document.querySelector(".use-ajax");
+async function predio(event) {
+    event.preventDefault();
+    try {
+        let response = await fetch("predio.html")
+        if (response.ok) {
+            let text = await response.text()
+            elPredio.innerHTML = text;
+        }
+    } catch (error) {
+        elPredio.innerHTML = "<h2>Error!</h2>";
+    }
+}
+let pred = document.querySelector(".btn-predio");
+pred.addEventListener("click", predio);
+
 ////////contactenos/////////////////
 let contacto = document.querySelector(".use-ajax");
 async function contactenos(event) {
@@ -134,22 +150,11 @@ async function contactenos(event) {
 }
 let contact = document.querySelector(".btn-contacto");
 contact.addEventListener("click", contactenos);
-//////////botones nav/////////////////
-let botonInicio = document.querySelector(".btn-inicio");
-let botonReserva = document.querySelector(".btn-reserva");
-let botonServicio = document.querySelector(".btn-servicios");
-let botonContacto = document.querySelector(".btn-contacto");
-let botonCabanias = document.querySelector(".btn-cabanias");
 
-
-document.querySelector(".btn-inicio").addEventListener("click", function () {
-    if (botonInicio.classList.contains("active")) {
-        botonInicio.classList.remove("active");
-    }
-    if (botonReserva.classList.contains("active")) {
-        botonReserva.classList.remove("active");
-    }
-})
+function contactoEnviado() {
+    alert("Contacto enviado");
+}
+document.querySelector("#envioConsulta").addEventListener("click", contactoEnviado);
 
 /////GET cabanias////////////
 async function datosCabanias(event) {
@@ -289,6 +294,7 @@ async function editarDato(event) {
     }
 }
 document.querySelector("#btn-editar").addEventListener("click", editarDato);
+
 ////////DELETE DATO//////////
 // async function borrarDato() {
     
