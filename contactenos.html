@@ -12,9 +12,28 @@
             <input type="email" name="repeatemail" id="repeatemail" placeholder="Correo electrónico..." required>
             <label>Teléfono:</label>
             <input type="number" name="telefono" id="telefono" placeholder="Teléfono..." required>
+            <label>Comentario:</label>
+            <div class="textarea">
+                <textarea name="textarea"></textarea>
+            </div>
             <div>
                 <input type="button" id="envioConsulta" value="Enviar">
             </div>
+            <p>CAPTCHA</p>
+            <div id="captcha">
+
+            </div>
+            <div class="suma">
+
+                <input type="text" id="respuesta" required>
+
+
+                <p id="resultado"></p>
+            </div>
+            <div>
+                <button type="submit" id="btn-captcha">Enviar</button>
+            </div>
+
         </form>
     </div>
 </div>
