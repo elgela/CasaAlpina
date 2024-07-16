@@ -3,8 +3,9 @@
     flex-direction: row;
     grid-template-areas:
         "header"
-        "formulario"
-        "lateralDer"
+        "formulario-agregar"
+        "informacion"
+        "formulario-cabañas"
         "footer"
     ;
 
@@ -326,8 +327,14 @@ ul label {
     font-size: xx-small;
 }
 
+div.consulta {
+    display: flex;
+    flex-direction: row;
+}
+
 div.consulta form {
-    text-align: center;
+    flex-direction: row;
+    text-align: left;
 }
 
 .formulario button {
@@ -426,6 +433,69 @@ td {
     font-size: large;
 }
 
+.ir-arriba {
+    position: fixed;
+    bottom: 3.5rem;
+    right: 16rem;
+    width: 6.6rem;
+    height: 6.6rem;
+    z-index: -1;
+}
+
+.ir-arriba-button {
+    width: 0rem;
+    height: 0rem;
+    background: rgb(153, 131, 69);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .2s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.ir-arriba-button i {
+    position: absolute;
+    font-size: 1.5rem;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: #fff;
+    transition: .2s;
+}
+
+.show {
+    z-index: 10;
+}
+
+.show .ir-arriba-button {
+    animation: popup .3s ease-in-out;
+    width: 4rem;
+    height: 4rem;
+    z-index: 11;
+}
+
+.show i {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+@keyframes popup {
+    0% {
+        width: 0rem;
+        height: 0rem;
+    }
+    50% {
+        width: 8rem;
+        height: 8rem;
+    }
+    100% {
+        width: 6.6rem;
+        height: 6.6rem;
+    }
+}
+
+
 /*//////////////////////////////////DESKTOP////////////////////////////////*/
 @media (width >=660px) {
     .container {
@@ -433,9 +503,9 @@ td {
         flex-direction: row;
         grid-template-columns: 1fr 2fr;
         grid-template-areas:
-            "header header"
-            "formulario lateralDer"
-            "footer footer";
+            "header header header"
+            "formulario-agregar informacion formulario-cabanias"
+            "footer footer footer";
     }
 
     body {
@@ -492,6 +562,10 @@ td {
         cursor: pointer;
     }
 
+    #formContacto {
+        margin-left: 3%;
+    }
+
     label {
         font-size: xx-large;
         color: rgb(165, 77, 42);
@@ -514,7 +588,6 @@ td {
     .servicios {
         display: block;
     }
-
 
     section h2,
     .registro h2 {
@@ -540,8 +613,66 @@ td {
         position: absolute;
     }
 
-    .btn-arriba {
-        padding: 8px;
+    .ir-arriba {
+        position: fixed;
+        bottom: 4rem;
+        left: 70rem;
+        width: 6.6rem;
+        height: 6.6rem;
+        z-index: -1;
+    }
+
+    .ir-arriba-button {
+        width: 0rem;
+        height: 0rem;
+        background: rgb(153, 131, 69);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: .2s;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+    }
+
+    .ir-arriba-button i {
+        position: absolute;
+        font-size: 1.5rem;
+        top: 48%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        color: #fff;
+        transition: .2s;
+    }
+
+    .show {
+        z-index: 10;
+    }
+
+    .show .ir-arriba-button {
+        animation: popup .3s ease-in-out;
+        width: 4rem;
+        height: 4rem;
+        z-index: 11;
+    }
+
+    .show i {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    @keyframes popup {
+        0% {
+            width: 0rem;
+            height: 0rem;
+        }
+        50% {
+            width: 8rem;
+            height: 8rem;
+        }
+        100% {
+            width: 6.6rem;
+            height: 6.6rem;
+        }
     }
 
     footer p {
