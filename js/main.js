@@ -1,5 +1,18 @@
 "use strict";
 
+window.onscroll = function() {
+    if (document.documentElement.scrollTop > 500) {
+        document.querySelector(".ir-arriba").classList.add("show");
+    } else {
+        document.querySelector(".ir-arriba").classList.remove("show");
+    }
+}
+document.querySelector(".ir-arriba").addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' //hace que suba mas suave
+    });
+});
 
 function menu() {
     document.querySelector(".nav").classList.toggle("show");
@@ -157,14 +170,14 @@ function contactoEnviado() {
 document.querySelector("#envioConsulta").addEventListener("click", contactoEnviado);
 
 /////GET cabanias////////////
+const urlCabanias = "https://6670528d0900b5f8724a36ff.mockapi.io/api/cabanias";
+const lista = document.querySelector("#tabla_formulario");
 async function datosCabanias(event) {
-    const urlCabanias = "https://6670528d0900b5f8724a36ff.mockapi.io/api/cabanias";
-    const lista = document.querySelector("#tabla_formulario");
     lista.innerHTML = "";
     event.preventDefault();
     try {
         let res = await fetch(urlCabanias); // GET a url
-        let json = await res.json(); // JSON se hace objeto
+        let json = await res.json(); // res se hace objeto JSON
         console.log(json);
         for (const cabanias of json) {
             let nombre = cabanias.name;
@@ -186,12 +199,12 @@ async function datosCabanias(event) {
     }
 
 }
-document.querySelector("#averigue").addEventListener("click", datosCabanias);
+document.querySelector("#btn-averiguar").addEventListener("click", datosCabanias);
 
+////////GET personas///////////////
 const urlPersonas = "https://6670528d0900b5f8724a36ff.mockapi.io/api/personas";
 const contenedor = document.querySelector("#tabla_formulario");
 
-////////GET personas///////////////
 
 async function datosPersonas(event) {
     event.preventDefault();
