@@ -1,39 +1,41 @@
 <div class="use-ajax">
-    <h2>Contacto</h2>
-    <div class="consulta">
-        <form method="post" id="formContacto">
-            <label>Nombre:</label>
-            <input type="text" name="nombre" id="nombre" placeholder="Nombre..." required>
-            <label>Apellido:</label>
-            <input type="text" name="apellido" id="apellido" placeholder="Apellido..." required>
-            <label>Email:</label>
-            <input type="email" name="email" id="email" placeholder="Correo electrónico..." required>
-            <label>Repetir Email:</label>
-            <input type="email" name="repeatemail" id="repeatemail" placeholder="Correo electrónico..." required>
-            <label>Teléfono:</label>
-            <input type="number" name="telefono" id="telefono" placeholder="Teléfono..." required>
-            <label>Comentario:</label>
-            <div class="textarea">
-                <textarea name="textarea"></textarea>
-            </div>
-            <div>
-                <input type="button" id="envioConsulta" value="Enviar">
-            </div>
-            <p>CAPTCHA</p>
-            <div id="captcha">
+    <article>
+        <h2>Contacto</h2>
+        <div class="consulta">
+            <form method="post" id="formContacto">
+                <label>Nombre:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre..." required>
+                <label>Apellido:</label>
+                <input type="text" name="apellido" id="apellido" placeholder="Apellido..." required>
+                <label>Email:</label>
+                <input type="email" name="email" id="email" placeholder="Correo electrónico..." required>
+                <label>Repetir Email:</label>
+                <input type="email" name="repeatemail" id="repeatemail" placeholder="Correo electrónico..." required>
+                <label>Teléfono:</label>
+                <input type="number" name="telefono" id="telefono" placeholder="Teléfono..." required>
+                <label>Comentario:</label>
+                <div class="textarea">
+                    <textarea name="textarea"></textarea>
+                </div>
+                <div>
+                    <input type="button" id="envioConsulta" value="Enviar">
+                </div>
+                <p>CAPTCHA</p>
+                <div id="captcha">
 
-            </div>
-            <div class="suma">
+                </div>
+                <div class="suma">
 
-                <input type="text" id="respuesta" required>
+                    <input type="text" id="respuesta" required>
 
 
-                <p id="resultado"></p>
-            </div>
-            <div>
-                <button type="submit" id="btn-captcha">Enviar</button>
-            </div>
+                    <p id="resultado"></p>
+                </div>
+                <div>
+                    <button type="submit" id="btn-captcha">Enviar</button>
+                </div>
 
-        </form>
-    </div>
+            </form>
+        </div>
+    </article>
 </div>
