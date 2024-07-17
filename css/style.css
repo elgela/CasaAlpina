@@ -39,7 +39,7 @@ body.clear-mode {
         color: rgb(43, 91, 4);
         text-decoration: none;
         /* background-color: rgb(205, 210, 203); */
-        /* border-radius: 7px; */
+        border-radius: 3px;
         margin: 4px;
     }
 
@@ -53,9 +53,9 @@ body.clear-mode {
     .btn-cabanias:hover,
     .btn-predio:hover {
         transform: scale(1.2);
-        /* cursor: pointer; */
+        cursor: pointer;
         /* font-weight: bold; */
-        background-color: rgba(66, 67, 65, 0.578);
+        /* background-color: rgba(66, 67, 65, 0.578); */
     }
 }
 
@@ -103,7 +103,7 @@ body.dark-mode {
         /* background-color: rgb(138, 143, 137); */
         /* border-radius: 7px; */
         margin: 4px;
-        border: 1px ridge rgb(217, 225, 221);
+        /* border: 1px ridge rgb(217, 225, 221); */
     }
 
     .btn-inicio:hover,
@@ -198,7 +198,7 @@ ul.nav li {
 }
 
 .btn-menu {
-    display: block;
+    display:grid ;
 }
 
 .btn-menu:hover {
@@ -538,11 +538,10 @@ td {
         cursor: pointer;
         position: relative;
         padding: 5px 10px;
-        background-color: aliceblue;
         background: white;
-        font-size: 28px;
-        border-top-right-radius: 10px;
-        border-top-left-radius: 10px;
+        font-size: 20px;
+        /* border-top-right-radius: 10px; */
+        /* border-top-left-radius: 10px; */
         transition: all 1s;
         &:after,&:before {
             content: " ";
@@ -555,14 +554,14 @@ td {
         &:after {
             top: -1px;
             left: -1px;
-            border-top: 5px solid black;
-            border-left: 5px solid black;
+            border-top: 5px solid rgb(0, 0, 0);
+            border-left: 5px solid rgb(0, 0, 0);
         }
         &:before {
             bottom: -1px;
             right: -1px;
-            border-bottom: 5px solid black;
-            border-right: 5px solid black;
+            border-bottom: 5px solid rgb(0, 0, 0);
+            border-right: 5px solid rgb(0, 0, 0);
         }
         &:hover {
             border-top-right-radius: 0px;
