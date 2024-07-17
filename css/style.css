@@ -265,6 +265,14 @@ a {
     padding: 1px;
     margin: 2px;
     border: 1px solid;
+    }
+
+figure.a {
+    display: none;
+}
+
+.cabs {
+    text-align: center;
 }
 
 a:hover {
@@ -272,10 +280,6 @@ a:hover {
     cursor: pointer;
     font-weight: bold;
     background-color: rgba(86, 108, 5, 0.578);
-}
-
-h1 {
-    
 }
 
 h2 {
@@ -498,6 +502,10 @@ td {
     }
 }
 
+.cabs {
+    display: grid;
+}
+
 
 /*//////////////////////////////////DESKTOP////////////////////////////////*/
 @media (width >=660px) {
@@ -636,7 +644,7 @@ td {
     }
 
     article h2 {
-        font-size: x-large;
+        font-size: xx-large;
     }
 
     .servicios {
@@ -732,4 +740,14 @@ td {
     footer p {
         font-size: large;
     }
+
+    .cabs {
+        position: relative;
+    }
+
+    .cabania1 img {
+        display: flexbox;
+        width: 50%;
+    }
+    
 }
