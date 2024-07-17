@@ -8,7 +8,6 @@
         "formulario-cabañas"
         "footer"
     ;
-
 }
 
 body.clear-mode {
@@ -38,7 +37,7 @@ body.clear-mode {
     .btn-predio {
         color: rgb(43, 91, 4);
         text-decoration: none;
-        /* background-color: rgb(205, 210, 203); */
+        /* background-color: rgb(136, 140, 135); */
         border-radius: 3px;
         margin: 4px;
     }
@@ -115,7 +114,7 @@ body.dark-mode {
     #btn-agregar:hover,
     #btn-consulta:hover,
     #btn-averiguar:hover {
-        transform: scale(1);
+        transform: scale(1.2);
         /* cursor: pointer; */
         /* font-weight: bold; */
         /* background-color: rgba(194, 196, 181, 0.578); */
@@ -275,16 +274,13 @@ a:hover {
     background-color: rgba(86, 108, 5, 0.578);
 }
 
+h1 {
+    
+}
+
 h2 {
     background-color: burlywood;
     text-align: center;
-}
-
-p {
-    font-family: cursive;
-    font-style: oblique;
-    font-weight: bold;
-    font-size: large;
 }
 
 h3 {
@@ -292,6 +288,13 @@ h3 {
     padding: 3px;
     border-radius: 5px;
 }
+p {
+    font-family: cursive;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: large;
+}
+
 
 .formulario {
     display: inline-block;
@@ -540,8 +543,8 @@ td {
         padding: 5px 10px;
         background: white;
         font-size: 20px;
-        /* border-top-right-radius: 10px; */
-        /* border-top-left-radius: 10px; */
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
         transition: all 1s;
         &:after,&:before {
             content: " ";
