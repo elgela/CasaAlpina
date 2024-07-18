@@ -1,7 +1,7 @@
 "use strict";
 
 window.onscroll = function() {
-    if (document.documentElement.scrollTop > 500) {
+    if (document.documentElement.scrollTop > 200) {
         document.querySelector(".ir-arriba").classList.add("show");
     } else {
         document.querySelector(".ir-arriba").classList.remove("show");
@@ -168,6 +168,24 @@ function contactoEnviado() {
     alert("Contacto enviado");
 }
 document.querySelector("#envioConsulta").addEventListener("click", contactoEnviado);
+
+/////////////del_pinar///////////////////////
+let cabania1 = document.querySelector(".use-ajax");
+async function delPinar(event) {
+    event.preventDefault();
+    try {
+        let response = await fetch("cabania1.html")
+        if (response.ok) {
+            let text = await response.text()
+            cabania1.innerHTML = text;
+        }
+    } catch (error) {
+        cabania1.innerHTML = "<h2>Error!</h2>";
+    }
+}
+let cab1 = document.querySelector("#c1");
+cab1.addEventListener("click", delPinar);
+
 
 /////GET cabanias////////////
 const urlCabanias = "https://6670528d0900b5f8724a36ff.mockapi.io/api/cabanias";
