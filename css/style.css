@@ -230,7 +230,7 @@ article.lista-cabañas {
 }
 
 article h2 {
-    font-size: medium;
+    font-size: large;
 }
 
 #btn-agregar,
@@ -256,7 +256,7 @@ article h2 {
     font-weight: bold;
 }
 
-a {
+/* a {
     display: inline;
     color: rgb(86, 126, 54);
     text-decoration: none;
@@ -265,13 +265,9 @@ a {
     padding: 1px;
     margin: 2px;
     border: 1px solid;
-    }
+} */
 
-figure.a {
-    display: none;
-}
-
-.cabs {
+.cab {
     text-align: center;
 }
 
@@ -288,17 +284,19 @@ h2 {
 }
 
 h3 {
-    display: inline;
+    display: block;
+    background: chocolate;
     padding: 3px;
     border-radius: 5px;
+    font-size: small;
 }
+
 p {
     font-family: cursive;
     font-style: oblique;
     font-weight: bold;
     font-size: large;
 }
-
 
 .formulario {
     display: inline-block;
@@ -502,8 +500,12 @@ td {
     }
 }
 
-.cabs {
-    display: grid;
+.descripcion-cab p {
+    font-size: medium;
+}
+
+#jardin img {
+    width: 20%;
 }
 
 
@@ -549,7 +551,7 @@ td {
         cursor: pointer;
         position: relative;
         padding: 5px 10px;
-        background: white;
+        /* background: white; */
         font-size: 20px;
         border-top-right-radius: 10px;
         border-bottom-left-radius: 10px;
@@ -583,7 +585,6 @@ td {
             }
         }
     }
-
 
     ul label {
         font-size: x-large;
@@ -740,14 +741,50 @@ td {
     footer p {
         font-size: large;
     }
-
-    .cabs {
-        position: relative;
+    
+    .descripcion-cab {
+        width: 40%;
+        height: auto;
+        padding-left: 0.5rem;
+        margin-left: 0.5rem;
+        float: right;
+        box-shadow: inset 5px 0 5px -5px #29627e;
     }
 
-    .cabania1 img {
-        display: flexbox;
-        width: 50%;
+    .descripcion-cab p {
+        font-size: large;
+    }
+
+    figcaption {
+        width: 60%;
+    }
+
+    h3 {
+        font-size: x-large;
+        text-align: center;
     }
     
+    aside#descripcion {
+        width: 40%;
+        float: left;
+        margin: 2%;
+        margin-top: 0;
+        padding: 1%;
+        box-shadow: inset 1px 3px 40px #29627e;
+        border-radius: 5px;
+    }
+
+    aside#fotos-jardin, aside#fotos-pileta {
+        width: 50%;
+        float: right;
+    }
+    
+    #jardin img, #pileta img {
+        width: 30%;
+        border-radius: 5px;
+    }
+
+    .exterior {
+        display: grid;
+    }
 }
