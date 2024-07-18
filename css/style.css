@@ -663,17 +663,20 @@ td {
 
     .map-responsive {
         overflow: hidden;
-        padding-bottom: 40%;
-        position: relative;
-        height: 0;
+        padding-bottom: 30%;
+        margin-right: 40%;
+        /* position: relative; */
+        /* height: 0; */
     }
 
     .map-responsive iframe {
-        left: 0;
-        top: 0;
-        height: 70%;
-        width: 50%;
+        left: 5%;
+        /* top: 0; */
+        /* height: 70%; */
+        /* width: 50%; */
         position: absolute;
+        top: 40px;
+        left: 40px;
     }
 
     .ir-arriba {
