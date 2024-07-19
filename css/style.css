@@ -78,6 +78,10 @@ body.dark-mode {
         color: black;
     }
 
+    h3 {
+        background-color: rgba(210, 105, 30, 0.429);
+    }
+
     .container {
         background-color: rgba(143, 143, 141, 0.121);
     }
@@ -87,7 +91,7 @@ body.dark-mode {
     }
     
     span {
-        color: #2d352f;
+        color: #c3d5c8;
     }
     
     .btn-inicio,
@@ -97,7 +101,7 @@ body.dark-mode {
     .btn-cabanias,
     .btn-predio {
         /* display: block; */
-        color: rgb(70, 122, 38);
+        color: rgb(217, 220, 215);
         text-decoration: none;
         /* background-color: rgb(138, 143, 137); */
         /* border-radius: 7px; */
@@ -256,7 +260,7 @@ article h2 {
     font-weight: bold;
 }
 
-/* a {
+.whatsapp {
     display: inline;
     color: rgb(86, 126, 54);
     text-decoration: none;
@@ -265,7 +269,7 @@ article h2 {
     padding: 1px;
     margin: 2px;
     border: 1px solid;
-} */
+}
 
 .cab {
     text-align: center;
@@ -479,6 +483,7 @@ td {
     width: 4rem;
     height: 4rem;
     z-index: 11;
+    opacity: 55%;
 }
 
 .show i {
@@ -506,6 +511,16 @@ td {
 
 #jardin img {
     width: 20%;
+}
+
+aside#fotos-jardin, aside#fotos-pileta, aside#fotos-desayuno {
+    width: 50%;
+    float: right;
+}
+
+#jardin img, #pileta img, #desayuno img {
+    width: 30%;
+    border-radius: 5px;
 }
 
 
@@ -688,7 +703,7 @@ td {
         z-index: -1;
     }
 
-    .ir-arriba-button {
+    /* .ir-arriba-button {
         width: 0rem;
         height: 0rem;
         background: rgb(153, 131, 69);
@@ -699,9 +714,9 @@ td {
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: -1;
-    }
+    } */
 
-    .ir-arriba-button i {
+    /* .ir-arriba-button i {
         position: absolute;
         font-size: 1.5rem;
         top: 48%;
@@ -709,22 +724,23 @@ td {
         transform: translate(-50%, -50%) scale(0);
         color: #fff;
         transition: .2s;
-    }
+    } */
 
     .show {
         z-index: 10;
     }
 
     .show .ir-arriba-button {
-        animation: popup .3s ease-in-out;
+        /* animation: popup .3s ease-in-out;
         width: 4rem;
         height: 4rem;
-        z-index: 11;
+        z-index: 11; */
+        opacity: 72%;
     }
 
-    .show i {
+    /* .show i {
         transform: translate(-50%, -50%) scale(1);
-    }
+    } */
 
     @keyframes popup {
         0% {
@@ -777,12 +793,12 @@ td {
         border-radius: 5px;
     }
 
-    aside#fotos-jardin, aside#fotos-pileta {
+    aside#fotos-jardin, aside#fotos-pileta, aside#fotos-desayuno {
         width: 50%;
         float: right;
     }
     
-    #jardin img, #pileta img {
+    #jardin img, #pileta img, #desayuno img {
         width: 30%;
         border-radius: 5px;
     }
