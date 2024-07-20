@@ -24,7 +24,7 @@ function mostrarNumero() {
     let num2 = Math.floor(Math.random() * 10) + 1;
     let num3 = Math.floor(Math.random() * 10) + 1;
     const suma = num1 + num2 + num3;
-
+    
     document.querySelector("#captcha").innerHTML = num1 + " + " + num2 + " + " + num3 + " = " + "?";
 
     return suma;
@@ -32,7 +32,7 @@ function mostrarNumero() {
 function verificar(resultado) {
 
     let respuesta = parseInt(document.querySelector("#respuesta").value);
-
+    
     if (resultado === respuesta) {
         document.querySelector("#resultado").innerHTML = "Correcto, eres humano.";
     }
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener('DOMContentLoaded', () => {
     const toggleButton = document.getElementById('mode-toggle');
     const body = document.body;
-
+    
     toggleButton.addEventListener('click', function () {
         if (body.classList.contains('clear-mode')) {
             body.classList.replace('clear-mode', 'dark-mode');
@@ -144,8 +144,7 @@ async function predio(event) {
         elPredio.innerHTML = "<h2>Error!</h2>";
     }
 }
-let pred = document.querySelector(".btn-predio");
-pred.addEventListener("click", predio);
+document.querySelector(".btn-predio").addEventListener("click", predio);
 
 ////////contactenos/////////////////
 let contacto = document.querySelector(".use-ajax");
@@ -161,8 +160,7 @@ async function contactenos(event) {
         contacto.innerHTML = "<h2>Error!</h2>";
     }
 }
-let contact = document.querySelector(".btn-contacto");
-contact.addEventListener("click", contactenos);
+document.querySelector(".btn-contacto").addEventListener("click", contactenos);
 
 function contactoEnviado() {
     alert("Contacto enviado");
@@ -183,8 +181,7 @@ async function delPinar(event) {
         cabania1.innerHTML = "<h2>Error!</h2>";
     }
 }
-let cab1 = document.querySelector("#c1");
-cab1.addEventListener("click", delPinar);
+document.querySelector(".cab").addEventListener("click", delPinar);
 
 
 /////GET cabanias////////////
@@ -202,16 +199,16 @@ async function datosCabanias(event) {
             let capacidad = cabanias.capacidad;
             let valor = cabanias.valor;
             lista.innerHTML += `<h2>Cabaña</h2>
-                                <tr>
-                                <td>Cabaña: ${nombre}</td>
-                                </tr>
-                                <tr>
-                                <td>Capacidad: ${capacidad}</td>
+            <tr>
+            <td>Cabaña: ${nombre}</td>
+            </tr>
+            <tr>
+            <td>Capacidad: ${capacidad}</td>
                                 </tr>
                                 <tr>
                                 <td>Valor: ${valor}</td>
                                 </tr>`;
-        }
+                            }
     } catch (error) {
         console.log(error);
     }
@@ -239,26 +236,26 @@ async function datosPersonas(event) {
             let telefono = personas.telefono;
             let id = personas.id;
             lista.innerHTML += `<tr>
-                                <td>id:</td>
-                                <td>${id}</td>
-                                </tr>
-                                <tr>
-                                <td>Nombre:</td>
-                                <td>${nombre}<input type="button" id="btn-editarNombre" value="Editar"><input type="button" id="btn-borrar" value="Borrar"></td>
-                                </tr>
-                                <tr>
-                                <td>Apellido:</td>
-                                <td>${apellido}<input type="button" id="btn-editarDato" value="Editar"><input type="button" id="btn-borrar" value="Borrar"></td>
-                                </tr>
-                                <tr>
-                                <td>DNI:</td>
-                                <td>${dni}<input type="button" id="btn-editarDato" value="Editar"><input type="button" id="btn-borrar" value="Borrar"></td>
-                                </tr>
-                                <td>Teléfono</td>
-                                <td>${telefono}<input type="button" id="btn-editarDato" value="Editar"><input type="button" id="btn-borrar" value="Borrar"></td>
-                                <input type="button" id="btn-editar" value="Editar">
-                                <input type="button" id="btn-eliminar" value="Eliminar">
-                                </tr>`;
+            <td>id:</td>
+            <td>${id}</td>
+            </tr>
+            <tr>
+            <td>Nombre:</td>
+            <td>${nombre}<input type="button" id="btn-editarNombre" value="Editar"><input type="button" id="btn-borrar" value="Borrar"></td>
+            </tr>
+            <tr>
+            <td>Apellido:</td>
+            <td>${apellido}<input type="button" id="btn-editarDato" value="Editar"><input type="button" id="btn-borrar" value="Borrar"></td>
+            </tr>
+            <tr>
+            <td>DNI:</td>
+            <td>${dni}<input type="button" id="btn-editarDato" value="Editar"><input type="button" id="btn-borrar" value="Borrar"></td>
+            </tr>
+            <td>Teléfono</td>
+            <td>${telefono}<input type="button" id="btn-editarDato" value="Editar"><input type="button" id="btn-borrar" value="Borrar"></td>
+            <input type="button" id="btn-editar" value="Editar">
+            <input type="button" id="btn-eliminar" value="Eliminar">
+            </tr>`;
         }
     } catch (error) {
         console.log(error);
@@ -279,7 +276,7 @@ async function enviarDatos() {
     let apellido = document.querySelector("#apellido").value;
     let dni = document.querySelector("#dni").value;
     let telefono = document.querySelector("#telefono").value;
-
+    
     contenedor.innerHTML = "Ha sido agregado " + nombre + " " + apellido;
     
     let persona = {
@@ -288,7 +285,7 @@ async function enviarDatos() {
         "dni": dni,
         "telefono": telefono
     };
-
+    
     try {
         let res = await fetch(urlPersonas, {
             "method": "POST",
@@ -296,7 +293,7 @@ async function enviarDatos() {
             "body": JSON.stringify(persona)
         });
         let json = await res.json();
-
+        
         console.log(json);
         if (res.status === 201) {
             console.log("Creado!");
@@ -333,7 +330,6 @@ document.querySelector("#btn-editar").addEventListener("click", editarDato);
 // document.querySelector("#btn-borrar").addEventListener("click", borrarDato);
 ///////////DELETE PERSONA/////////////////
 // async function eliminarPersona() {
-
+    
 // }
 // document.querySelector("#btn-eliminar").addEventListener("click", eliminarPersona);
-
