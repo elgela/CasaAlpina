@@ -1,11 +1,11 @@
 .container {
-    display: grid;
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
     grid-template-areas:
         "header"
-        "formulario-agregar"
+        "formulario-agregar formulario-cabañas"
         "informacion"
-        "formulario-cabañas"
+        /* "formulario-cabañas" */
         "footer"
     ;
 }
@@ -48,6 +48,7 @@ body.clear-mode {
     #btn-agregar:hover,
     #btn-consulta:hover,
     #btn-averiguar:hover,
+    #go-back:hover,
     .btn-contacto:hover,
     .btn-cabanias:hover,
     .btn-predio:hover {
@@ -523,6 +524,23 @@ aside#fotos-jardin, aside#fotos-pileta, aside#fotos-desayuno {
     border-radius: 5px;
 }
 
+.del_pinar {
+    display: inline-table;
+    text-align: center;
+}
+
+#cab1 {
+    display: inline-table;
+}
+
+.del_pinar img {
+    margin: 15px;
+    width: 75%;
+}
+
+.del_pinar h1 {
+    color: rgb(6, 109, 23);
+}
 
 /*//////////////////////////////////DESKTOP////////////////////////////////*/
 @media (width >=660px) {
@@ -562,7 +580,8 @@ aside#fotos-jardin, aside#fotos-pileta, aside#fotos-desayuno {
     .btn-servicios,
     .btn-contacto,
     .btn-cabanias,
-    .btn-predio {
+    .btn-predio,
+    #go-back {
         cursor: pointer;
         position: relative;
         padding: 5px 10px;
@@ -582,14 +601,14 @@ aside#fotos-jardin, aside#fotos-pileta, aside#fotos-desayuno {
         &:after {
             top: -1px;
             left: -1px;
-            border-top: 5px solid rgb(0, 0, 0);
-            border-left: 5px solid rgb(0, 0, 0);
+            border-top: 5px solid rgb(2, 54, 2);
+            border-left: 5px solid rgb(2, 54, 2);
         }
         &:before {
             bottom: -1px;
             right: -1px;
-            border-bottom: 5px solid rgb(0, 0, 0);
-            border-right: 5px solid rgb(0, 0, 0);
+            border-bottom: 5px solid rgb(2, 54, 2);
+            border-right: 5px solid rgb(2, 54, 2);
         }
         &:hover {
             border-top-right-radius: 0px;
