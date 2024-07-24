@@ -25,24 +25,24 @@ function mostrarNumero() {
     let num3 = Math.floor(Math.random() * 10) + 1;
     const suma = num1 + num2 + num3;
     
-    document.querySelector("#captcha").innerHTML = num1 + " + " + num2 + " + " + num3 + " = " + "?";
+    document.getElementById("captcha").innerHTML = num1 + " + " + num2 + " + " + num3 + " = " + "?";
 
     return suma;
 }
 function verificar(resultado) {
 
-    let respuesta = parseInt(document.querySelector("#respuesta").value);
+    let respuesta = parseInt(document.getElementById("respuesta").value);
     
     if (resultado === respuesta) {
-        document.querySelector("#resultado").innerHTML = "Correcto, eres humano.";
+        document.getElementById("resultado").innerHTML = "Correcto, eres humano.";
     }
     else {
-        document.querySelector("#resultado").innerHTML = "Respuesta incorrecta.";
+        document.getElementById("resultado").innerHTML = "Respuesta incorrecta.";
     }
 }
 document.addEventListener("DOMContentLoaded", function () {
     let resultado = mostrarNumero();
-    document.querySelector("#btn-captcha").addEventListener("click", function () {
+    document.getElementById("btn-captcha").addEventListener("click", function () {
         verificar(resultado);
         resultado = mostrarNumero();
     });
@@ -165,7 +165,7 @@ document.querySelector(".btn-contacto").addEventListener("click", contactenos);
 function contactoEnviado() {
     alert("Contacto enviado");
 }
-document.querySelector("#envioConsulta").addEventListener("click", contactoEnviado);
+document.getElementById("envioConsulta").addEventListener("click", contactoEnviado);
 
 /////////////del_pinar///////////////////////
 let cabania1 = document.querySelector(".use-ajax");
@@ -186,7 +186,7 @@ document.querySelector(".cab").addEventListener("click", delPinar);
 
 /////GET cabanias////////////
 const urlCabanias = "https://6670528d0900b5f8724a36ff.mockapi.io/api/cabanias";
-const lista = document.querySelector("#tabla_formulario");
+const lista = document.getElementById("tabla_formulario");
 async function datosCabanias(event) {
     lista.innerHTML = "";
     event.preventDefault();
@@ -214,16 +214,16 @@ async function datosCabanias(event) {
     }
 
 }
-document.querySelector("#btn-averiguar").addEventListener("click", datosCabanias);
+document.getElementById("btn-averiguar").addEventListener("click", datosCabanias);
 
 ////////GET personas///////////////
 const urlPersonas = "https://6670528d0900b5f8724a36ff.mockapi.io/api/personas";
-const contenedor = document.querySelector("#tabla_formulario");
+const contenedor = document.getElementById("tabla_formulario");
 
 
 async function datosPersonas(event) {
     event.preventDefault();
-    const lista = document.querySelector("#tabla_formulario");
+    const lista = document.getElementById("tabla_formulario");
     lista.innerHTML = "";
     try {
         let res = await fetch(urlPersonas); // GET a url
@@ -262,20 +262,20 @@ async function datosPersonas(event) {
     }
     
 }
-document.querySelector("#btn-consulta").addEventListener("click", datosPersonas);
+document.getElementById("btn-consulta").addEventListener("click", datosPersonas);
 
 function reservar() {
     alert("Agregado");
 }
-document.querySelector("#btn-agregar").addEventListener("click", reservar);
+document.getElementById("btn-agregar").addEventListener("click", reservar);
 
 
 ///////////POST personas///////////////////
 async function enviarDatos() {
-    let nombre = document.querySelector("#nombre").value;
-    let apellido = document.querySelector("#apellido").value;
-    let dni = document.querySelector("#dni").value;
-    let telefono = document.querySelector("#telefono").value;
+    let nombre = document.getElementById("nombre").value;
+    let apellido = document.getElementById("apellido").value;
+    let dni = document.getElementById("dni").value;
+    let telefono = document.getElementById("telefono").value;
     
     contenedor.innerHTML = "Ha sido agregado " + nombre + " " + apellido;
     
@@ -302,10 +302,10 @@ async function enviarDatos() {
         console.log(error);
     }
 }
-document.querySelector("#btn-agregar").addEventListener("click", enviarDatos);
+document.getElementById("btn-agregar").addEventListener("click", enviarDatos);
 
 /////////////PUT/////////////
-let container = document.querySelector("#use-ajax");
+let container = document.getElementById("use-ajax");
 async function editarDato(event) {
     event.preventDefault();
     try {
@@ -321,7 +321,7 @@ async function editarDato(event) {
         contenedor.innerHTML = "<h1>Error</h1>";
     }
 }
-document.querySelector("#btn-editar").addEventListener("click", editarDato);
+document.getElementById("btn-editar").addEventListener("click", editarDato);
 
 ////////DELETE DATO//////////
 // async function borrarDato() {
