@@ -566,7 +566,7 @@ td {
 
 .show .ir-arriba-button {
     animation: popup .3s ease-in-out;
-    width: 3rem;
+    width: 3.5rem;
     height: 3rem;
     z-index: 11;
     opacity: 55%;
