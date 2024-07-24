@@ -3,15 +3,14 @@
     flex-direction: column;
     grid-template-areas:
         "header"
-        "formulario-agregar formulario-cabañas"
+        "formulario-cabañas"
         "informacion"
-        /* "formulario-cabañas" */
         "footer"
     ;
 }
 
 body.clear-mode {
-    background-color: white;
+    background-color: rgb(230, 244, 180);
     color: black;
 
     h2 {
@@ -25,9 +24,10 @@ body.clear-mode {
         background-color: bisque;
     }
 
-    /* span {
-        color: burlywood;
-    } */
+    #menu-abrir {
+        color: rgb(51, 127, 54);
+        margin-right: 30px;
+    }
 
     .btn-inicio,
     .btn-reserva,
@@ -40,6 +40,12 @@ body.clear-mode {
         /* background-color: rgb(136, 140, 135); */
         border-radius: 3px;
         margin: 4px;
+        
+    }
+
+    #mode-toggle {
+        color: aliceblue;
+        background-color: rgb(57, 81, 17);
     }
 
     .btn-inicio:hover,
@@ -57,6 +63,16 @@ body.clear-mode {
         /* font-weight: bold; */
         /* background-color: rgba(66, 67, 65, 0.578); */
     }
+
+    .nav-text {
+        color: rgb(153, 131, 69);
+    }
+
+    .bx {
+        color: rgb(94, 71, 13);
+    }
+
+
 }
 
 body.dark-mode {
@@ -91,23 +107,20 @@ body.dark-mode {
         background-color: rgb(81, 79, 77);
     }
     
-    span {
-        color: #c3d5c8;
+    #menu-abrir {
+        color: black;
+        margin-right: 30px;
     }
     
-    .btn-inicio,
+    /* .btn-inicio,
     .btn-reserva,
     .btn-servicios,
     .btn-contacto,
     .btn-cabanias,
     .btn-predio {
-        /* display: block; */
         color: rgb(217, 220, 215);
         text-decoration: none;
-        /* background-color: rgb(138, 143, 137); */
-        /* border-radius: 7px; */
         margin: 4px;
-        /* border: 1px ridge rgb(217, 225, 221); */
     }
 
     .btn-inicio:hover,
@@ -120,10 +133,57 @@ body.dark-mode {
     #btn-consulta:hover,
     #btn-averiguar:hover {
         transform: scale(1.2);
-        /* cursor: pointer; */
-        /* font-weight: bold; */
-        /* background-color: rgba(194, 196, 181, 0.578); */
+    } */
+
+    #mode-toggle {
+        color: rgb(60, 61, 62);
+        background-color: rgb(178, 240, 189);
     }
+
+    .btn-inicio,
+    .btn-reserva,
+    .btn-servicios,
+    .btn-contacto,
+    .btn-cabanias,
+    .btn-predio,
+    #go-back {
+        cursor: pointer;
+        /* position: relative; */
+        padding: 5px 10px;
+        font-size: 20px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        transition: all 1s;
+        &:after,&:before {
+            content: " ";
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            border: 0px solid #fff;
+            transition: all 1s;
+        }
+        &:after {
+            top: -1px;
+            left: -1px;
+            border-top: 5px solid rgb(197, 188, 176);
+            border-left: 5px solid rgb(197, 188, 176);
+        }
+        &:before {
+            bottom: -1px;
+            right: -1px;
+            border-bottom: 5px solid rgb(197, 188, 176);
+            border-right: 5px solid rgb(197, 188, 176);
+        }
+        &:hover {
+            border-top-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+            &:before, &:after {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
 
     .menu {
         width: auto;
@@ -133,11 +193,24 @@ body.dark-mode {
         /* border-color: rgb(48, 43, 43); */
     }
 
+    .nav-text {
+        color: rgb(197, 188, 176);
+    }
+
+    .bx {
+        color: rgb(248, 248, 245);
+    }
+
+
 }
 
 /*********************************************************/
 header img {
     width: 100%;
+}
+
+#mode-toggle:hover {
+    cursor: pointer;
 }
 
 .menu {
@@ -164,7 +237,7 @@ header img {
 
 .titulo {
     margin: 0;
-    color: rgb(12, 13, 12);
+    color: rgb(87, 118, 87);
     width: 100%;
     height: 10%;
     display: grid;
@@ -175,8 +248,7 @@ header img {
 }
 
 span {
-    display: flexbox;
-    color: rgb(60, 72, 18);
+    display: block;
 }
 
 ul label {
@@ -263,17 +335,16 @@ article h2 {
 
 .whatsapp {
     display: inline;
-    color: rgb(86, 126, 54);
+    color: rgb(130, 136, 125);
     text-decoration: none;
-    background-color: rgb(238, 246, 235);
-    border-radius: 3px;
-    padding: 1px;
-    margin: 2px;
-    border: 1px solid;
 }
 
 .cab {
     text-align: center;
+}
+
+.cab figcaption {
+    color: rgb(42, 165, 42);
 }
 
 a:hover {
@@ -294,6 +365,10 @@ h3 {
     padding: 3px;
     border-radius: 5px;
     font-size: small;
+}
+
+h4 {
+    margin: -5px;
 }
 
 p {
@@ -399,9 +474,19 @@ table {
 }
 
 footer {
+    height: auto;
     text-align: center;
     color: grey;
     background-color: rgba(195, 181, 110, 0.121);
+}
+
+footer li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+footer li a {
+    color: #89908b;
 }
 
 footer p {
@@ -561,12 +646,13 @@ aside#fotos-jardin, aside#fotos-pileta, aside#fotos-desayuno {
     .titulo {
         font-family: cursive;
         font-size: 300%;
-        background-color: rgba(195, 181, 110, 0.121);
+        /* background-color: rgba(195, 181, 110, 0.121); */
         color: rgba(86, 108, 5, 0.578);
     }
 
     #imagenFinal {
-        width: 205%;
+        display: inline-block;
+        width: 200%;
     }
 
     .btn-menu {
@@ -574,6 +660,12 @@ aside#fotos-jardin, aside#fotos-pileta, aside#fotos-desayuno {
         color: rgb(233, 188, 28);
         padding: 15px;
     }
+
+    ul.nav li {
+        text-align: center;
+    }
+
+    
 
     .btn-inicio,
     .btn-reserva,
@@ -585,7 +677,6 @@ aside#fotos-jardin, aside#fotos-pileta, aside#fotos-desayuno {
         cursor: pointer;
         position: relative;
         padding: 5px 10px;
-        /* background: white; */
         font-size: 20px;
         border-top-right-radius: 10px;
         border-bottom-left-radius: 10px;
@@ -601,14 +692,14 @@ aside#fotos-jardin, aside#fotos-pileta, aside#fotos-desayuno {
         &:after {
             top: -1px;
             left: -1px;
-            border-top: 5px solid rgb(2, 54, 2);
-            border-left: 5px solid rgb(2, 54, 2);
+            border-top: 5px solid rgb(153, 131, 69);
+            border-left: 5px solid rgb(153, 131, 69);
         }
         &:before {
             bottom: -1px;
             right: -1px;
-            border-bottom: 5px solid rgb(2, 54, 2);
-            border-right: 5px solid rgb(2, 54, 2);
+            border-bottom: 5px solid rgb(153, 131, 69);
+            border-right: 5px solid rgb(153, 131, 69);
         }
         &:hover {
             border-top-right-radius: 0px;
@@ -625,7 +716,7 @@ aside#fotos-jardin, aside#fotos-pileta, aside#fotos-desayuno {
     }
 
     ul.nav {
-        display: grid;
+        /* display: grid; */
         width: 100%;
         margin: 0px;
         padding: 0px;
@@ -674,8 +765,15 @@ aside#fotos-jardin, aside#fotos-pileta, aside#fotos-desayuno {
         font-weight: bold;
     }
 
+    aside img {
+        width: 80%;
+        height: 50%;
+        margin-top: 5px;
+    }
+
     article.lista-cabañas {
-        text-align: left;
+        display: grid;
+        grid-template-columns: 50% 50%;
     }
 
     article h2 {
@@ -698,7 +796,7 @@ aside#fotos-jardin, aside#fotos-pileta, aside#fotos-desayuno {
     .map-responsive {
         overflow: hidden;
         padding-bottom: 30%;
-        margin-right: 40%;
+        /* margin-right: 40%; */
         /* position: relative; */
         /* height: 0; */
     }
@@ -710,7 +808,7 @@ aside#fotos-jardin, aside#fotos-pileta, aside#fotos-desayuno {
         /* width: 50%; */
         position: absolute;
         top: 40px;
-        left: 40px;
+        /* left: 40px; */
     }
 
     .ir-arriba {
