@@ -10,7 +10,7 @@
 }
 
 body.clear-mode {
-    background-color: rgb(230, 244, 180);
+    background-color: rgba(230, 244, 180, 0.212);
     color: black;
 
     h2 {
@@ -41,7 +41,10 @@ body.clear-mode {
 
     #mode-toggle {
         color: aliceblue;
-        background-color: rgb(57, 81, 17);
+        background-color: rgba(0, 0, 0, 0.842);
+        border-radius: 30%;
+        font-style: oblique;
+
     }
 
     .btn-inicio:hover,
@@ -76,7 +79,7 @@ body.dark-mode {
     color: rgb(212, 207, 207);
 
     .titulo {
-        color: rgb(247, 248, 241);
+        color: rgb(210, 105, 30, 0.281);
         background-color: rgb(29, 31, 31);
     }
 
@@ -92,7 +95,7 @@ body.dark-mode {
     }
 
     h3 {
-        background-color: rgba(210, 105, 30, 0.429);
+        background-color: rgba(210, 105, 30, 0.281);
     }
 
     .container {
@@ -133,7 +136,10 @@ body.dark-mode {
 
     #mode-toggle {
         color: rgb(60, 61, 62);
-        background-color: rgb(178, 240, 189);
+        background-color: rgba(230, 244, 180, 0.877);
+        border-radius: 30%;
+        font-style: oblique;
+        font-family: fantasy;
     }
 
     .btn-inicio,
