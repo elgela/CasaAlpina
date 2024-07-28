@@ -165,7 +165,7 @@ document.querySelector(".btn-contacto").addEventListener("click", contactenos);
 function contactoEnviado() {
     alert("Contacto enviado");
 }
-document.getElementById("envioConsulta").addEventListener("click", contactoEnviado);
+document.getElementById("#btn-agregar").addEventListener("click", contactoEnviado);
 
 /////////////del_pinar///////////////////////
 let cabania1 = document.querySelector(".use-ajax");
