@@ -20,10 +20,6 @@ body.clear-mode {
         color: white;
     }
 
-    .container {
-        background-color: bisque;
-    }
-
     #menu-abrir {
         color: rgb(51, 127, 54);
         margin-right: 30px;
@@ -523,9 +519,8 @@ td {
 
 .tabla-servicios {
     width: 100%;
-    background-color: bisque;
     text-align: center;
-    font-size: large;
+    font-size: small;
 }
 
 .ir-arriba {
