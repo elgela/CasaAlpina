@@ -246,7 +246,7 @@ header img {
     text-align: center;
     font-size: x-large;
     font-family: cursive;
-    background-color: rgba(132, 183, 44, 0.42);
+    background-color: rgba(183, 146, 44, 0.42);
 }
 
 span {
@@ -496,6 +496,12 @@ footer p {
     padding: 5px;
     font-size: small;
 }
+
+#sociales li {
+    display: inline-block;
+    margin: 10px;
+}
+
 
 td {
     padding: 15px;
