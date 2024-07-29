@@ -185,9 +185,9 @@ document.querySelector(".cab").addEventListener("click", delPinar);
 
 
 /////GET cabanias////////////
-const urlCabanias = "https://6670528d0900b5f8724a36ff.mockapi.io/api/cabanias";
-const lista = document.getElementById("tabla_formulario");
 async function datosCabanias(event) {
+    const urlCabanias = "https://6670528d0900b5f8724a36ff.mockapi.io/api/cabanias";
+    const lista = document.querySelector("#tabla_formulario");
     lista.innerHTML = "";
     event.preventDefault();
     try {
@@ -195,7 +195,7 @@ async function datosCabanias(event) {
         let json = await res.json(); // res se hace objeto JSON
         console.log(json);
         for (const cabanias of json) {
-            let nombre = cabanias.name;
+            let nombre = cabanias.nombre;
             let capacidad = cabanias.capacidad;
             let valor = cabanias.valor;
             lista.innerHTML += `<h2>Cabaña</h2>
@@ -217,14 +217,14 @@ async function datosCabanias(event) {
 document.getElementById("btn-averiguar").addEventListener("click", datosCabanias);
 
 ////////GET personas///////////////
-const urlPersonas = "https://6670528d0900b5f8724a36ff.mockapi.io/api/personas";
-const contenedor = document.getElementById("tabla_formulario");
 
 
 async function datosPersonas(event) {
-    event.preventDefault();
-    const lista = document.getElementById("tabla_formulario");
+    const urlPersonas = "https://6670528d0900b5f8724a36ff.mockapi.io/api/personas";
+    const lista = document.querySelector("#tabla_formulario");
     lista.innerHTML = "";
+    // const contenedor = document.getElementById("tabla_formulario");
+    event.preventDefault();
     try {
         let res = await fetch(urlPersonas); // GET a url
         let json = await res.json(); // JSON se hace objeto
@@ -262,7 +262,8 @@ async function datosPersonas(event) {
     }
     
 }
-document.getElementById("btn-consulta").addEventListener("click", datosPersonas);
+document.addEventListener
+// document.getElementById("btn-consulta").addEventListener("click", datosPersonas);
 
 function reservar() {
     alert("Agregado");
