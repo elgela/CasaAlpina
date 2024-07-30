@@ -604,10 +604,6 @@ td {
     font-size: medium;
 }
 
-#jardin img {
-    width: 20%;
-}
-
 aside#fotos-jardin, aside#fotos-pileta, aside#fotos-desayuno {
     width: 50%;
     float: right;
@@ -616,6 +612,12 @@ aside#fotos-jardin, aside#fotos-pileta, aside#fotos-desayuno {
 #jardin img, #pileta img, #desayuno img {
     width: 30%;
     border-radius: 5px;
+}
+
+#jardin img:hover, #pileta img:hover, #desayuno img:hover {
+    opacity: 2;
+    transform: scale(1.2);
+
 }
 
 .del_pinar {
@@ -937,8 +939,8 @@ aside#fotos-jardin, aside#fotos-pileta, aside#fotos-desayuno {
     }
     
     #c1:hover, #c2:hover, #c3:hover, #c4:hover {
-        opacity: 0.5;
-        transform: scale(1.1);
+        opacity: 2;
+        transform: scale(1.15);
     }
     
 }
