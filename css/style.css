@@ -75,10 +75,6 @@ body.clear-mode {
         transition: background-color 0.5s;
     }
 
-    footer .bx:hover {
-        
-    }
-
 }
 
 body.dark-mode {
@@ -932,4 +928,17 @@ aside#fotos-jardin, aside#fotos-pileta, aside#fotos-desayuno {
     .exterior {
         display: grid;
     }
+
+    #c1, #c2, #c3, #c4 {
+        background-color: #000;
+        line-height: 0;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    
+    #c1:hover, #c2:hover, #c3:hover, #c4:hover {
+        opacity: 0.5;
+        transform: scale(1.1);
+    }
+    
 }
