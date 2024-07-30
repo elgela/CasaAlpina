@@ -181,7 +181,7 @@ async function delPinar(event) {
         cabania1.innerHTML = "<h2>Error!</h2>";
     }
 }
-document.querySelector(".cab").addEventListener("click", delPinar);
+document.querySelector("#c1").addEventListener("click", delPinar);
 
 
 /////GET cabanias////////////
