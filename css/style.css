@@ -67,10 +67,17 @@ body.clear-mode {
         color: rgb(153, 131, 69);
     }
 
-    .bx {
+    .nav .bx {
         color: rgb(94, 71, 13);
     }
 
+    footer .bx {
+        transition: background-color 0.5s;
+    }
+
+    footer .bx:hover {
+        
+    }
 
 }
 
@@ -501,7 +508,6 @@ footer p {
     display: inline-block;
     margin: 10px;
 }
-
 
 td {
     padding: 15px;
