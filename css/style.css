@@ -349,7 +349,11 @@ article h2 {
 }
 
 .cab figcaption {
-    color: rgb(42, 165, 42);
+    color: rgb(165, 97, 42);
+    font-size: larger;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    font-style: oblique;
 }
 
 a:hover {
