@@ -10,6 +10,9 @@ window.onscroll = function() {
 document.querySelector(".ir-arriba").addEventListener("click", () => {
     window.scrollTo({
         top: 0,
+        bottom: 0,
+        rigth: 0,
+        left: 0,
         behavior: 'smooth' //hace que suba mas suave
     });
 });
