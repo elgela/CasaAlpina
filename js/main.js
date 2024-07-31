@@ -1,7 +1,7 @@
 "use strict";
 
 window.onscroll = function() {
-    if (document.documentElement.scrollTop > 200) {
+    if (document.documentElement.scrollTop > 300) {
         document.querySelector(".ir-arriba").classList.add("show");
     } else {
         document.querySelector(".ir-arriba").classList.remove("show");
