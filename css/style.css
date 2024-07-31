@@ -77,7 +77,6 @@ body.clear-mode {
     
     footer .bx:hover {
         filter: brightness(0.5);
-        
     }
 
 }
@@ -515,10 +514,6 @@ footer p {
 #sociales li {
     display: inline-block;
     margin: 10px;
-}
-
-#sociales li:hover {
-
 }
 
 td {
