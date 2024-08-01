@@ -90,6 +90,10 @@ body.dark-mode {
         background-color: rgb(29, 31, 31);
     }
 
+    #logo {
+        background-color: #767d80;
+    }
+
     header {
         background-color: rgb(221, 213, 208);
     }
