@@ -839,6 +839,7 @@ aside#fotos-jardin, aside#fotos-pileta, aside#fotos-desayuno {
         width: 80%;
         height: 50%;
         margin-top: 5px;
+        border-radius: 5px;
     }
 
     .lista-cabañas {
