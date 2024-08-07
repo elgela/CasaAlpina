@@ -265,8 +265,7 @@ async function datosPersonas(event) {
     }
     
 }
-document.addEventListener
-// document.getElementById("btn-consulta").addEventListener("click", datosPersonas);
+document.getElementById("btn-consulta").addEventListener("click", datosPersonas);
 
 function reservar() {
     alert("Agregado");

@@ -361,13 +361,18 @@ ul.nav li {
 }
 
 .lista-cabañas img {
-    /* text-align: center; */
     width: 100%;
     height: 200px;  
 }
 
 article h2 {
     font-size: large;
+}
+
+article ul li {
+    font-size: small;
+    color: rgb(41, 36, 28);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #btn-agregar,
@@ -676,25 +681,37 @@ aside#fotos-jardin, aside#fotos-pileta, aside#fotos-desayuno {
 
 #jardin img:hover, #pileta img:hover, #desayuno img:hover {
     opacity: 1;
-    transform: scale(2.5);
 }
 
-.del_pinar, .del_solar {
+.del_pinar, .del_solar, .del_puente, .casagrande {
     display: inline-table;
+    /* text-align: center; */
+}
+
+article h1 {
     text-align: center;
+    }
+
+.del_pinar p, .del_solar p, .del_puente p, .casagrande p {
+    color: rgb(82, 107, 77);
 }
 
-#cab1 {
-    display: inline-table;
+#cab1, #cab2, #cab3, #cab4 {
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
-.del_pinar img, .del_solar img {
-    margin: 15px;
-    width: 75%;
+.del_pinar img, .del_solar img, .del_puente img, .casagrande img {
+    margin: auto;
+    height: auto;
+    padding: 20px;
+    border-radius: 30px;
 }
 
-.del_pinar h1, .del_solar h1 {
-    color: rgb(6, 109, 23);
+.del_pinar h1, .del_solar h1, .del_puente h1, .casagrande h1 {
+    color: rgb(38, 102, 49);
+    font-size: x-large;
+
 }
 
 /*//////////////////////////////////DESKTOP////////////////////////////////*/
@@ -829,6 +846,10 @@ aside#fotos-jardin, aside#fotos-pileta, aside#fotos-desayuno {
         color: rgb(165, 77, 42);
     }
 
+    .del_pinar p, .del_solar p, .del_puente p, .casagrande p {
+        color: antiquewhite;
+    }
+
     .descripcion p {
         width: 50%;
         font-size: large;
@@ -852,10 +873,20 @@ aside#fotos-jardin, aside#fotos-pileta, aside#fotos-desayuno {
         margin-left: 10%;
     }
 
+    .del_pinar h1, .del_solar h1, .del_puente h1, .casagrande h1 {
+        font-size: xx-large;
+    }
+
     article h2 {
         font-size: xx-large;
     }
 
+    article ul li {
+        font-size: medium;
+        color: antiquewhite;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
     .servicios {
         display: block;
     }
@@ -1006,6 +1037,5 @@ aside#fotos-jardin, aside#fotos-pileta, aside#fotos-desayuno {
     #c1:hover, #c2:hover, #c3:hover, #c4:hover {
         opacity: 2;
         transform: scale(1.15);
-    }
-    
+    }    
 }
