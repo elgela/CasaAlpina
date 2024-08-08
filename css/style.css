@@ -863,14 +863,12 @@ article h1 {
         border-radius: 5px;
     }
 
-    .lista-cabañas {
-        display: grid;
-        grid-template-columns: 50% 50%;
-    }
-
     .lista-cabañas img {
-        width: 80%;
-        margin-left: 10%;
+        width: 100%;
+        height: 40%;
+        margin: 0;
+        opacity: 2;
+        /* margin-left: 10%; */
     }
 
     .del_pinar h1, .del_solar h1, .del_puente h1, .casagrande h1 {
