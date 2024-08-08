@@ -1037,5 +1037,16 @@ article h1 {
     #c1:hover, #c2:hover, #c3:hover, #c4:hover {
         opacity: 2;
         transform: scale(1.15);
-    }    
+    }
+
+    #detalles {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        margin: 0 0 0 150px;
+    }
+
+    #detalles ul {
+        list-style-type: none;
+    }
 }
