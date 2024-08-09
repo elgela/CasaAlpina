@@ -367,8 +367,12 @@ ul.nav li {
 }
 
 .lista-cabañas img {
-    width: 100%;
-    height: 200px;
+    width: 50%;
+    height: 40%;
+}
+
+.lista-cabañas label {
+    text-align: start;
 }
 
 article h2 {
@@ -744,6 +748,14 @@ article h1 {
 
 }
 
+.titulo-servicio-tabla {
+    color: #988a3b;
+}
+
+#empresa {
+    font-size: x-large;
+}
+
 /*//////////////////////////////////DESKTOP////////////////////////////////*/
 @media (width >=660px) {
     .container {
@@ -935,6 +947,11 @@ article h1 {
         opacity: 2;
         /* margin-left: 10%; */
     }
+
+    .lista-cabañas label {
+        text-align: center;
+    }
+    
 
     .del_pinar h1,
     .del_solar h1,
