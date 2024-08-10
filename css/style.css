@@ -267,8 +267,6 @@ body.dark-mode {
     }
 }
 
-
-
 header img {
     width: 100%;
 }
@@ -754,6 +752,13 @@ article h1 {
 
 #empresa {
     font-size: x-large;
+}
+
+video {
+    width: 30%;
+    border-radius: 10px;
+    height: 600px;
+    /* margin-left: 5%; */
 }
 
 /*//////////////////////////////////DESKTOP////////////////////////////////*/
