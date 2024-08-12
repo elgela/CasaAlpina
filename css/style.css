@@ -536,10 +536,10 @@ img {
     opacity: 85%;
 }
 
-p.descripcion {
-    width: 60%;
-    font-weight: bold;
+.descripcion-cab p {
     font-size: small;
+    /* font-family: cursive; */
+    /* font-weight: bold; */
     color: rgb(52, 59, 65);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -676,10 +676,6 @@ td {
     }
 }
 
-.descripcion-cab p {
-    font-size: medium;
-}
-
 aside#fotos-jardin,
 aside#fotos-pileta,
 aside#fotos-desayuno {
@@ -773,9 +769,9 @@ video {
             "footer footer footer";
     }
 
-    body {
+    /* body {
         background-color: rgb(9, 9, 9);
-    }
+    } */
 
     .titulo {
         font-family: cursive;
@@ -932,11 +928,6 @@ video {
         color: antiquewhite;
     }
 
-    .descripcion p {
-        width: 50%;
-        font-size: large;
-        font-weight: bold;
-    }
 
     aside img {
         width: 80%;
@@ -975,6 +966,14 @@ video {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
+    .cab {
+        text-align: left;
+    }
+    
+    .cab figcaption {
+        font-style: italic;
+    }
+    
     .servicios {
         display: block;
     }
@@ -1077,12 +1076,18 @@ video {
         padding-left: 0.5rem;
         margin-left: 0.5rem;
         float: right;
-        box-shadow: inset 5px 0 5px -5px #29627e;
+        box-shadow: inset 5px 5px 5px -5px #29627e;
+        margin: 3%;
+        border-radius: 5px;
     }
 
     .descripcion-cab p {
-        font-size: large;
+        font-size: 0.5rem;
+        text-align: left;
+        font-style: oblique;
+        
     }
+
 
     figcaption {
         width: 60%;
@@ -1091,16 +1096,6 @@ video {
     h3 {
         font-size: x-large;
         text-align: center;
-    }
-
-    aside#descripcion {
-        width: 40%;
-        float: left;
-        margin: 2%;
-        margin-top: 0;
-        padding: 1%;
-        box-shadow: inset 1px 3px 40px #29627e;
-        border-radius: 5px;
     }
 
     aside#fotos-jardin,
