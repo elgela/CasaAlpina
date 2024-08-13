@@ -391,6 +391,10 @@ article ul li {
     border-radius: 4px;
 }
 
+#btn-averiguar {
+    width: auto;
+}
+
 #btn-consulta {
     margin-left: 15px;
 }
@@ -464,19 +468,23 @@ p {
     justify-content: center;
 }
 
-.formulario input {
-    width: 70%;
+.formulario-cabanias input {
+    width: 50%;
     font-size: small;
     border-radius: 5px;
     box-shadow: 3px 2px 2px grey;
 }
 
-.formulario select {
+.formulario-cabanias select {
+    width: 50%;
     font-size: small;
     border-radius: 5px;
     box-shadow: 3px 2px 2px grey;
 }
 
+.formulario-cabanias form {
+    margin-left: -20px;
+}
 
 label {
     display: block;
@@ -500,10 +508,10 @@ div.consulta form {
     text-align: left;
 }
 
-.formulario button {
+/* .formulario button {
     border-radius: 5px;
     box-shadow: 3px 2px 2px grey;
-}
+} */
 
 .informacion {
     display: inline;
@@ -890,27 +898,41 @@ video {
         background-color: rgb(185, 190, 167);
     }
 
-    .formulario,
+    .formulario-cabanias input {
+        width: 85%;
+        font-size: medium;
+    }
+    
+    .formulario-cabanias select {
+        width: 85%;
+    }
+    
+    /* .formulario-cabanias form {
+        margin-left: -20px;
+    } */
+    
+
+    /* .formulario,
     .registro {
         margin: 50px;
         display: inline;
         font-size: medium;
         box-shadow: 5px 5px 5px 5px gray;
-    }
+    } */
 
-    .registro label {
+    /* .registro label {
         text-align: left;
         margin-left: 10px;
-    }
+    } */
 
-    .formulario input,
+    /* .formulario input,
     .formulario select {
         display: flex;
         font-size: large;
         border-radius: 5px;
         box-shadow: 3px 2px 2px grey;
         cursor: pointer;
-    }
+    } */
 
     #formContacto {
         margin-left: 3%;
