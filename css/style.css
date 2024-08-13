@@ -82,7 +82,7 @@ body.dark-mode {
     color: rgb(212, 207, 207);
 
     .titulo {
-        color: rgb(210, 105, 30, 0.281);
+        color: rgba(229, 231, 185, 0.382);
         background-color: rgb(29, 31, 31);
     }
 
@@ -299,6 +299,7 @@ header img {
 
 .titulo {
     margin: 0;
+    background-color: rgba(183, 146, 44, 0.42);
     color: rgb(87, 118, 87);
     width: 100%;
     height: 10%;
@@ -306,7 +307,6 @@ header img {
     text-align: center;
     font-size: x-large;
     font-family: cursive;
-    background-color: rgba(183, 146, 44, 0.42);
 }
 
 span {
