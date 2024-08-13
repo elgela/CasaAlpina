@@ -968,6 +968,11 @@ video {
 
     .lista-cabañas label {
         text-align: center;
+        background-color: #ede6ba;
+        border-radius: 50%;
+        border-style: ridge;
+        border-color: #67590b7f;
+        margin-top: 2%;
     }
     
 
