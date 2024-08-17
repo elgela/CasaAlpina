@@ -72,6 +72,10 @@ body.clear-mode {
         color: rgb(94, 71, 13);
     }
 
+    footer {
+        background-color: #ede6ba;
+    }
+
     footer .bx {
         transition: background-color 0.5s;
     }
@@ -231,6 +235,10 @@ body.dark-mode {
         color: rgb(248, 248, 245);
     }
 
+    footer {
+        background-color: #333539;
+
+    }
 
 }
 
@@ -580,7 +588,6 @@ footer {
     height: auto;
     text-align: center;
     color: grey;
-    background-color: #333539;
 }
 
 footer li {
