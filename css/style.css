@@ -38,6 +38,10 @@ body.clear-mode {
 
     }
 
+    .lista-cabañas label {
+        background-color: #ede6ba;
+    }
+
     #mode-toggle {
         color: rgb(28, 28, 28);
         background-color: rgba(139, 136, 136, 0.888);
@@ -98,13 +102,17 @@ body.dark-mode {
 
     h2 {
         display: grid;
-        background-color: rgb(221, 213, 208);
+        background-color: #333539;
         text-align: center;
-        color: black;
+        color: #959da0;
     }
 
     h3 {
         background-color: rgba(210, 105, 30, 0.281);
+    }
+
+    p {
+        color: #959da0;
     }
 
     .container {
@@ -118,6 +126,11 @@ body.dark-mode {
     #menu-abrir {
         color: black;
         margin-right: 30px;
+    }
+
+    .lista-cabañas label {
+        background-color: #333539;
+        color: #bec4c0;
     }
 
     .btn-inicio,
@@ -494,7 +507,7 @@ label {
     font-size: large;
     font-weight: bold;
     font-style: oblique;
-    color: darkolivegreen;
+    color: rgb(107, 106, 47);
 }
 
 ul label {
@@ -567,7 +580,7 @@ footer {
     height: auto;
     text-align: center;
     color: grey;
-    background-color: rgba(195, 181, 110, 0.121);
+    background-color: #333539;
 }
 
 footer li {
@@ -959,12 +972,10 @@ video {
         height: 40%;
         margin: 0;
         opacity: 2;
-        /* margin-left: 10%; */
     }
 
     .lista-cabañas label {
         text-align: center;
-        background-color: #ede6ba;
         border-radius: 50%;
         border-style: ridge;
         border-color: #67590b7f;
