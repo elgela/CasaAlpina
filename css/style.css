@@ -22,8 +22,7 @@ body.clear-mode {
     }
 
     #menu-abrir {
-        color: rgb(51, 127, 54);
-        margin-right: 30px;
+        color: rgb(127, 98, 51);
     }
 
     .btn-inicio,
@@ -60,7 +59,7 @@ body.clear-mode {
     #btn-consulta:hover,
     #btn-averiguar:hover,
     #go-back:hover {
-        /* transform: scale(1.2); */
+        transform: scale(1.2);
         cursor: pointer;
     }
 
@@ -129,7 +128,6 @@ body.dark-mode {
 
     #menu-abrir {
         color: black;
-        margin-right: 30px;
     }
 
     .lista-cabañas label {
@@ -216,7 +214,9 @@ body.dark-mode {
 
 
     .menu {
-        width: auto;
+        display: flex;
+        width: 50%;
+        /* height: 100%; */
         background-color: rgba(78, 73, 62, 0.68);
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
@@ -317,7 +317,6 @@ header img {
 
 #imagenFinal {
     width: 100%;
-    margin-top: 85px;
 }
 
 .titulo {
@@ -354,12 +353,22 @@ ul.nav.show {
     flex-direction: column;
 }
 
+ul.nav.show li {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 7px;
+}
+
 ul.nav li {
     list-style: none;
     text-align: center;
+    
 }
 
 .btn-menu {
+    text-align: right;
+    margin-right: 50px;
     display: grid;
 }
 
@@ -376,7 +385,7 @@ ul.nav li {
 }
 
 #menu-abrir {
-    text-align: right;
+    margin-left: 30px;
 }
 
 .btn-menu a {
@@ -731,8 +740,11 @@ aside#fotos-desayuno {
 .del_solar,
 .del_puente,
 .casagrande {
-    display: inline-table;
-    /* text-align: center; */
+    display: flex;
+    text-align: center;
+    background-color: rgba(230, 244, 180, 0.354);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 article h1 {
@@ -783,8 +795,11 @@ article h1 {
 
 video {
     width: 30%;
-    height: 400px;
-    /* margin-left: 5%; */
+    height: 300px;
+}
+
+.exterior video {
+    margin-left: 8px;
 }
 
 /*//////////////////////////////////DESKTOP////////////////////////////////*/
@@ -809,6 +824,8 @@ video {
 
     #imagenFinal {
         height: 300px;
+        margin-top: 83px;
+
     }
 
     .btn-menu {
@@ -1184,5 +1201,13 @@ video {
 
     #detalles ul {
         list-style-type: none;
+    }
+
+    #detalles ul li {
+        color: #282B39;
+    }
+
+    .del_pinar p, .del_solar p, .del_puente p, .casagrande p {
+        color: #282B39;
     }
 }
