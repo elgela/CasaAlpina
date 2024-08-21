@@ -556,6 +556,7 @@ div.consulta form {
     padding-bottom: 40%;
     position: relative;
     height: 0;
+    justify-content: center;
 }
 
 .map-responsive iframe {
@@ -1033,7 +1034,16 @@ video {
     }
     
     .servicios {
-        display: block;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    #serv {
+        padding: 5px;
+    }
+
+    #ubicacion {
+padding: 5px;
     }
 
     section h2,
@@ -1046,21 +1056,17 @@ video {
     }
 
     .map-responsive {
-        overflow: hidden;
         padding-bottom: 30%;
-        /* margin-right: 40%; */
-        /* position: relative; */
-        /* height: 0; */
     }
 
     .map-responsive iframe {
-        left: 5%;
+        /* left: 5%; */
         /* top: 0; */
         /* height: 70%; */
         /* width: 50%; */
-        position: absolute;
+        /* position: absolute; */
         top: 40px;
-        /* left: 40px; */
+        left: 10%;
     }
 
     .ir-arriba {
