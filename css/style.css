@@ -803,6 +803,10 @@ video {
     margin-left: 8px;
 }
 
+#aviso {
+    text-align: center;
+    font-size: small;
+}
 /*//////////////////////////////////DESKTOP////////////////////////////////*/
 @media (width >=660px) {
     .container {
@@ -1152,6 +1156,9 @@ padding: 5px;
         
     }
 
+    #aviso {
+        font-size: large;
+    }
 
     figcaption {
         width: 60%;
