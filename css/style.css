@@ -806,6 +806,7 @@ video {
 #aviso {
     text-align: center;
     font-size: small;
+    margin-left: 50px;
 }
 /*//////////////////////////////////DESKTOP////////////////////////////////*/
 @media (width >=660px) {
