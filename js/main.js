@@ -183,41 +183,47 @@ async function delPinar(event) {
 document.querySelector("#c1").addEventListener("click", delPinar);
 
 
-/////GET cabanias////////////
-async function datosCabanias(event) {
-    const urlCabanias = "https://6670528d0900b5f8724a36ff.mockapi.io/api/cabanias";
-    const lista = document.querySelector("#tabla_formulario");
-    lista.innerHTML = "";
-    event.preventDefault();
+
+///////////POST personas///////////////////
+async function enviarDatos() {
+    let nombre = document.getElementById("nombre").value;
+    let apellido = document.getElementById("apellido").value;
+    let dni = document.getElementById("dni").value;
+    let telefono = document.getElementById("telefono").value;
+    
+    contenedor.innerHTML = "Ha sido agregado " + nombre + " " + apellido;
+    
+    let persona = {
+        "nombre": nombre,
+        "apellido": apellido,
+        "dni": dni,
+        "telefono": telefono
+    };
+    
     try {
-        let res = await fetch(urlCabanias); // GET a url
-        let json = await res.json(); // res se hace objeto JSON
+        let res = await fetch(urlPersonas, {
+            "method": "POST",
+            "headers": {"Content-type": "application/json"},
+            "body": JSON.stringify(persona)
+        });
+        let json = await res.json();
+        
         console.log(json);
-        for (const cabanias of json) {
-            let nombre = cabanias.nombre;
-            let capacidad = cabanias.capacidad;
-            let valor = cabanias.valor;
-            lista.innerHTML += `<h2>Cabaña</h2>
-            <tr>
-            <td>Cabaña: ${nombre}</td>
-            </tr>
-            <tr>
-            <td>Capacidad: ${capacidad}</td>
-                                </tr>
-                                <tr>
-                                <td>Valor: ${valor}</td>
-                                </tr>`;
-                            }
+        if (res.status === 201) {
+            console.log("Creado!");
+        }
     } catch (error) {
         console.log(error);
     }
-
 }
-document.getElementById("btn-averiguar").addEventListener("click", datosCabanias);
+document.getElementById("btn-agregar").addEventListener("click", enviarDatos);
+
+function reservar() {
+    alert("Agregado");
+}
+document.getElementById("btn-agregar").addEventListener("click", reservar);
 
 ////////GET personas///////////////
-
-
 async function datosPersonas(event) {
     const urlPersonas = "https://6670528d0900b5f8724a36ff.mockapi.io/api/personas";
     const lista = document.querySelector("#tabla_formulario");
@@ -263,45 +269,39 @@ async function datosPersonas(event) {
 }
 document.getElementById("btn-consulta").addEventListener("click", datosPersonas);
 
-function reservar() {
-    alert("Agregado");
-}
-document.getElementById("btn-agregar").addEventListener("click", reservar);
 
-
-///////////POST personas///////////////////
-async function enviarDatos() {
-    let nombre = document.getElementById("nombre").value;
-    let apellido = document.getElementById("apellido").value;
-    let dni = document.getElementById("dni").value;
-    let telefono = document.getElementById("telefono").value;
-    
-    contenedor.innerHTML = "Ha sido agregado " + nombre + " " + apellido;
-    
-    let persona = {
-        "nombre": nombre,
-        "apellido": apellido,
-        "dni": dni,
-        "telefono": telefono
-    };
-    
+/////GET cabanias////////////
+async function datosCabanias(event) {
+    const urlCabanias = "https://6670528d0900b5f8724a36ff.mockapi.io/api/cabanias";
+    const lista = document.querySelector("#tabla_formulario");
+    lista.innerHTML = "";
+    event.preventDefault();
     try {
-        let res = await fetch(urlPersonas, {
-            "method": "POST",
-            "headers": {"Content-type": "application/json"},
-            "body": JSON.stringify(persona)
-        });
-        let json = await res.json();
-        
+        let res = await fetch(urlCabanias); // GET a url
+        let json = await res.json(); // res se hace objeto JSON
         console.log(json);
-        if (res.status === 201) {
-            console.log("Creado!");
-        }
+        for (const cabanias of json) {
+            let nombre = cabanias.nombre;
+            let capacidad = cabanias.capacidad;
+            let valor = cabanias.valor;
+            lista.innerHTML += `<h2>Cabaña</h2>
+            <tr>
+            <td>Cabaña: ${nombre}</td>
+            </tr>
+            <tr>
+            <td>Capacidad: ${capacidad}</td>
+                                </tr>
+                                <tr>
+                                <td>Valor: ${valor}</td>
+                                </tr>`;
+                            }
     } catch (error) {
         console.log(error);
     }
+
 }
-document.getElementById("btn-agregar").addEventListener("click", enviarDatos);
+document.getElementById("btn-averiguar").addEventListener("click", datosCabanias);
+
 
 /////////////PUT/////////////
 let container = document.getElementById("use-ajax");
