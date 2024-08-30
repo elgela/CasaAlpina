@@ -191,7 +191,7 @@ async function enviarDatos() {
     let dni = document.getElementById("dni").value;
     let telefono = document.getElementById("telefono").value;
     
-    contenedor.innerHTML = "Ha sido agregado " + nombre + " " + apellido;
+    lista.innerHTML = "Ha sido agregado " + nombre + " " + apellido;
     
     let persona = {
         "nombre": nombre,
