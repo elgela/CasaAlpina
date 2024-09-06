@@ -11,13 +11,18 @@
 
 body.clear-mode {
     margin: 2px;
-    background-color: rgba(230, 244, 180, 0.212);
+    background-color: rgba(237, 248, 197, 0.43);
     color: black;
+
+    h1 {
+        background-color: rgba(111, 153, 69, 0.524);
+        color: rgb(253, 253, 253);
+    }
 
     h2 {
         margin: 0;
         display: grid;
-        background-color: rgb(153, 131, 69);
+        background-color: rgba(111, 153, 69, 0.542);
         text-align: center;
         color: white;
     }
@@ -39,7 +44,7 @@ body.clear-mode {
     }
 
     .lista-cabañas label {
-        background-color: #ede6ba;
+        color: rgb(111, 153, 69);
     }
 
     #mode-toggle {
@@ -62,11 +67,15 @@ body.clear-mode {
     }
 
     .nav-text {
-        color: rgb(153, 131, 69);
+        color: rgb(236, 234, 227);
+    }
+
+    ul.nav {
+        background-color: rgba(111, 153, 69, 0.818);
     }
 
     .nav .bx {
-        color: rgb(94, 71, 13);
+        color: rgb(253, 250, 245);
     }
 
     img, #imagenFinal {
@@ -74,7 +83,7 @@ body.clear-mode {
     }
 
     footer {
-        background-color: #ede6ba;
+        background-color: rgba(111, 153, 69, 0.542);
     }
 
     footer .bx {
@@ -89,7 +98,7 @@ body.clear-mode {
 
 body.dark-mode {
     margin: 2px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.718);
     color: rgb(212, 207, 207);
 
     .titulo {
@@ -108,9 +117,9 @@ body.dark-mode {
     h2 {
         margin: 0;
         display: grid;
-        background-color: #333539;
+        background-color: #333934;
         text-align: center;
-        color: #959da0;
+        color: white;
     }
 
     h3 {
@@ -416,8 +425,13 @@ ul.nav li {
 }
 
 .lista-cabañas img {
-    width: 50%;
-    height: 40%;
+    width: 90%;
+    height: 30%;
+}
+
+#img-inicio, #img-inicio label {
+    text-align: center;
+    font-size: larger;
 }
 
 .lista-cabañas label {
@@ -624,7 +638,7 @@ footer li {
 }
 
 footer li a {
-    color: #89908b;
+    color: #696f6b;
 }
 
 footer p {
@@ -682,7 +696,7 @@ td {
 .ir-arriba-button {
     width: 0rem;
     height: 0rem;
-    background: rgb(153, 131, 69);
+    background: rgba(111, 153, 69, 0.818);
     border-radius: 50%;
     cursor: pointer;
     transition: .2s;
@@ -809,7 +823,10 @@ article h1 {
 }
 
 #empresa {
-    font-size: x-large;
+    font-size: xx-large;
+    display: flex;
+    margin: auto;
+    justify-content: center;
 }
 
 video {
@@ -911,15 +928,15 @@ video {
         &:after {
             top: -1px;
             left: -1px;
-            border-top: 5px solid rgb(153, 131, 69);
-            border-left: 5px solid rgb(153, 131, 69);
+            border-top: 5px solid rgb(249, 249, 247);
+            border-left: 5px solid rgb(255, 254, 252);
         }
 
         &:before {
             bottom: -1px;
             right: -1px;
-            border-bottom: 5px solid rgb(153, 131, 69);
-            border-right: 5px solid rgb(153, 131, 69);
+            border-bottom: 5px solid rgb(252, 251, 251);
+            border-right: 5px solid rgb(255, 255, 255);
         }
 
         &:hover {
@@ -941,7 +958,7 @@ video {
     ul.nav {
         z-index: 1;
         position: fixed;
-        background-color: #ede6ba;
+        background-color: #d4f8b6;
         width: 100%;
         margin: 0px;
         padding: 0px;
@@ -1156,7 +1173,7 @@ padding: 5px;
     }
 
     footer p {
-        font-size: large;
+        font-size: small;
     }
 
     .descripcion-cab {
