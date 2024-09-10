@@ -9,6 +9,16 @@
     ;
 }
 
+main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+    justify-content: center;
+}
+
+
 body.clear-mode {
     margin: 2px;
     background-color: rgba(237, 248, 197, 0.43);
@@ -231,7 +241,11 @@ body.dark-mode {
 
     .menu-bar {
         background-color: rgba(69, 65, 58, 0.68);
-    }    
+    }
+
+    .ir-arriba-button {
+        background: rgba(69, 65, 58, 0.68);
+    }
 
     .menu {
         display: flex;
@@ -256,6 +270,10 @@ body.dark-mode {
     footer {
         background-color: #333539;
 
+    }
+
+    #empresa {
+        color: #bec4c0;
     }
 
 }
@@ -498,7 +516,7 @@ a:hover {
     transform: scale(1);
     cursor: pointer;
     font-weight: bold;
-    background-color: rgba(86, 108, 5, 0.578);
+    /* background-color: rgba(86, 108, 5, 0.578); */
 }
 
 h2 {
@@ -648,9 +666,27 @@ footer p {
 }
 
 #sociales li {
+    position: relative;
     display: inline-block;
-    margin: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
 }
+
+#sociales li i {
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 39%;
+    transform: translate(-50% -50%);
+    font-size: 1.4em;
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+}
+
 
 td {
     padding: 15px;
@@ -823,6 +859,7 @@ article h1 {
 }
 
 #empresa {
+    color: #282B39;
     font-size: xx-large;
     display: flex;
     margin: auto;
@@ -843,6 +880,7 @@ video {
     font-size: small;
     margin-left: 50px;
 }
+
 /*//////////////////////////////////DESKTOP////////////////////////////////*/
 @media (width >=660px) {
     .container {
@@ -970,9 +1008,9 @@ video {
         background-color: rgb(255, 157, 0);
     }
 
-    a:hover {
+    /* a:hover {
         background-color: rgb(185, 190, 167);
-    }
+    } */
 
     .formulario-cabanias input {
         width: 85%;
@@ -1261,4 +1299,57 @@ padding: 5px;
     .del_pinar p, .del_solar p, .del_puente p, .casagrande p {
         color: #282B39;
     }
+    #sociales li {
+        position: relative;
+        display: inline-block;
+        margin: 20px;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        transition: all .8s;
+    }
+    
+    #sociales li:hover {
+        background-color: crimson;
+        box-shadow: 0 0 20px crimson;
+    }
+    
+    #sociales li:hover:nth-child(2) {
+        background-color: rgb(225, 110, 65);
+        box-shadow: 0 0 20px rgb(225, 110, 65);
+    }
+    
+    #sociales li:hover:nth-child(3) {
+        background-color: #1877f2;
+        box-shadow: 0 0 20px #1877f2;
+    }
+    
+    #sociales li:hover:nth-child(4) {
+        background-color: #25d366;
+        box-shadow: 0 0 20px #25d366;
+    }
+    
+    #sociales li:hover:nth-child(5) {
+        background-color: rgb(10, 10, 10);
+        box-shadow: 0 0 20px rgb(10, 10, 10);
+    }
+    
+    #sociales li i {
+        color: #fff;
+        position: absolute;
+        top: 40%;
+        left: 39%;
+        transform: translate(-50% -50%);
+        font-size: 1.4em;
+    }
+
+    svg circle {
+        stroke-dasharray: 150;
+        transition: all .8s ease-in-out;
+    }
+    
+    #sociales li:hover circle {
+        stroke-dasharray: 220;
+    }
+    
 }
