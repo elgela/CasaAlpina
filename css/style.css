@@ -30,11 +30,15 @@ body.clear-mode {
     }
 
     h2 {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-style: oblique;
+        text-shadow: 0px 2px 9px rgba(111, 153, 69, 0.542);
         margin: 0;
         display: grid;
-        background-color: rgba(111, 153, 69, 0.542);
+        background-color: rgba(232, 236, 228, 0.542);
         text-align: center;
-        color: white;
+        color: rgba(111, 153, 69, 0.542);
+        letter-spacing: 10px;
     }
 
     #menu-abrir {
@@ -1123,7 +1127,7 @@ video {
     }
 
     #ubicacion {
-padding: 5px;
+        padding: 5px;
     }
 
     section h2,
@@ -1158,7 +1162,7 @@ padding: 5px;
         z-index: -1;
     }
 
-    /* .ir-arriba-button {
+    .ir-arriba-button {
         width: 0rem;
         height: 0rem;
         background: rgb(153, 131, 69);
@@ -1169,17 +1173,12 @@ padding: 5px;
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: -1;
-    } */
+    }
 
-    /* .ir-arriba-button i {
-        position: absolute;
-        font-size: 1.5rem;
-        top: 48%;
-        left: 50%;
-        transform: translate(-50%, -50%) scale(0);
-        color: #fff;
-        transition: .2s;
-    } */
+    .ir-arriba-button:hover {
+        background-color: #679b2cb1;
+        zoom: 150%;
+    }
 
     .show {
         z-index: 10;
