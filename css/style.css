@@ -891,6 +891,10 @@ video {
     margin-left: 50px;
 }
 
+.creator span {
+    color: rgb(116, 65, 65);
+}
+
 /*//////////////////////////////////DESKTOP////////////////////////////////*/
 @media (width >=660px) {
     .container {
