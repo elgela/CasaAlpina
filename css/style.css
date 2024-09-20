@@ -891,7 +891,13 @@ video {
     margin-left: 50px;
 }
 
+.creator {
+    margin-right: 100px;
+    text-align: right;
+}
+
 .creator span {
+    justify-content: center;
     color: rgb(116, 65, 65);
 }
 
