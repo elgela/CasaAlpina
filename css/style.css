@@ -515,7 +515,7 @@ article ul li {
 
 .cab figcaption {
     color: rgb(165, 97, 42);
-    font-size: larger;
+    font-size: clamp(0.3rem, 3.7vw, 2.5rem);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bolder;
     font-style: oblique;
@@ -639,9 +639,9 @@ img {
 }
 
 .descripcion-cab p {
-    font-size: small;
-    /* font-family: cursive; */
-    /* font-weight: bold; */
+    font-size: clamp(0.2rem, 2.5vw, 3rem);
+    font-family: cursive;
+    font-weight: bold;
     color: rgb(52, 59, 65);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -1130,6 +1130,7 @@ video {
     }
     
     .cab figcaption {
+        font-size: clamp(1.8rem, 3.8vw, 2.5rem);
         font-style: italic;
     }
     
@@ -1241,7 +1242,7 @@ video {
     }
 
     .descripcion-cab p {
-        font-size: 0.5rem;
+        font-size: clamp(0.5rem, 1.23vw, 5rem);
         text-align: left;
         font-style: oblique;
         
@@ -1251,9 +1252,9 @@ video {
         font-size: large;
     }
 
-    figcaption {
+    /* figcaption {
         width: 60%;
-    }
+    } */
 
     h3 {
         font-size: x-large;
@@ -1314,6 +1315,7 @@ video {
     .del_pinar p, .del_solar p, .del_puente p, .casagrande p {
         color: #282B39;
     }
+    
     #sociales li {
         position: relative;
         display: inline-block;
