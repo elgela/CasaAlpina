@@ -96,7 +96,7 @@ async function dispReserva(event) {
         reserva.innerHTML = "<h2>Error!</h2>";
     }
 }
-let res = document.querySelector(".btn-reserva");
+let res = document.querySelector(".btn-consulta");
 res.addEventListener("click", dispReserva);
 
 ////////////servicios///////////////
