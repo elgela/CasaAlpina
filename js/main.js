@@ -82,12 +82,12 @@ async function inicio(event) {
 let ini = document.querySelector(".btn-inicio");
 ini.addEventListener("click", inicio);
 
-//////////////reservas////////////////
+//////////////consultas////////////////
 let reserva = document.querySelector(".use-ajax");
 async function dispReserva(event) {
     event.preventDefault();
     try {
-        let response = await fetch("reservas.html")
+        let response = await fetch("consultas.html")
         if (response.ok) {
             let text = await response.text()
             reserva.innerHTML = text;
