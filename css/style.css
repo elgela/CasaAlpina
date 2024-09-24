@@ -47,7 +47,7 @@ body.clear-mode {
     }
 
     .btn-inicio,
-    .btn-reserva,
+    .btn-consulta,
     .btn-servicios,
     .btn-contacto,
     .btn-cabanias,
@@ -68,7 +68,7 @@ body.clear-mode {
     }
 
     .btn-inicio:hover,
-    .btn-reserva:hover,
+    .btn-consulta:hover,
     .btn-servicios:hover,
     .btn-cabanias:hover,
     .btn-predio:hover,
@@ -168,7 +168,7 @@ body.dark-mode {
     }
 
     .btn-inicio,
-    .btn-reserva,
+    .btn-consulta,
     .btn-servicios,
     .btn-cabanias,
     .btn-predio,
@@ -179,7 +179,7 @@ body.dark-mode {
     }
 
     .btn-inicio:hover,
-    .btn-reserva:hover,
+    .btn-consulta:hover,
     .btn-servicios:hover,
     .btn-cabanias:hover,
     .btn-predio:hover,
@@ -195,7 +195,7 @@ body.dark-mode {
     }
 
     .btn-inicio,
-    .btn-reserva,
+    .btn-consulta,
     .btn-servicios,
     .btn-contacto,
     .btn-cabanias,
@@ -290,7 +290,7 @@ body.dark-mode {
 
 /*********************************************************/
 .btn-inicio,
-.btn-reserva,
+.btn-consulta,
 .btn-servicios,
 .btn-contacto,
 .btn-cabanias,
@@ -959,7 +959,7 @@ video {
     }
 
     .btn-inicio,
-    .btn-reserva,
+    .btn-consulta,
     .btn-servicios,
     .btn-contacto,
     .btn-cabanias,
