@@ -17,37 +17,35 @@ document.querySelector(".ir-arriba").addEventListener("click", () => {
     });
 });
 
-document.querySelector(".btn-menu").addEventListener("click", menu);
-
 function menu() {
     document.querySelector(".nav").classList.toggle("show");
 }
+document.querySelector(".btn-menu").addEventListener("click", menu);
 
 function mostrarNumero() {
     let num1 = Math.floor(Math.random() * 10) + 1;
     let num2 = Math.floor(Math.random() * 10) + 1;
     let num3 = Math.floor(Math.random() * 10) + 1;
     const suma = num1 + num2 + num3;
-
-    document.querySelector("#captcha").innerHTML = num1 + " + " + num2 + " + " + num3 + " = " + "?";
+    
+    document.getElementById("captcha").innerHTML = num1 + " + " + num2 + " + " + num3 + " = " + "?";
 
     return suma;
 }
-
 function verificar(resultado) {
-    let respuesta = parseInt(document.querySelector("#respuesta").value);
 
+    let respuesta = parseInt(document.getElementById("respuesta").value);
+    
     if (resultado === respuesta) {
-        document.querySelector("#resultado").innerHTML = "Correcto, eres humano.";
+        document.getElementById("resultado").innerHTML = "Correcto, eres humano.";
     }
     else {
-        document.querySelector("#resultado").innerHTML = "Respuesta incorrecta.";
+        document.getElementById("resultado").innerHTML = "Respuesta incorrecta.";
     }
 }
-
 document.addEventListener("DOMContentLoaded", function () {
     let resultado = mostrarNumero();
-    document.querySelector("#btn-captcha").addEventListener("click", function () {
+    document.getElementById("btn-captcha").addEventListener("click", function () {
         verificar(resultado);
         resultado = mostrarNumero();
     });
@@ -56,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener('DOMContentLoaded', () => {
     const toggleButton = document.getElementById('mode-toggle');
     const body = document.body;
-
+    
     toggleButton.addEventListener('click', function () {
         if (body.classList.contains('clear-mode')) {
             body.classList.replace('clear-mode', 'dark-mode');
@@ -84,12 +82,12 @@ async function inicio(event) {
 let ini = document.querySelector(".btn-inicio");
 ini.addEventListener("click", inicio);
 
-//////////////consultas////////////////
+//////////////reservas////////////////
 let reserva = document.querySelector(".use-ajax");
 async function dispReserva(event) {
     event.preventDefault();
     try {
-        let response = await fetch("consultas.html")
+        let response = await fetch("reservas.html")
         if (response.ok) {
             let text = await response.text()
             reserva.innerHTML = text;
@@ -98,7 +96,7 @@ async function dispReserva(event) {
         reserva.innerHTML = "<h2>Error!</h2>";
     }
 }
-let res = document.querySelector(".btn-consulta");
+let res = document.querySelector(".btn-reserva");
 res.addEventListener("click", dispReserva);
 
 ////////////servicios///////////////
@@ -169,62 +167,69 @@ document.querySelector(".btn-contacto").addEventListener("click", contactenos);
 
 
 /////////////del_pinar///////////////////////
-// let cabania1 = document.querySelector(".use-ajax");
-// async function delPinar(event) {
-//     event.preventDefault();
-//     try {
-//         let response = await fetch("cabania1.html")
-//         if (response.ok) {
-//             let text = await response.text()
-//             cabania1.innerHTML = text;
-//         }
-//     } catch (error) {
-//         cabania1.innerHTML = "<h2>Error!</h2>";
-//     }
-// }
-// document.querySelector("#c1").addEventListener("click", delPinar);
-
-/////GET cabanias////////////
-const urlCabanias = "https://6670528d0900b5f8724a36ff.mockapi.io/api/cabanias";
-async function datosCabanias(event) {
+let cabania1 = document.querySelector(".use-ajax");
+async function delPinar(event) {
     event.preventDefault();
-    const lista = document.querySelector("#tabla_formulario");
-    lista.innerHTML = "";
     try {
-        let res = await fetch(urlCabanias); // GET a url
-        let json = await res.json(); // JSON se hace objeto
+        let response = await fetch("cabania1.html")
+        if (response.ok) {
+            let text = await response.text()
+            cabania1.innerHTML = text;
+        }
+    } catch (error) {
+        cabania1.innerHTML = "<h2>Error!</h2>";
+    }
+}
+document.querySelector("#c1").addEventListener("click", delPinar);
+
+
+
+///////////POST personas///////////////////
+async function enviarDatos() {
+    let nombre = document.getElementById("nombre").value;
+    let apellido = document.getElementById("apellido").value;
+    let dni = document.getElementById("dni").value;
+    let telefono = document.getElementById("telefono").value;
+    
+    lista.innerHTML = "Ha sido agregado " + nombre + " " + apellido;
+    
+    let persona = {
+        "nombre": nombre,
+        "apellido": apellido,
+        "dni": dni,
+        "telefono": telefono
+    };
+    
+    try {
+        let res = await fetch(urlPersonas, {
+            "method": "POST",
+            "headers": {"Content-type": "application/json"},
+            "body": JSON.stringify(persona)
+        });
+        let json = await res.json();
+        
         console.log(json);
-        for (const cabanias of json) {
-            let nombre = cabanias.name;
-            let capacidad = cabanias.capacidad;
-            let valor = cabanias.valor;
-            lista.innerHTML += `<h2>Cabaña</h2>
-                                <tr>
-                                <td>Cabaña: ${nombre}</td>
-                                </tr>
-                                <tr>
-                                <td>Capacidad: ${capacidad}</td>
-                                </tr>
-                                <tr>
-                                <td>Valor: ${valor}</td>
-                                </tr>`;
+        if (res.status === 201) {
+            console.log("Creado!");
         }
     } catch (error) {
         console.log(error);
     }
-
 }
-document.querySelector("#consulte").addEventListener("click", datosCabanias);
+document.getElementById("btn-agregar").addEventListener("click", enviarDatos);
 
+function reservar() {
+    alert("Agregado");
+}
+document.getElementById("btn-agregar").addEventListener("click", reservar);
 
 ////////GET personas///////////////
-const urlPersonas = "https://6670528d0900b5f8724a36ff.mockapi.io/api/personas";
-// const contenedor = document.querySelector("#tabla_formulario");
-
 async function datosPersonas(event) {
-    event.preventDefault();
+    const urlPersonas = "https://6670528d0900b5f8724a36ff.mockapi.io/api/personas";
     const lista = document.querySelector("#tabla_formulario");
     lista.innerHTML = "";
+    // const contenedor = document.getElementById("tabla_formulario");
+    event.preventDefault();
     try {
         let res = await fetch(urlPersonas); // GET a url
         let json = await res.json(); // JSON se hace objeto
@@ -236,81 +241,94 @@ async function datosPersonas(event) {
             let telefono = personas.telefono;
             let id = personas.id;
             lista.innerHTML += `<tr>
-                                <td>id:</td>
-                                <td>${id}</td>
-                                </tr>
-                                <tr>
-                                <td>Nombre:</td>
-                                <td>${nombre}<input type="button" id="btn-modificar" value="Editar"><input type="button" value="Borrar"></td>
-                                </tr>
-                                <tr>
-                                <td>Apellido:</td>
-                                <td>${apellido}<input type="button" id="btn-modificar" value="Editar"><input type="button" value="Borrar"></td>
-                                </tr>
-                                <tr>
-                                <td>DNI:</td>
-                                <td>${dni}<input type="button" id="btn-modificar" value="Editar"><input type="button" value="Borrar"></td>
-                                </tr>
-                                <td>Teléfono</td>
-                                <td>${telefono}<input type="button" id="btn-modificar" value="Editar"><input type="button" value="Borrar"></td>
-                                <input type="button" id="btn-eliminar" value="Eliminar">
-                                </tr>`;
+            <td>id:</td>
+            <td>${id}</td>
+            </tr>
+            <tr>
+            <td>Nombre:</td>
+            <td>${nombre}<input type="button" id="btn-editarNombre" value="Editar"><input type="button" id="btn-borrar" value="Borrar"></td>
+            </tr>
+            <tr>
+            <td>Apellido:</td>
+            <td>${apellido}<input type="button" id="btn-editarDato" value="Editar"><input type="button" id="btn-borrar" value="Borrar"></td>
+            </tr>
+            <tr>
+            <td>DNI:</td>
+            <td>${dni}<input type="button" id="btn-editarDato" value="Editar"><input type="button" id="btn-borrar" value="Borrar"></td>
+            </tr>
+            <td>Teléfono</td>
+            <td>${telefono}<input type="button" id="btn-editarDato" value="Editar"><input type="button" id="btn-borrar" value="Borrar"></td>
+            <input type="button" id="btn-editar" value="Editar">
+            <input type="button" id="btn-eliminar" value="Eliminar">
+            </tr>`;
         }
     } catch (error) {
         console.log(error);
     }
     
 }
-document.querySelector("#btn-consulta").addEventListener("click", datosPersonas);
-
-function reservar() {
-    alert("Agregado");
-}
-document.querySelector("#btn-agregar").addEventListener("click", reservar);
+document.getElementById("btn-consulta").addEventListener("click", datosPersonas);
 
 
-///////////POST personas///////////////////
-async function enviarDatos() {
-    let nombre = document.querySelector("#nombre").value;
-    let apellido = document.querySelector("#apellido").value;
-    let dni = document.querySelector("#dni").value;
-    let telefono = document.querySelector("#telefono").value;
-
-    contenedor.innerHTML = "Ha sido agregado " + nombre + " " + apellido;
-    
-    let persona = {
-        "nombre": nombre,
-        "apellido": apellido,
-        "dni": dni,
-        "telefono": telefono
-    };
-
+/////GET cabanias////////////
+async function datosCabanias(event) {
+    const urlCabanias = "https://6670528d0900b5f8724a36ff.mockapi.io/api/cabanias";
+    const lista = document.querySelector("#tabla_formulario");
+    lista.innerHTML = "";
+    event.preventDefault();
     try {
-        let res = await fetch(urlPersonas, {
-            "method": "POST",
-            "headers": {"Content-type": "application/json"},
-            "body": JSON.stringify(persona)
-        });
-        let json = await res.json();
-
+        let res = await fetch(urlCabanias); // GET a url
+        let json = await res.json(); // res se hace objeto JSON
         console.log(json);
-        if (res.status === 201) {
-            document.querySelector("#msg").innerHTML += "Creado!";
-            console.log("Creado!");
-        }
+        for (const cabanias of json) {
+            let nombre = cabanias.nombre;
+            let capacidad = cabanias.capacidad;
+            let valor = cabanias.valor;
+            lista.innerHTML += `<h2>Cabaña</h2>
+            <tr>
+            <td>Cabaña: ${nombre}</td>
+            </tr>
+            <tr>
+            <td>Capacidad: ${capacidad}</td>
+                                </tr>
+                                <tr>
+                                <td>Valor: ${valor}</td>
+                                </tr>`;
+                            }
     } catch (error) {
         console.log(error);
     }
+
 }
-document.querySelector("#btn-agregar").addEventListener("click", enviarDatos);
+document.getElementById("btn-averiguar").addEventListener("click", datosCabanias);
+
 
 /////////////PUT/////////////
-function modificarDato() {
-
+let container = document.getElementById("use-ajax");
+async function editarDato(event) {
+    event.preventDefault();
+    try {
+        let response = await fetch("editar.html")
+        if (response.ok) {
+            let text = await response.text()
+            contenedor.innerHTML = text;
+        }
+        else {
+            contenedor.innerHTML = text;
+        }
+    } catch (error) {
+        contenedor.innerHTML = "<h1>Error</h1>";
+    }
 }
-document.querySelector("#btn-modificar").addEventListener("click", modificarDato);
-////////DELETE//////////
-async function borrarDato() {
+document.getElementById("btn-editar").addEventListener("click", editarDato);
 
-}
-document.querySelector("#btn-eliminar").addEventListener("click", borrarDato);
+////////DELETE DATO//////////
+// async function borrarDato() {
+    
+// }
+// document.querySelector("#btn-borrar").addEventListener("click", borrarDato);
+///////////DELETE PERSONA/////////////////
+// async function eliminarPersona() {
+    
+// }
+// document.querySelector("#btn-eliminar").addEventListener("click", eliminarPersona);
