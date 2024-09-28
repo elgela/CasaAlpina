@@ -1,42 +1,136 @@
-<div class="contacto">
-    <article>
-        <h2>Contacto</h2>
-        <div class="consulta">
-            <form method="post" id="formContacto">
-                <label>Nombre:</label>
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre..." required>
-                <label>Apellido:</label>
-                <input type="text" name="apellido" id="apellido" placeholder="Apellido..." required>
-                <label>Email:</label>
-                <input type="email" name="email" id="email" placeholder="Correo electrónico..." required>
-                <label>Repetir Email:</label>
-                <input type="email" name="repeatemail" id="repeatemail" placeholder="Correo electrónico..." required>
-                <label>Teléfono:</label>
-                <input type="number" name="telefono" id="telefono" placeholder="Teléfono..." required>
-                <p>CAPTCHA</p>
-                <div id="captcha">
-                    
-                </div>
-                <div class="suma">
+<!DOCTYPE html>
+<html lang="es">
 
-                    <input type="text" id="respuesta" required>
-                    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="images/iconos/favicon.jpg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
 
-                    <p id="resultado"></p>
-                </div>
-                <div>
-                    <button id="btn-captcha">Enviar</button>
-                </div>
-                <label>Comentario:</label>
-                <div class="textarea">
-                    <textarea name="textarea"></textarea>
-                </div>
-                <div>
-                    <input type="button" id="envioConsulta" value="Enviar">
-                </div>
-                
-            </form>
-            <p id="aviso">No funciona, en reparación...</p>
+    <title>Cabañas Casa Alpina</title>
+</head>
+
+
+<body class="clear-mode">
+    <header>
+        <div class="barraTitulo">
+            <h1 class="titulo">Cabañas Casa Alpina</h1>
+            <div>
+                <label class="btn-menu">
+                    <span id="menu-abrir">&#9776;</span>
+                    <span id="menu-cerrar">&#88;</span>
+                </label>
+            </div>
         </div>
-    </article>
-</div>
+        <div class="menu-bar">
+            <nav class="menu">
+                <!-- <div class="menu"> -->
+                    <ul class="nav">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="consultas.html">Consultas</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li>
+                            <a href="index.html"><img src="images/logo.png" id="logo" alt="Logo Casa Alpina"></a>
+                        </li>
+                            <li><a href="cabanias.html">Cabañas</a></li>
+                        <li><a href="predio.html">Predio</a></li>
+                        <li><a href="contactenos.html">Contactenos</a></li>
+                    </ul>
+                <!-- </div> -->
+            </nav>
+        </div>
+        <img src="images/background-removed.png" id="imagenFinal" alt="cabañas de frente">
+        <button id="mode-toggle">Modo oscuro</button>
+    </header>
+
+    <div class="contacto">
+        <article>
+            <h2>Contacto</h2>
+            <div class="consulta">
+                <form method="post" id="formContacto">
+                    <label>Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre..." required>
+                    <label>Apellido:</label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Apellido..." required>
+                    <label>Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Correo electrónico..." required>
+                    <label>Repetir Email:</label>
+                    <input type="email" name="repeatemail" id="repeatemail" placeholder="Correo electrónico..."
+                        required>
+                    <label>Teléfono:</label>
+                    <input type="number" name="telefono" id="telefono" placeholder="Teléfono..." required>
+                    <p>CAPTCHA</p>
+                    <div id="captcha">
+
+                    </div>
+                    <div class="suma">
+
+                        <input type="text" id="respuesta" required>
+
+
+                        <p id="resultado"></p>
+                    </div>
+                    <div>
+                        <button id="btn-captcha">Enviar</button>
+                    </div>
+                    <label>Comentario:</label>
+                    <div class="textarea">
+                        <textarea name="textarea"></textarea>
+                    </div>
+                    <div>
+                        <input type="button" id="envioConsulta" value="Enviar">
+                    </div>
+
+                </form>
+            </div>
+        </article>
+    </div>
+    <footer>
+        <ul id="sociales">
+            <p id="empresa">Casa Alpina</p>
+            <li><a href="https://www.instagram.com/casaalpina/" target="_blank" title="Instagram">
+                    <svg heigth="80" width="80">
+                        <circle cx="40" cy="40" r="35" stroke="white" stroke-width="3" fill="none"></circle>
+                    </svg>
+                    <i class='bx bxl-instagram'></i>
+                </a></li>
+            <li><a href="https://www.facebook.com/casaalpina.tandil" target="_blank" title="Facebook">
+                    <svg heigth="80" width="80">
+                        <circle cx="40" cy="40" r="35" stroke="white" stroke-width="3" fill="none"></circle>
+                    </svg>
+                    <i class='bx bxl-facebook-circle'></i>
+                </a></li>
+            <li><a href="https://wa.me/5492494549919" class="whatsapp" target="_blank" title="WhatsApp">
+                    <svg heigth="80" width="80">
+                        <circle cx="40" cy="40" r="35" stroke="white" stroke-width="3" fill="none"></circle>
+                    </svg>
+                    <i class='bx bxl-whatsapp'></i>
+                </a></li>
+            <li><a href="https://www.tiktok.com/@casaalpina" target="_blank" title="TikTok">
+                    <svg heigth="80" width="80">
+                        <circle cx="40" cy="40" r="35" stroke="white" stroke-width="3" fill="none"></circle>
+                    </svg>
+                    <i class='bx bxl-tiktok'></i>
+                </a></li>
+            <li><a href="https://www.youtube.com/c/Caba%C3%B1asCASAALPINATandil" target="_blank" title="YouTube">
+                    <svg heigth="80" width="80">
+                        <circle cx="40" cy="40" r="35" stroke="white" stroke-width="3" fill="none"></circle>
+                    </svg>
+                    <i class='bx bxl-youtube'></i>
+                </a></li>
+
+            <p>Icalma 2904 - Paraje El Centinela</p>
+            <p>©2024</p>
+        </ul>
+        <div class="creator">
+            <p>Desarrollado por: <span>Marcelo Gelato</span></p>
+        </div>
+
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

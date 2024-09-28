@@ -1,22 +1,5 @@
 "use strict";
 
-window.onscroll = function() {
-    if (document.documentElement.scrollTop > 300) {
-        document.querySelector(".ir-arriba").classList.add("show");
-    } else {
-        document.querySelector(".ir-arriba").classList.remove("show");
-    }
-}
-document.querySelector(".ir-arriba").addEventListener("click", () => {
-    window.scrollTo({
-        top: 0,
-        bottom: 0,
-        rigth: 0,
-        left: 0,
-        behavior: 'smooth' //hace que suba mas suave
-    });
-});
-
 document.querySelector(".btn-menu").addEventListener("click", menu);
 
 function menu() {
@@ -67,122 +50,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
-/////////////inicio///////////////////
-let paginaInicio = document.querySelector(".use-ajax");
-async function inicio(event) {
-    event.preventDefault();
-    try {
-        let response = await fetch("pagina-inicio.html")
-        if (response.ok) {
-            let text = await response.text()
-            paginaInicio.innerHTML = text;
-        }
-    } catch (error) {
-        paginaInicio.innerHTML = "<h2>Error!</h2>";
-    }
-}
-let ini = document.querySelector(".btn-inicio");
-ini.addEventListener("click", inicio);
-
-//////////////consultas////////////////
-let reserva = document.querySelector(".use-ajax");
-async function dispReserva(event) {
-    event.preventDefault();
-    try {
-        let response = await fetch("consultas.html")
-        if (response.ok) {
-            let text = await response.text()
-            reserva.innerHTML = text;
-        }
-    } catch (error) {
-        reserva.innerHTML = "<h2>Error!</h2>";
-    }
-}
-let res = document.querySelector(".btn-consulta");
-res.addEventListener("click", dispReserva);
-
-////////////servicios///////////////
-let servicio = document.querySelector(".use-ajax");
-async function servicios(event) {
-    event.preventDefault();
-    try {
-        let response = await fetch("servicios.html")
-        if (response.ok) {
-            let text = await response.text()
-            servicio.innerHTML = text;
-        }
-    } catch (error) {
-        servicio.innerHTML = "<h2>Error!</h2>";
-    }
-}
-let servi = document.querySelector(".btn-servicios");
-servi.addEventListener("click", servicios);
-
-/////////////cabañas//////////////////
-let cabania = document.querySelector(".use-ajax");
-async function cabanias(event) {
-    event.preventDefault();
-    try {
-        let response = await fetch("cabanias.html")
-        if (response.ok) {
-            let text = await response.text()
-            cabania.innerHTML = text;
-        }
-    } catch (error) {
-        cabania.innerHTML = "<h2>Error!</h2>";
-    }
-}
-let cab = document.querySelector(".btn-cabanias");
-cab.addEventListener("click", cabanias);
-
-///////////predio//////////////////
-let elPredio = document.querySelector(".use-ajax");
-async function predio(event) {
-    event.preventDefault();
-    try {
-        let response = await fetch("predio.html")
-        if (response.ok) {
-            let text = await response.text()
-            elPredio.innerHTML = text;
-        }
-    } catch (error) {
-        elPredio.innerHTML = "<h2>Error!</h2>";
-    }
-}
-document.querySelector(".btn-predio").addEventListener("click", predio);
-
-////////contactenos/////////////////
-let contacto = document.querySelector(".use-ajax");
-async function contactenos(event) {
-    event.preventDefault();
-    try {
-        let response = await fetch("contactenos.html")
-        if (response.ok) {
-            let text = await response.text()
-            contacto.innerHTML = text;
-        }
-    } catch (error) {
-        contacto.innerHTML = "<h2>Error!</h2>";
-    }
-}
-document.querySelector(".btn-contacto").addEventListener("click", contactenos);
-
-
-/////////////del_pinar///////////////////////
-// let cabania1 = document.querySelector(".use-ajax");
-// async function delPinar(event) {
-//     event.preventDefault();
-//     try {
-//         let response = await fetch("cabania1.html")
-//         if (response.ok) {
-//             let text = await response.text()
-//             cabania1.innerHTML = text;
-//         }
-//     } catch (error) {
-//         cabania1.innerHTML = "<h2>Error!</h2>";
-//     }
-// }
-// document.querySelector("#c1").addEventListener("click", delPinar);
 
 /////GET cabanias////////////
 const urlCabanias = "https://6670528d0900b5f8724a36ff.mockapi.io/api/cabanias";
@@ -216,10 +83,10 @@ async function datosCabanias(event) {
 }
 document.querySelector("#consulte").addEventListener("click", datosCabanias);
 
+const urlPersonas = "https://6670528d0900b5f8724a36ff.mockapi.io/api/personas";
+const contenedor = document.querySelector("#tabla_formulario");
 
 ////////GET personas///////////////
-const urlPersonas = "https://6670528d0900b5f8724a36ff.mockapi.io/api/personas";
-// const contenedor = document.querySelector("#tabla_formulario");
 
 async function datosPersonas(event) {
     event.preventDefault();
@@ -314,3 +181,4 @@ async function borrarDato() {
 
 }
 document.querySelector("#btn-eliminar").addEventListener("click", borrarDato);
+

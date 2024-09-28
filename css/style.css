@@ -380,6 +380,10 @@ header img {
     text-align: center;
 }
 
+ul {
+    list-style-type: none;
+}
+
 span {
     display: block;
 }
@@ -881,11 +885,11 @@ video {
     margin-left: 8px;
 }
 
-#aviso {
+/* #aviso {
     text-align: center;
     font-size: small;
     margin-left: 50px;
-}
+} */
 
 .creator {
     margin-right: 100px;

@@ -13,6 +13,7 @@
     <title>Cabañas Casa Alpina</title>
 </head>
 
+
 <body class="clear-mode">
     <header>
         <div class="barraTitulo">
@@ -26,41 +27,25 @@
         </div>
         <div class="menu-bar">
             <nav class="menu">
-                <ul class="nav">
-                    <li class="btn-inicio">
-                        <i class='bx bxs-home'></i>
-                        <span class="nav-text">Inicio</span>
-                    </li>
-                    <li class="btn-consulta">
-                        <i class='bx bxs-edit'></i>
-                        <span class="nav-text">Consultas</span>
-                    </li>
-                    <li class="btn-servicios">
-                        <i class='bx bxl-stripe'></i>
-                        <span class="nav-text">Servicios</span>
-                    </li>
-                    <li>
-                        <a href="#"><img src="images/logo.png" id="logo" alt="Logo Casa Alpina"></a>
-                    </li>
-                    <li class="btn-cabanias">
-                        <i class='bx bxs-institution'></i>
-                        <span class="nav-text">Cabañas</span>
-                    </li>
-                    <li class="btn-predio">
-                        <i class='bx bxs-landscape'></i>
-                        <span class="nav-text">Predio</span>
-                    </li>
-                    <li class="btn-contacto">
-                        <i class='bx bxs-phone-incoming'></i>
-                        <span class="nav-text">Contactenos</span>
-                    </li>
-                </ul>
+                <!-- <div class="menu"> -->
+                    <ul class="nav">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="consultas.html">Consultas</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li>
+                            <a href="#"><img src="images/logo.png" id="logo" alt="Logo Casa Alpina"></a>
+                        </li>
+                            <li><a href="cabanias.html">Cabañas</a></li>
+                        <li><a href="predio.html">Predio</a></li>
+                        <li><a href="contactenos.html">Contactenos</a></li>
+                    </ul>
+                <!-- </div> -->
             </nav>
         </div>
         <img src="images/background-removed.png" id="imagenFinal" alt="cabañas de frente">
         <button id="mode-toggle">Modo oscuro</button>
     </header>
-    <div class="use-ajax">
+    <main>
         <article>
             <h2>Algo más que apacibles sierras...</h2>
             <p>
@@ -68,70 +53,82 @@
                 con su propio entorno de vegetación. En su interior, numerosos detalles de confort y comodidad.
             </p>
         </article>
-        <article class="lista-cabañas">
-            <aside>
-                <div id="img-inicio">
-                    <label>Pileta con hidromasaje</label>
-                    <img src="img/Photos/pileta/piletaC2C3.jpg" alt="">
-                </div>
-                <div id="img-inicio">
-                    <label>Cabaña Del Pinar</label>
-                    <img src="img/del_pinar.jpg" alt="Cabaña Del Pinar">
-                </div>
-                <div id="img-inicio">
-                    <label>Cabaña Del Solar</label>
-                    <img src="img/del_solar.jpg" alt="Cabaña Del Solar">
-                </div>
-                <div id="img-inicio">
-                    <label>Cabaña Del Puente</label>
-                    <img src="img/del_puente.jpg" alt="Cabaña Del Puente">
-                </div>
-                <div id="img-inicio">
-                    <label>Cabaña Casagrande</label>
-                    <img src="img/casagrande.jpg" alt="Cabaña Casagrande">
-                </div>
-            </aside>
-        </article>
-    </div>
-    <div class="ir-arriba">
-        <div class="ir-arriba-button">
-            <i class='bx bx-chevron-up-circle'></i>
-        </div>
-    </div>
+
+        <ul class="lista-cabañas">
+            <li>
+                <label>Del Pinar</label>
+                <img src="img/del_pinar.jpg" alt="Cabaña Del Pinar">
+                <aside class="lateral">
+                    <p>Monoambiente amplio, con capacidad para alojar 2 a 4 personas.</p>
+                </aside>
+            </li>
+            <li>
+                <label>Del Solar</label>
+                <img src="img/del_solar.jpg" alt="Cabaña Del Solar">
+                <aside class="lateral">
+                    <p>Hermosa construcción de dos plantas, con capacidad para alojar 2 a 5 personas.</p>
+                </aside>
+            </li>
+            <li>
+                <label>Del Puente</label>
+                <img src="img/del_puente.jpg" alt="Cabaña Del Puente">
+                <aside class="lateral">
+                    <p>Espléndida y moderna construcción, monoambiente, ideal para 2 personas, o bien para pareja con
+                        bebé...</p>
+                </aside>
+            </li>
+            <li>
+                <label>Casagrande</label>
+                <img src="img/casagrande.jpg" alt="Cabaña Casagrande">
+                <aside class="lateral">
+                    <p>Tiene capacidad para alojar 3 a 6 personas. Posee dos plantas, ideal para un grupo familiar
+                        grande o
+                        para dos familias.</p>
+                </aside>
+            </li>
+            <li>
+                <label>Pileta c/ hidromasaje</label>
+                <img src="img/pileta.jpg" alt="Pileta">
+                <aside class="lateral">
+                    <p>Una piscina de 8 x 4 mts y 1,40 mts. de profundidad, de 45.000 lts de cristalina agua.</p>
+                </aside>
+            </li>
+        </ul>
+    </main>
     <footer>
         <ul id="sociales">
             <p id="empresa">Casa Alpina</p>
             <li><a href="https://www.instagram.com/casaalpina/" target="_blank" title="Instagram">
-                <svg heigth="80" width="80">
-                    <circle cx="40" cy="40" r="35" stroke="white" stroke-width="3" fill="none"></circle>
-                </svg>
-                <i class='bx bxl-instagram'></i>
-            </a></li>
+                    <svg heigth="80" width="80">
+                        <circle cx="40" cy="40" r="35" stroke="white" stroke-width="3" fill="none"></circle>
+                    </svg>
+                    <i class='bx bxl-instagram'></i>
+                </a></li>
             <li><a href="https://www.facebook.com/casaalpina.tandil" target="_blank" title="Facebook">
-                <svg heigth="80" width="80">
-                    <circle cx="40" cy="40" r="35" stroke="white" stroke-width="3" fill="none"></circle>
-                </svg>
+                    <svg heigth="80" width="80">
+                        <circle cx="40" cy="40" r="35" stroke="white" stroke-width="3" fill="none"></circle>
+                    </svg>
                     <i class='bx bxl-facebook-circle'></i>
                 </a></li>
-                <li><a href="https://wa.me/5492494549919" class="whatsapp" target="_blank" title="WhatsApp">
+            <li><a href="https://wa.me/5492494549919" class="whatsapp" target="_blank" title="WhatsApp">
                     <svg heigth="80" width="80">
                         <circle cx="40" cy="40" r="35" stroke="white" stroke-width="3" fill="none"></circle>
                     </svg>
                     <i class='bx bxl-whatsapp'></i>
                 </a></li>
             <li><a href="https://www.tiktok.com/@casaalpina" target="_blank" title="TikTok">
-                <svg heigth="80" width="80">
-                    <circle cx="40" cy="40" r="35" stroke="white" stroke-width="3" fill="none"></circle>
-                </svg>
+                    <svg heigth="80" width="80">
+                        <circle cx="40" cy="40" r="35" stroke="white" stroke-width="3" fill="none"></circle>
+                    </svg>
                     <i class='bx bxl-tiktok'></i>
                 </a></li>
             <li><a href="https://www.youtube.com/c/Caba%C3%B1asCASAALPINATandil" target="_blank" title="YouTube">
-                <svg heigth="80" width="80">
-                    <circle cx="40" cy="40" r="35" stroke="white" stroke-width="3" fill="none"></circle>
-                </svg>
-                <i class='bx bxl-youtube'></i>
-            </a></li>
-            
+                    <svg heigth="80" width="80">
+                        <circle cx="40" cy="40" r="35" stroke="white" stroke-width="3" fill="none"></circle>
+                    </svg>
+                    <i class='bx bxl-youtube'></i>
+                </a></li>
+
             <p>Icalma 2904 - Paraje El Centinela</p>
             <p>©2024</p>
         </ul>
