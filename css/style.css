@@ -82,7 +82,9 @@ body.clear-mode {
     }
 
     .nav .bx {
-        color: rgb(253, 250, 245);
+        color: rgb(41, 62, 20);
+        margin: 7px;
+        padding: 5px;
     }
 
     img, #imagenFinal {
@@ -410,14 +412,20 @@ ul.nav.show li {
     display: flex;
     align-items: center;
     position: relative;
-    margin: 7px;
+    margin: 5px;
 }
 
 ul.nav li {
     list-style: none;
     text-align: center;
-    
 }
+
+.nav a {
+    text-decoration: none;
+    color: rgb(41, 62, 20);
+    margin: 20px;
+}
+
 
 .btn-menu {
     text-align: right;
@@ -1018,19 +1026,21 @@ video {
         position: fixed;
         background-color: #d4f8b6;
         width: 100%;
-        margin: 0px;
-        padding: 0px;
+        margin: 0;
+        padding: 0;
         display: flex;
         justify-content: space-between;
+        font-family: monospace;
+        font-family: cursive;
     }
 
-    .nav li:active {
-        background-color: rgb(255, 157, 0);
+    a:active {
+        color: rgb(72, 119, 23);
     }
 
-    /* a:hover {
-        background-color: rgb(185, 190, 167);
-    } */
+    a:hover {
+        background-color: rgba(73, 119, 23, 0.135);
+    }
 
     .formulario-cabanias input {
         width: 85%;
