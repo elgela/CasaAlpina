@@ -65,7 +65,7 @@ body.clear-mode {
     .btn-cabanias:hover,
     .btn-predio:hover,
     .btn-contacto:hover,
-    #btn-agregar:hover,
+    #btn-reservar:hover,
     #btn-consulta:hover,
     #btn-averiguar:hover,
     #go-back:hover {
@@ -423,9 +423,12 @@ ul.nav li {
 .nav a {
     text-decoration: none;
     color: rgb(41, 62, 20);
-    margin: 20px;
+    margin: 3px;
 }
 
+.nav i {
+    display: inline;
+}
 
 .btn-menu {
     text-align: right;
@@ -484,7 +487,7 @@ article ul li {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#btn-agregar,
+#btn-reservar,
 #btn-consulta,
 #btn-averiguar,
 #envioConsulta,
@@ -943,7 +946,7 @@ video {
         padding: 15px;
     }
 
-    #btn-agregar,
+    #btn-reservar,
     #btn-consulta,
     #btn-averiguar {
         background: white;
@@ -959,7 +962,7 @@ video {
         margin-top: 10px;
     }
 
-    #btn-agregar:active,
+    #btn-reservar:active,
     #btn-consulta:active,
     #btn-averiguar:active {
         transform: translate(4px, 4px);

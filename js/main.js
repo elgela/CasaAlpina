@@ -85,6 +85,7 @@ document.querySelector("#consulte").addEventListener("click", datosCabanias);
 
 const urlPersonas = "https://6670528d0900b5f8724a36ff.mockapi.io/api/personas";
 const contenedor = document.querySelector("#tabla_formulario");
+const urlReserva = "https://booking.avirato.com/";
 
 ////////GET personas///////////////
 
@@ -97,29 +98,36 @@ async function datosPersonas(event) {
         let json = await res.json(); // JSON se hace objeto
         console.log(json);
         for (const personas of json) {
+            let id = personas.id;
             let nombre = personas.nombre;
             let apellido = personas.apellido;
             let dni = personas.dni;
             let telefono = personas.telefono;
-            let id = personas.id;
             lista.innerHTML += `<tr>
                                 <td>id:</td>
                                 <td>${id}</td>
                                 </tr>
                                 <tr>
                                 <td>Nombre:</td>
-                                <td>${nombre}<input type="button" id="btn-modificar" value="Editar"><input type="button" value="Borrar"></td>
+                                <td>${nombre}</td>
+                                <td><input type="button" id="btn-modificar" value="Editar"></td>
                                 </tr>
                                 <tr>
                                 <td>Apellido:</td>
-                                <td>${apellido}<input type="button" id="btn-modificar" value="Editar"><input type="button" value="Borrar"></td>
+                                <td>${apellido}</td>
+                                <td><input type="button" id="btn-modificar" value="Editar"></td>
                                 </tr>
                                 <tr>
                                 <td>DNI:</td>
-                                <td>${dni}<input type="button" id="btn-modificar" value="Editar"><input type="button" value="Borrar"></td>
+                                <td>${dni}</td>
+                                <td><input type="button" id="btn-modificar" value="Editar"></td>
                                 </tr>
+                                <tr>
                                 <td>Teléfono</td>
-                                <td>${telefono}<input type="button" id="btn-modificar" value="Editar"><input type="button" value="Borrar"></td>
+                                <td>${telefono}</td>
+                                <td><input type="button" id="btn-modificar" value="Editar"></td>
+                                </tr>
+                                <tr>
                                 <input type="button" id="btn-eliminar" value="Eliminar">
                                 </tr>`;
         }
@@ -131,9 +139,9 @@ async function datosPersonas(event) {
 document.querySelector("#btn-consulta").addEventListener("click", datosPersonas);
 
 function reservar() {
-    alert("Agregado");
+    alert("Reservado");
 }
-document.querySelector("#btn-agregar").addEventListener("click", reservar);
+document.querySelector("#btn-reservar").addEventListener("click", reservar);
 
 
 ///////////POST personas///////////////////
@@ -143,7 +151,7 @@ async function enviarDatos() {
     let dni = document.querySelector("#dni").value;
     let telefono = document.querySelector("#telefono").value;
 
-    contenedor.innerHTML = "Ha sido agregado " + nombre + " " + apellido;
+    contenedor.innerHTML = "Ha sido reservado a nombre de: " + nombre + " " + apellido;
     
     let persona = {
         "nombre": nombre,
@@ -169,10 +177,11 @@ async function enviarDatos() {
         console.log(error);
     }
 }
-document.querySelector("#btn-agregar").addEventListener("click", enviarDatos);
+document.querySelector("#btn-reservar").addEventListener("click", enviarDatos);
 
 /////////////PUT/////////////
-function modificarDato() {
+async function modificarDato(event) {
+    event.preventDefault();
 
 }
 document.querySelector("#btn-modificar").addEventListener("click", modificarDato);
