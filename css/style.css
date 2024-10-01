@@ -81,6 +81,11 @@ body.clear-mode {
         background-color: rgba(111, 153, 69, 0.818);
     }
 
+    .nav span {
+        margin-top: -30px;
+        margin-bottom: 20px;
+    }
+
     .nav .bx {
         color: rgb(41, 62, 20);
         margin: 7px;
@@ -250,6 +255,12 @@ body.dark-mode {
 
     .nav-text {
         color: rgb(197, 188, 176);
+    }
+    
+    .nav .bx {
+        color: rgb(205, 207, 202);
+        margin: 7px;
+        padding: 5px;
     }
 
     ul.nav {
@@ -424,6 +435,12 @@ ul.nav li {
     text-decoration: none;
     color: rgb(41, 62, 20);
     margin: 3px;
+}
+
+.nav p {
+    margin-top: -30px;
+    margin-bottom: 20px;
+    margin-left: -10px;
 }
 
 .nav i {
@@ -738,7 +755,9 @@ td {
 .tabla-servicios {
     width: 100%;
     text-align: center;
-    font-size: small;
+    font-size: x-large;
+    justify-content: center;
+    display: inline-table;
 }
 
 .ir-arriba {
@@ -877,6 +896,7 @@ article h1 {
 
 .titulo-servicio-tabla {
     color: #988a3b;
+    font-size: medium;
 }
 
 #empresa {
@@ -903,13 +923,15 @@ video {
 } */
 
 .creator {
+    display: inline;
     margin-right: 100px;
     text-align: right;
 }
 
 .creator span {
+    display: inline;
     justify-content: center;
-    /*color: rgb(116, 65, 65);*/
+    color: rgb(18, 18, 18);
 }
 
 /*//////////////////////////////////DESKTOP////////////////////////////////*/
@@ -938,6 +960,10 @@ video {
         height: 300px;
         margin-top: 83px;
 
+    }
+
+    .titulo-servicio-tabla {
+        font-size: larger;
     }
 
     .btn-menu {
@@ -1036,6 +1062,19 @@ video {
         font-family: monospace;
         font-family: cursive;
     }
+
+    .nav p {
+        margin-top: 1px;
+        margin-bottom: 20px;
+        margin-left: 3px;
+        font-size: larger;
+        font-weight: bolder;
+    }
+    
+    .nav .bx {
+        font-size: larger;
+    }
+    
 
     a:active {
         color: rgb(72, 119, 23);
@@ -1149,7 +1188,7 @@ video {
     
     .servicios {
         display: grid;
-        grid-template-columns: 50% 50%;
+        /* grid-template-columns: 50% 50%; */
     }
 
     #serv {

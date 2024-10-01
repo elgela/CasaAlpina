@@ -85,7 +85,6 @@ document.querySelector("#consulte").addEventListener("click", datosCabanias);
 
 const urlPersonas = "https://6670528d0900b5f8724a36ff.mockapi.io/api/personas";
 const contenedor = document.querySelector("#tabla_formulario");
-const urlReserva = "https://booking.avirato.com/";
 
 ////////GET personas///////////////
 
@@ -136,7 +135,7 @@ async function datosPersonas(event) {
     }
     
 }
-document.querySelector("#btn-consulta").addEventListener("click", datosPersonas);
+// document.querySelector("#btn-consulta").addEventListener("click", datosPersonas);
 
 function reservar() {
     alert("Reservado");
