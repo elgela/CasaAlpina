@@ -634,7 +634,7 @@ div.consulta form {
     box-shadow: 3px 2px 2px grey;
 } */
 
-.informacion {
+.reservas {
     display: inline;
     width: 100%;
 }
@@ -1074,14 +1074,37 @@ video {
     .nav .bx {
         font-size: larger;
     }
-    
 
-    a:active {
-        color: rgb(72, 119, 23);
+    /* .bx:active {
+        color: rgb(119, 66, 23);
+    } */
+    
+    a:link {
+        color: #265301;
     }
 
-    a:hover {
-        background-color: rgba(73, 119, 23, 0.135);
+    .direccion:visited {
+        border-bottom: 5px black solid;
+    }
+    
+    .avirato {
+        color: #f23118;
+        text-align: center;
+    }
+
+    /* a:focus {
+        border-bottom: 3px solid;
+        background: #bae498;
+    } */
+    
+    .direccion:hover {
+        border-bottom: 4px solid;
+        /* background: #cdfeaa; */
+    }
+    
+    a:active {
+        background: #265301;
+        color: #cdfeaa;
     }
 
     .formulario-cabanias input {
@@ -1121,7 +1144,7 @@ video {
     } */
 
     #formContacto {
-        margin-left: 3%;
+        margin-left: 13%;
     }
 
     label {
@@ -1169,7 +1192,9 @@ video {
 
     article h2 {
         font-size: xx-large;
+        /* margin-left: 3%; */
     }
+
 
     article ul li {
         font-size: medium;
@@ -1192,10 +1217,6 @@ video {
     }
 
     #serv {
-        padding: 5px;
-    }
-
-    #ubicacion {
         padding: 5px;
     }
 

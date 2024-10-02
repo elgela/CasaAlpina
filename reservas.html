@@ -29,33 +29,38 @@
             <nav class="menu">
                 <!-- <div class="menu"> -->
                 <ul class="nav">
-                    <a href="index.html">
+                    <a href="index.html" class="direccion">
                         <li>
                             <i class='bx bxs-home'></i>
-                        </li><p>Inicio</p>
+                        </li>
+                        <p>Inicio</p>
                     </a>
-                    <a href="cabanias.html">
+                    <a href="cabanias.html" class="direccion">
                         <li>
                             <i class='bx bxs-store-alt'></i>
-                        </li><p>Cabañas</p>
+                        </li>
+                        <p>Cabañas</p>
                     </a>
-                    <a href="predio.html">
+                    <a href="predio.html" class="direccion">
                         <li>
                             <i class='bx bxs-tree'></i>
-                        </li><p>Predio</p>
+                        </li>
+                        <p>Predio</p>
                     </a>
                     <li>
                         <img src="images/logo.png" id="logo" alt="Logo Casa Alpina">
                     </li>
-                    <a href="reservas.html">
+                    <a href="reservas.html" class="direccion">
                         <li>
                             <i class='bx bx-calendar-edit'></i>
-                        </li><p>Reservas</p>
+                        </li>
+                        <p>Reservas</p>
                     </a>
-                    <a href="servicios.html">
+                    <a href="servicios.html" class="direccion">
                         <li>
                             <i class="bx bxs-cog"></i>
-                        </li><p>Servicios</p>
+                        </li>
+                        <p>Servicios</p>
                     </a>
                     <!-- <a href="contactenos.html">
                         <li>
@@ -92,7 +97,7 @@
             </section> -->
             <div class="contacto">
                 <article>
-                    <h2>Contacto</h2>
+                    <h2 class="h2-contacto">Contacto</h2>
                     <div class="consulta">
                         <form method="post" id="formContacto">
                             <label>Nombre:</label>
@@ -103,18 +108,18 @@
                             <input type="email" name="email" id="email" placeholder="Correo electrónico..." required>
                             <label>Repetir Email:</label>
                             <input type="email" name="repeatemail" id="repeatemail" placeholder="Correo electrónico..."
-                            required>
+                                required>
                             <label>Teléfono:</label>
                             <input type="number" name="telefono" id="telefono" placeholder="Teléfono..." required>
                             <p>CAPTCHA</p>
                             <div id="captcha">
-                                
+
                             </div>
                             <div class="suma">
-                                
+
                                 <input type="text" id="respuesta" required>
-                                
-                                
+
+
                                 <p id="resultado"></p>
                             </div>
                             <div>
@@ -127,46 +132,47 @@
                             <div>
                                 <input type="button" id="envioConsulta" value="Enviar">
                             </div>
-                            
+
                         </form>
                     </div>
                 </article>
             </div>
-            <section class="informacion">
+            <div class="reservas">
                 <table id="tabla_formulario">
-                    <thead>
-                        <tr>
-                            <h2>Reservas</h2>
-                        </tr>
-                        <div>
-                            <p>Dirijase y reserve</p>
-                            <a href="https://booking.avirato.com/" target="_blank"><input type="button" id="btn-consulta" value="Avirato"></a>
-                        </div>
+                    <tr>
+                        <h2 class="h2-reservas">Reservas</h2>
+                    </tr>
+                    <div>
+                        <label class="avirato">Haga<a href="https://booking.avirato.com/?code=49886329&spaceTypeId=1"
+                                target="_blank"><input type="button" id="btn-consulta" value="Click"></a> aquí para
+                            reservar</label>
+                    </div>
                     </thead>
                     <tbody>
-        
+
                     </tbody>
                 </table>
                 <p class="respuesta"></p>
-            </section>
+            </div>
+            <div class="ubicacion">
+                <article>
+                    <h2 class="h2-ubicacion">Ubicación</h2>
+                    <p>
+                        Ubicadas en una de las mejores zonas serranas de Tandil, en las laderas del Cerro El Centinela y
+                        a
+                        solo 4 km. del centro de la ciudad.
+                    </p>
 
-            <article id="ubicacion">
-                <h2>Ubicación</h2>
-                <p>
-                    Ubicadas en una de las mejores zonas serranas de Tandil, en las laderas del Cerro El Centinela y a
-                    solo 4 km. del centro de la ciudad.
-                </p>
-    
-                <div class="map-responsive">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2506.8436596288775!2d-59.169330524978925!3d-37.34828340757744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2sus!4v1720636131798!5m2!1ses!2sus"
-                        width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </article>
-    
-        
-            <!-- <section class="formulario-cabanias">
+                    <div class="map-responsive">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2506.8436596288775!2d-59.169330524978925!3d-37.34828340757744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2sus!4v1720636131798!5m2!1ses!2sus"
+                            width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </article>
+            </div>
+
+        <!-- <section class="formulario-cabanias">
                 <h2>Cabañas</h2>
                 <form>
                     <ul>
