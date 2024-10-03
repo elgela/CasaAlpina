@@ -1103,8 +1103,9 @@ video {
     }
     
     a:active {
-        background: #265301;
-        color: #cdfeaa;
+        background: #5081289f;
+        border-radius: 10%;
+        /* color: #cdfeaa; */
     }
 
     .formulario-cabanias input {
