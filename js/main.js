@@ -1,10 +1,9 @@
 "use strict";
 
-document.querySelector(".btn-menu").addEventListener("click", menu);
-
 function menu() {
     document.querySelector(".nav").classList.toggle("show");
 }
+document.querySelector(".btn-menu").addEventListener("click", menu);
 
 function mostrarNumero() {
     let num1 = Math.floor(Math.random() * 10) + 1;
