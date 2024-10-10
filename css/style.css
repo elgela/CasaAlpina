@@ -359,8 +359,7 @@ header img {
 
 .menu {
     display: grid;
-    width: 90%;
-    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     transition: all 300ms ease;
     /* opacity: 0; */
@@ -895,6 +894,16 @@ article h1 {
     color: #988a3b;
     font-size: medium;
 }
+
+.nav > a > li > p {
+    margin-top: -5;
+    margin-bottom: 1px;
+}
+
+ul > a > li > .bx {
+    padding-top: 20px;
+}
+
 
 #empresa {
     color: #282B39;
