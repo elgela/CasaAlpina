@@ -97,7 +97,7 @@ body.clear-mode {
     }
 
     footer {
-        background-color: rgba(111, 153, 69, 0.542);
+        background-color: #6d9050;
     }
 
     footer .bx {
@@ -276,7 +276,7 @@ body.dark-mode {
 
 /*********************************************************/
 body {
-    margin: 2px;
+    margin: 0;
 }
 
 h2 {
@@ -1059,7 +1059,7 @@ video {
     ul.nav {
         z-index: 1;
         position: fixed;
-        background-color: #d4f8b6;
+        background-color: #6d9050;
         width: 100%;
         margin: 0;
         padding: 0;
