@@ -83,7 +83,7 @@ body.clear-mode {
     #btn-averiguar:hover,
     #go-back:hover {
         transform: scale(1.2);
-        cursor: pointer;
+        /* cursor: pointer; */
     }
 
     .nav-text {
@@ -187,7 +187,7 @@ body.dark-mode {
     .btn-predio:hover,
     .btn-contacto:hover {
         transform: scale(1.2);
-        cursor: pointer;
+        /* cursor: pointer; */
     }
 
 
@@ -312,7 +312,7 @@ h2 {
 .btn-cabanias,
 .btn-predio,
 #go-back {
-    cursor: pointer;
+    /* cursor: pointer; */
     position: relative;
     padding: 5px 10px;
     font-size: 20px;
@@ -367,9 +367,9 @@ header img {
     margin: 1px;
 }
 
-#mode-toggle:hover {
+/* #mode-toggle:hover {
     cursor: pointer;
-}
+} */
 
 .menu {
     display: grid;
@@ -475,11 +475,6 @@ ul.nav li {
     text-align: right;
 }
 
-
-.btn-menu:hover {
-    cursor: pointer;
-}
-
 #menu-cerrar:not(:checked) {
     display: none;
 }
@@ -547,7 +542,7 @@ article ul li {
 
 #btn-captcha:hover,
 #envioConsulta:hover {
-    cursor: pointer;
+    /* cursor: pointer; */
     background-color: burlywood;
     font-weight: bold;
 }
@@ -573,7 +568,7 @@ article ul li {
 
 a:hover {
     transform: scale(1);
-    cursor: pointer;
+    /* cursor: pointer; */
     font-weight: bold;
     /* background-color: rgba(86, 108, 5, 0.578); */
 }
