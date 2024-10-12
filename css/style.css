@@ -63,6 +63,10 @@ body.clear-mode {
         list-style-type: none;
     }
 
+    .lista-cabañas li img {
+        width: 100%;
+    }
+
     .lista-cabañas label {
         color: rgb(111, 153, 69);
     }
@@ -367,15 +371,15 @@ header img {
     margin: 1px;
 }
 
-/* #mode-toggle:hover {
+#mode-toggle:hover {
     cursor: pointer;
-} */
+}
 
 .menu {
     display: grid;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    opacity: 1;
+    /* opacity: 1; */
     transition: all 3s ease;
     /* visibility: hidden; */
 }
@@ -433,6 +437,7 @@ ul.nav {
 }
 
 ul.nav.show {
+    padding: 0;
     display: flex;
     flex-direction: column;
 }
@@ -486,6 +491,10 @@ ul.nav li {
 #menu-abrir {
     display: flex;
     margin-left: 30px;
+}
+
+#menu-abrir:hover {
+    cursor: pointer;
 }
 
 .btn-menu a {
@@ -570,7 +579,6 @@ a:hover {
     transform: scale(1);
     /* cursor: pointer; */
     font-weight: bold;
-    /* background-color: rgba(86, 108, 5, 0.578); */
 }
 
 h2 {
@@ -723,6 +731,11 @@ footer p {
     color: rgb(45, 44, 44);
 }
 
+ul#sociales {
+    padding: 0;
+    margin: 0;
+}
+
 #sociales li {
     position: relative;
     display: inline-block;
@@ -848,11 +861,11 @@ aside#fotos-desayuno {
     border-radius: 5px;
 }
 
-#jardin img:hover,
+/* #jardin img:hover,
 #pileta img:hover,
 #desayuno img:hover {
     opacity: 1;
-}
+} */
 
 .del_pinar,
 .del_solar,
