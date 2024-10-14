@@ -1,272 +1,273 @@
-<!DOCTYPE html>
-<html lang="en">
+    <!-- <!DOCTYPE html>
+    <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="shortcut icon" href="images/iconos/favicon.jpg" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="shortcut icon" href="images/iconos/favicon.jpg" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
 
-    <title>Casa Alpina - Reservas</title>
-</head>
+        <title>Casa Alpina - Reservas</title>
+    </head>
 
 
-<body class="clear-mode">
-    <header>
-        <div>
-            <div class="logo">
-                <img src="images/logo.png" class="logo-mobile" alt="Logo Casa Alpina">
-            </div>
-
+    <body class="clear-mode">
+        <header>
             <div>
-                <label class="btn-menu">
-                    <span id="menu-abrir">&#9776;</span>
-                </label>
+                <div class="logo">
+                    <img src="images/logo.png" class="logo-mobile" alt="Logo Casa Alpina">
+                </div>
+
+                <div>
+                    <label class="btn-menu">
+                        <span id="menu-abrir">&#9776;</span>
+                    </label>
+                </div>
             </div>
-        </div>
-        <div class="menu-bar">
-            <nav class="menu">
-                <!-- <div class="menu"> -->
-                <ul class="nav">
-                    <a href="index.html">
-                        <li>
-                            <img src="images/logo.png" id="logo" class="logo-nav" alt="Logo Casa Alpina">
-                        </li>
-                    </a>
-                    <a href="index.html" class="direccion">
-                        <li>
-                            <i class='bx bxs-home'></i>
-                            <p>Inicio</p>
-                        </li>
-                    </a>
-                    <a href="cabanias.html" class="direccion">
-                        <li>
-                            <i class='bx bxs-store-alt'></i>
-                            <p>Cabañas</p>
-                        </li>
-                    </a>
-                    <a href="predio.html" class="direccion">
-                        <li>
-                            <i class='bx bxs-tree'></i>
-                            <p>Predio</p>
-                        </li>
-                    </a>
-                    <a href="reservas.html" class="direccion">
-                        <li>
-                            <i class='bx bx-calendar-edit'></i>
-                            <p>Reservas</p>
-                        </li>
-                    </a>
-                    <a href="servicios.html" class="direccion">
-                        <li>
-                            <i class="bx bxs-cog"></i>
-                            <p>Servicios</p>
-                        </li>
-                    </a>
-                    <!-- <a href="contactenos.html">
+            <div class="menu-bar">
+                <nav class="menu">
+                    <!-- <div class="menu"> -->
+                    <ul class="nav">
+                        <a href="index.html">
                             <li>
-                                <i class='bx bxs-phone-call'></i>
-                            </li><p>Contacto</p>
-                        </a> -->
-                </ul>
-                <!-- </div> -->
-            </nav>
-        </div>
-        <img src="images/background-removed.png" id="imagenFinal" alt="cabañas de frente">
-        <button id="mode-toggle">Modo oscuro</button>
-    </header>
-    <!-- <main> -->
-    <div class="consultas">
-        <article class="container">
-            <!-- <section class="formulario-agregar">
-                <h2>Reservar</h2>
-                <form>
-                    <ul>
-                        <label>Nombre</label>
-                        <input type="text" name="nombre" id="nombre" placeholder="Nombre">
-                        <label>Apellido</label>
-                        <input type="text" name="apellido" id="apellido" placeholder="Apellido">
-                        <label>DNI</label>
-                        <input type="text" name="dni" id="dni" placeholder="DNI">
-                        <label>Teléfono</label>
-                        <input type="tel" name="telefono" id="telefono" placeholder="Teléfono">
-                        <div>
-                            <input type="button" id="btn-reservar" value="Reservar">
-                        </div>
+                                <img src="images/logo.png" id="logo" class="logo-nav" alt="Logo Casa Alpina">
+                            </li>
+                        </a>
+                        <a href="index.html" class="direccion">
+                            <li>
+                                <i class='bx bxs-home'></i>
+                                <p>Inicio</p>
+                            </li>
+                        </a>
+                        <a href="cabanias.html" class="direccion">
+                            <li>
+                                <i class='bx bxs-store-alt'></i>
+                                <p>Cabañas</p>
+                            </li>
+                        </a>
+                        <a href="predio.html" class="direccion">
+                            <li>
+                                <i class='bx bxs-tree'></i>
+                                <p>Predio</p>
+                            </li>
+                        </a>
+                        <a href="reservas.html" class="direccion">
+                            <li>
+                                <i class='bx bx-calendar-edit'></i>
+                                <p>Reservas</p>
+                            </li>
+                        </a>
+                        <a href="servicios.html" class="direccion">
+                            <li>
+                                <i class="bx bxs-cog"></i>
+                                <p>Servicios</p>
+                            </li>
+                        </a>
+                        <!-- <a href="contactenos.html">
+                                <li>
+                                    <i class='bx bxs-phone-call'></i>
+                                </li><p>Contacto</p>
+                            </a> -->
                     </ul>
-                </form>
-            </section> -->
-            <div class="contacto">
-                <article>
-                    <h2 class="h2-contacto">Contacto</h2>
-                    <div class="consulta">
-                        <form method="post" id="formContacto">
-                            <label>Nombre:</label>
-                            <input type="text" name="nombre" id="nombre" placeholder="Nombre..." required>
-                            <label>Apellido:</label>
-                            <input type="text" name="apellido" id="apellido" placeholder="Apellido..." required>
-                            <label>Email:</label>
-                            <input type="email" name="email" id="email" placeholder="Correo electrónico..." required>
-                            <label>Repetir Email:</label>
-                            <input type="email" name="repeatemail" id="repeatemail" placeholder="Correo electrónico..."
-                                required>
-                            <label>Teléfono:</label>
-                            <input type="number" name="telefono" id="telefono" placeholder="Teléfono..." required>
-                            <p>CAPTCHA</p>
-                            <div id="captcha">
-
-                            </div>
-                            <div class="suma">
-
-                                <input type="text" id="respuesta" required>
-
-
-                                <p id="resultado"></p>
-                            </div>
-                            <div>
-                                <button id="btn-captcha">Enviar</button>
-                            </div>
-                            <label>Comentario:</label>
-                            <div class="textarea">
-                                <textarea name="textarea"></textarea>
-                            </div>
-                            <div>
-                                <input type="button" id="envioConsulta" value="Enviar">
-                            </div>
-
-                        </form>
-                    </div>
-                </article>
+                    <!-- </div> -->
+                </nav>
             </div>
-            <div class="reservas">
-                <table id="tabla_formulario">
+            <img src="images/background-removed.png" id="imagenFinal" alt="cabañas de frente">
+            <button id="mode-toggle">Modo oscuro</button>
+        </header>
+        <main>
+        <div class="consultas">
+            <article class="container">
+                <section class="formulario-agregar">
+                    <h2>Reservar</h2>
+                    <form>
+                        <ul>
+                            <label>Nombre</label>
+                            <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                            <label>Apellido</label>
+                            <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+                            <label>DNI</label>
+                            <input type="text" name="dni" id="dni" placeholder="DNI">
+                            <label>Teléfono</label>
+                            <input type="tel" name="telefono" id="telefono" placeholder="Teléfono">
+                            <div>
+                                <input type="button" id="btn-reservar" value="Reservar">
+                            </div>
+                        </ul>
+                    </form>
+                </section>
+                <div class="contacto">
+                    <article>
+                        <h2 class="h2-contacto">Contacto</h2>
+                        <div class="consulta">
+                            <form method="post" id="formContacto">
+                                <label>Nombre:</label>
+                                <input type="text" name="nombre" id="nombre" placeholder="Nombre..." required>
+                                <label>Apellido:</label>
+                                <input type="text" name="apellido" id="apellido" placeholder="Apellido..." required>
+                                <label>Email:</label>
+                                <input type="email" name="email" id="email" placeholder="Correo electrónico..." required>
+                                <label>Repetir Email:</label>
+                                <input type="email" name="repeatemail" id="repeatemail" placeholder="Correo electrónico..."
+                                    required>
+                                <label>Teléfono:</label>
+                                <input type="number" name="telefono" id="telefono" placeholder="Teléfono..." required>
+                                <p>CAPTCHA</p>
+                                <div id="captcha">
+
+                                </div>
+                                <div class="suma">
+
+                                    <input type="text" id="respuesta" required>
+
+
+                                    <p id="resultado"></p>
+                                </div>
+                                <div>
+                                    <button id="btn-captcha">Enviar</button>
+                                </div>
+                                <label>Comentario:</label>
+                                <div class="textarea">
+                                    <textarea name="textarea"></textarea>
+                                </div>
+                                <div>
+                                    <input type="button" id="envioConsulta" value="Enviar">
+                                </div>
+
+                            </form>
+                        </div>
+                    </article>
+                </div>
+                <div class="reservas">
+                    <table id="tabla_formulario">
+                        <tr>
+                            <h2 class="h2-reservas">Reservas</h2>
+                        </tr>
+                        <div>
+                            <label class="avirato">Haga<a href="https://booking.avirato.com/?code=49886329&spaceTypeId=1"
+                                    target="_blank"><input type="button" id="btn-consulta" value="Click"></a> aquí para
+                                reservar</label>
+                        </div>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                    <p class="respuesta"></p>
+                </div>
+                <div class="ubicacion">
+                    <article>
+                        <h2 class="h2-ubicacion">Ubicación</h2>
+                        <p>
+                            Ubicadas en una de las mejores zonas serranas de Tandil, en las laderas del Cerro El Centinela y
+                            a
+                            solo 4 km. del centro de la ciudad.
+                        </p>
+
+                        <div class="map-responsive">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2506.8436596288775!2d-59.169330524978925!3d-37.34828340757744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2sus!4v1720636131798!5m2!1ses!2sus"
+                                width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </article>
+                </div>
+
+                <section class="formulario-cabanias">
+                    <h2>Cabañas</h2>
+                    <form>
+                        <ul>
+                            <label>Cabaña:</label>
+                            <select id="opciones">
+                                <option value="selected">Seleccione cabaña</option>
+                                <option id="pinar" value="Del Pinar">Del Pinar</option>
+                                <option id="puente" value="Del Puente">Del Puente</option>
+                                <option id="solar" value="Del Solar">Del Solar</option>
+                                <option id="casagrande" value="Casagrande">Casagrande</option>
+                            </select>
+                            <label>Fecha de Ingreso:</label>
+                            <input type="date" name="fechaIngreso" id="ingreso">
+                            <label>Fecha de Egreso</label>
+                            <input type="date" name="fechaEgreso" id="egreso">
+                            <label>Cantidad de personas</label>
+                            <select name="cant-personas" id="cant-personas">
+                                <option value="selected">Cantidad</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                            <input class="btn-consulte" type="button" id="consulte" value="Consulte">
+                        </ul>
+                    </form>
+                </section>
+        </div>
+        <div class="registro">
+            <table id="tabla_formulario">
+                <thead>
                     <tr>
-                        <h2 class="h2-reservas">Reservas</h2>
+                        <h2>Información</h2>
                     </tr>
                     <div>
-                        <label class="avirato">Haga<a href="https://booking.avirato.com/?code=49886329&spaceTypeId=1"
-                                target="_blank"><input type="button" id="btn-consulta" value="Click"></a> aquí para
-                            reservar</label>
+                        <input type="button" id="btn-consulta" value="Consulta">
                     </div>
-                    </thead>
-                    <tbody>
+                </thead>
+                <tbody>
 
-                    </tbody>
-                </table>
-                <p class="respuesta"></p>
-            </div>
-            <div class="ubicacion">
-                <article>
-                    <h2 class="h2-ubicacion">Ubicación</h2>
-                    <p>
-                        Ubicadas en una de las mejores zonas serranas de Tandil, en las laderas del Cerro El Centinela y
-                        a
-                        solo 4 km. del centro de la ciudad.
-                    </p>
-
-                    <div class="map-responsive">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2506.8436596288775!2d-59.169330524978925!3d-37.34828340757744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2sus!4v1720636131798!5m2!1ses!2sus"
-                            width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </article>
-            </div>
-
-            <!-- <section class="formulario-cabanias">
-                <h2>Cabañas</h2>
-                <form>
-                    <ul>
-                        <label>Cabaña:</label>
-                        <select id="opciones">
-                            <option value="selected">Seleccione cabaña</option>
-                            <option id="pinar" value="Del Pinar">Del Pinar</option>
-                            <option id="puente" value="Del Puente">Del Puente</option>
-                            <option id="solar" value="Del Solar">Del Solar</option>
-                            <option id="casagrande" value="Casagrande">Casagrande</option>
-                        </select>
-                        <label>Fecha de Ingreso:</label>
-                        <input type="date" name="fechaIngreso" id="ingreso">
-                        <label>Fecha de Egreso</label>
-                        <input type="date" name="fechaEgreso" id="egreso">
-                        <label>Cantidad de personas</label>
-                        <select name="cant-personas" id="cant-personas">
-                            <option value="selected">Cantidad</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                        </select>
-                        <input class="btn-consulte" type="button" id="consulte" value="Consulte">
-                    </ul>
-                </form>
-            </section> -->
-    </div>
-    <!-- <div class="registro">
-        <table id="tabla_formulario">
-            <thead>
-                <tr>
-                    <h2>Información</h2>
-                </tr>
-                <div>
-                    <input type="button" id="btn-consulta" value="Consulta">
-                </div>
-            </thead>
-            <tbody>
-
-            </tbody>
-        </table>
-        <p class="respuesta"></p>
-    </div> -->
-    <!-- </main> -->
-    <footer>
-        <ul id="sociales">
-            <p id="empresa">Casa Alpina</p>
-            <li><a href="https://www.instagram.com/casaalpina/" target="_blank" title="Instagram">
-                    <svg heigth="80" width="80">
-                        <circle cx="40" cy="40" r="35" stroke="white" stroke-width="3" fill="none"></circle>
-                    </svg>
-                    <i class='bx bxl-instagram'></i>
-                </a></li>
-            <li><a href="https://www.facebook.com/casaalpina.tandil" target="_blank" title="Facebook">
-                    <svg heigth="80" width="80">
-                        <circle cx="40" cy="40" r="35" stroke="white" stroke-width="3" fill="none"></circle>
-                    </svg>
-                    <i class='bx bxl-facebook-circle'></i>
-                </a></li>
-            <li><a href="https://wa.me/5492494549919" class="whatsapp" target="_blank" title="WhatsApp">
-                    <svg heigth="80" width="80">
-                        <circle cx="40" cy="40" r="35" stroke="white" stroke-width="3" fill="none"></circle>
-                    </svg>
-                    <i class='bx bxl-whatsapp'></i>
-                </a></li>
-            <li><a href="https://www.tiktok.com/@casaalpina" target="_blank" title="TikTok">
-                    <svg heigth="80" width="80">
-                        <circle cx="40" cy="40" r="35" stroke="white" stroke-width="3" fill="none"></circle>
-                    </svg>
-                    <i class='bx bxl-tiktok'></i>
-                </a></li>
-            <li><a href="https://www.youtube.com/c/Caba%C3%B1asCASAALPINATandil" target="_blank" title="YouTube">
-                    <svg heigth="80" width="80">
-                        <circle cx="40" cy="40" r="35" stroke="white" stroke-width="3" fill="none"></circle>
-                    </svg>
-                    <i class='bx bxl-youtube'></i>
-                </a></li>
-
-            <p>Icalma 2904 - Paraje El Centinela</p>
-            <p>©2024</p>
-        </ul>
-        <div class="creator">
-            <p>Desarrollado por: <span>Marcelo Gelato</span></p>
+                </tbody>
+            </table>
+            <p class="respuesta"></p>
         </div>
+        </main>
+        <footer>
+            <ul id="sociales">
+                <p id="empresa"></p>
+                <li><a href="https://www.instagram.com/casaalpina/" target="_blank" title="Instagram">
+                        <svg heigth="80" width="80">
+                            <circle cx="40" cy="40" r="35" stroke="white" stroke-width="3" fill="none"></circle>
+                        </svg>
+                        <i class='bx bxl-instagram'></i>
+                    </a></li>
+                <li><a href="https://www.facebook.com/casaalpina.tandil" target="_blank" title="Facebook">
+                        <svg heigth="80" width="80">
+                            <circle cx="40" cy="40" r="35" stroke="white" stroke-width="3" fill="none"></circle>
+                        </svg>
+                        <i class='bx bxl-facebook-circle'></i>
+                    </a></li>
+                <li><a href="https://wa.me/5492494549919" class="whatsapp" target="_blank" title="WhatsApp">
+                        <svg heigth="80" width="80">
+                            <circle cx="40" cy="40" r="35" stroke="white" stroke-width="3" fill="none"></circle>
+                        </svg>
+                        <i class='bx bxl-whatsapp'></i>
+                    </a></li>
+                <li><a href="https://www.tiktok.com/@casaalpina" target="_blank" title="TikTok">
+                        <svg heigth="80" width="80">
+                            <circle cx="40" cy="40" r="35" stroke="white" stroke-width="3" fill="none"></circle>
+                        </svg>
+                        <i class='bx bxl-tiktok'></i>
+                    </a></li>
+                <li><a href="https://www.youtube.com/c/Caba%C3%B1asCASAALPINATandil" target="_blank" title="YouTube">
+                        <svg heigth="80" width="80">
+                            <circle cx="40" cy="40" r="35" stroke="white" stroke-width="3" fill="none"></circle>
+                        </svg>
+                        <i class='bx bxl-youtube'></i>
+                    </a></li>
+                </ul>
+                <div class="texto-footer">
+                    <p class="nombre-cab">Casa Alpina&#174;</p>
+                    <p>Icalma 2904 - Paraje El Centinela - Tandil</p>
+                    <p>©2024</p>
+                </div>
+                <div class="creator">
+                    <p>Desarrollado por: <span>Marcelo Gelato</span></p>
+                </div>
+            </footer>
+            <script src="js/main.js"></script>
+    </body>
 
-    </footer>
-    <script src="js/main.js"></script>
-</body>
-
-</html>
+    </html> -->
