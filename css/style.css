@@ -609,6 +609,14 @@ p {
     font-family: sans-serif;
 }
 
+#descripcion p {
+    text-align: center;
+}
+
+section {
+    font-weight: 800;
+}
+
 .formulario {
     display: inline-block;
     margin: 5%;
@@ -668,20 +676,14 @@ div.consulta form {
 }
 
 .map-responsive {
-    overflow: hidden;
-    padding-bottom: 40%;
-    position: relative;
-    height: 0;
+    padding: 20px 0;
     justify-content: center;
+    text-align: center;
 }
 
 .map-responsive iframe {
-    justify-content: center;
-    right: 100px;
-    top: 0;
-    height: 70%;
-    width: 50%;
-    position: absolute;
+    height: 130px;
+    width: 230px;
 }
 
 .consulta input,
@@ -847,18 +849,26 @@ td {
     }
 }
 
-aside#fotos-jardin,
-aside#fotos-pileta,
-aside#fotos-desayuno {
-    width: 50%;
-    float: right;
+#fotos-jardin,
+#fotos-pileta,
+#fotos-desayuno {
+    text-align: center;
 }
 
-#jardin img,
+#jardines img,
 #pileta img,
 #desayuno img {
-    width: 30%;
+    width: 1fr;
     border-radius: 5px;
+    margin-top: 6px;
+}
+
+#jardines,
+#pileta,
+#desayuno {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: auto;
 }
 
 /* #jardin img:hover,
@@ -1223,11 +1233,14 @@ video {
         font-size: xx-large;
     }
 
-    article h2 {
-        font-size: xx-large;
-        /* margin-left: 3%; */
+    #h3-ubicacion {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 
+    #h3-ubicacion p {
+        margin: 10px;
+    }
 
     article ul li {
         font-size: medium;
@@ -1262,18 +1275,8 @@ video {
         margin-left: -30px;
     }
 
-    .map-responsive {
-        padding-bottom: 30%;
-    }
-
     .map-responsive iframe {
-        /* left: 5%; */
-        /* top: 0; */
-        /* height: 70%; */
-        /* width: 50%; */
-        /* position: absolute; */
-        top: 40px;
-        left: 10%;
+        left: 25%;
     }
 
     .ir-arriba {
@@ -1363,24 +1366,33 @@ video {
     } */
 
     h3 {
+        margin: 0;
         font-size: x-large;
         text-align: center;
     }
 
-    aside#fotos-jardin,
-    aside#fotos-pileta,
-    aside#fotos-desayuno {
-        width: 50%;
-        float: right;
+    #fotos-jardin,
+    #fotos-pileta,
+    #fotos-desayuno {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 50px;
     }
-
-    #jardin img,
+    
+    /* #jardines img,
     #pileta img,
     #desayuno img {
-        width: 30%;
+        width: 1fr;
         border-radius: 5px;
+        margin-top: 6px;
+    } */
+    
+    #jardines,
+    #pileta,
+    #desayuno {
+        display: block;
     }
-
+    
     .exterior {
         display: grid;
     }
