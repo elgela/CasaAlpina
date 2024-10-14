@@ -118,7 +118,7 @@ body.clear-mode {
     }
 
     footer .bx:hover {
-        filter: brightness(0.5);
+        filter: brightness(0.6);
     }
 
 }
@@ -267,12 +267,6 @@ body.dark-mode {
         color: rgb(197, 188, 176);
     }
     
-    .bx {
-        color: rgb(205, 207, 202);
-        margin: 7px;
-        padding: 5px;
-    }
-
     .nav {
         background-color: #333539;
     }
@@ -520,7 +514,7 @@ ul.nav li {
 }
 
 article h2 {
-    font-size: large;
+    font-size: 25px;
 }
 
 article ul li {
@@ -535,6 +529,7 @@ article ul li {
 #envioConsulta,
 #btn-captcha {
     border-radius: 4px;
+    margin-bottom: 25px;
 }
 
 #btn-averiguar {
@@ -715,6 +710,7 @@ table {
 footer {
     height: auto;
     text-align: center;
+    justify-content: center;
 }
 
 footer li {
@@ -727,10 +723,26 @@ footer li a {
 }
 
 footer p {
-    margin: 5px;
-    padding: 5px;
+    padding: 0;
+    margin: 0;
     font-size: small;
     color: rgb(45, 44, 44);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.texto-footer > p {
+    margin-left: 25px;
+}
+
+.texto-footer {
+    display: grid;
+    margin-top: 15px;
+}
+
+.nombre-cab {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
 }
 
 ul#sociales {
@@ -905,6 +917,13 @@ article h1 {
 #cab4 {
     display: grid;
     grid-template-columns: 50% 50%;
+}
+
+#c1,
+#c2,
+#c3,
+#c4 {
+    border-radius: 8px;
 }
 
 .del_pinar img,
@@ -1266,6 +1285,10 @@ video {
         padding: 5px;
     }
 
+    article h2 {
+        font-size: 50px;
+    }
+
     section h2,
     .registro h2 {
         margin: 10px;
@@ -1277,6 +1300,8 @@ video {
 
     .map-responsive iframe {
         left: 25%;
+        width: 400px;
+        height: 200px;
     }
 
     .ir-arriba {
@@ -1339,6 +1364,12 @@ video {
         font-size: small;
     }
 
+    
+    .nombre-cab {
+        font-size: large;
+    }
+    
+
     .descripcion-cab {
         width: 40%;
         height: auto;
@@ -1361,10 +1392,6 @@ video {
         font-size: large;
     }
 
-    /* figcaption {
-        width: 60%;
-    } */
-
     h3 {
         margin: 0;
         font-size: x-large;
@@ -1377,6 +1404,7 @@ video {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         margin-left: 50px;
+        align-items: center;
     }
     
     /* #jardines img,
@@ -1412,18 +1440,15 @@ video {
     #c3:hover,
     #c4:hover {
         opacity: 2;
-        transform: scale(1.15);
-    }
-
-    #detalles {
-        display: flex;
-        flex-direction: row;
-        text-align: center;
-        margin: 0 0 0 150px;
+        transform: scale(1.1);
     }
 
     #detalles ul {
         list-style-type: none;
+        color: #080909;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
     }
 
     #detalles ul li {
@@ -1489,6 +1514,11 @@ video {
     
     #sociales li:hover circle {
         stroke-dasharray: 220;
+    }
+
+    .reserv {
+        display: flex;
+        align-items: center;
     }
     
 }
