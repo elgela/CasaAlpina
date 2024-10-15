@@ -969,12 +969,13 @@ ul > a > li > .bx {
 }
 
 video {
-    width: 30%;
+    width: 35%;
     height: 300px;
 }
 
-.exterior video {
-    margin-left: 8px;
+#videos {
+    display: flex;
+    width: 100%;
 }
 
 /* #aviso {
@@ -998,13 +999,13 @@ video {
 /*//////////////////////////////////DESKTOP////////////////////////////////*/
 @media (width >=660px) {
     .container {
-        display: flex;
-        flex-direction: row;
-        grid-template-columns: 1fr 2fr;
+        display: grid;
+        grid-template-columns: 2fr 2fr;
         grid-template-areas:
-            "header header header"
-            "formulario-agregar informacion formulario-cabanias"
-            "footer footer footer";
+            "header header"
+            "cabania1 cabania2"
+            "cabania3 cabania4"
+            "footer footer";
     }
 
     .logo {
@@ -1269,12 +1270,20 @@ video {
 
     .cab {
         text-align: left;
+        margin-bottom: 50px;
     }
     
     .cab figcaption {
         font-size: clamp(1.8rem, 3.8vw, 2.5rem);
         font-style: italic;
+        text-align: center;
     }
+
+    /* .cab #c1,
+    .cab #c2 {
+        margin-top: 15px;
+        height: 70%;
+    } */
     
     .servicios {
         display: grid;
@@ -1429,17 +1438,18 @@ video {
     #c2,
     #c3,
     #c4 {
-        /* background-color: #000; */
-        line-height: 0;
+        /* line-height: 0; */
         border-radius: 10px;
-        overflow: hidden;
+        /* overflow: hidden; */
+        height: 67%;
+        margin-top: 15px;
     }
 
     #c1:hover,
     #c2:hover,
     #c3:hover,
     #c4:hover {
-        opacity: 2;
+        /* opacity: 2; */
         transform: scale(1.1);
     }
 
@@ -1517,8 +1527,8 @@ video {
     }
 
     .reserv {
-        display: flex;
-        align-items: center;
+        display: grid;
+        text-align: center;
     }
     
 }
