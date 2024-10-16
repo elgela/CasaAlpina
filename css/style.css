@@ -1153,6 +1153,19 @@ video {
         color: #265301;
     }
 
+    .presentacion {
+        font-family: sans-serif;
+        font-size: 30px;
+        font-style: oblique;
+        font-weight: 500;
+        font-family: cursive;
+    }
+
+    .lateral > p {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: large;
+    }
+
     .direccion:visited {
         border-bottom: 5px black solid;
     }
