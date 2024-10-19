@@ -67,9 +67,9 @@ body.clear-mode {
         width: 100%;
     }
 
-    .lista-cabañas label {
-        color: rgb(111, 153, 69);
-    }
+    /* .lista-cabañas label {
+        color: rgb(22, 23, 22);
+    } */
 
     #mode-toggle {
         color: rgb(28, 28, 28);
@@ -583,7 +583,7 @@ h2 {
 
 h3 {
     display: block;
-    background: chocolate;
+    background: rgb(105, 160, 51);
     padding: 3px;
     border-radius: 5px;
     font-size: small;
@@ -1155,7 +1155,7 @@ video {
 
     .presentacion {
         font-family: sans-serif;
-        font-size: 30px;
+        font-size: 20px;
         font-style: oblique;
         font-weight: 500;
         font-family: cursive;
@@ -1163,7 +1163,10 @@ video {
 
     .lateral > p {
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: large;
+        font-size: 15px;
+        font-weight: 600;
+        font-variant: small-caps;
+        margin-bottom: 50px;
     }
 
     .direccion:visited {
@@ -1260,11 +1263,10 @@ video {
 
     .lista-cabañas label {
         text-align: center;
-        border-radius: 45%;
-        border-style: ridge;
-        border-color: #67590b7f;
+        background-color: chocolate;
         margin-top: 2%;
         font-size: large;
+
     }
 
     .del_pinar h1,
