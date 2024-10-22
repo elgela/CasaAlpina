@@ -1567,6 +1567,30 @@ input, select, textarea {
 			opacity: 0;
 		}
 
+			#predio .services {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+			}
+
+			#predio .services img {
+				margin-top: 20px;
+				opacity: 70%;
+			}
+
+			#predio .services div {
+				text-align: center;
+			}
+
+			#div-wifi {
+				display: flex;
+				justify-content: center;
+				opacity: 70%;
+			}
+
+			article label {
+				text-align: center;
+			}
+
 			#main article.active {
 				-moz-transform: translateY(0);
 				-webkit-transform: translateY(0);
