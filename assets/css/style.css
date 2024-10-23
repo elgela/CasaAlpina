@@ -176,7 +176,10 @@ textarea {
 	appearance: none;
 }
 
-.del_pinar {
+.del_pinar,
+.del_solar,
+.del_puente,
+.casagrande {
 	display: flex;
 	text-align: center;
 	background-color: #1b1f22;
@@ -186,15 +189,11 @@ textarea {
 
 #detalles ul {
 	list-style-type: none;
-	/* color: #080909; */
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	text-align: center;
 }
 
-#detalles ul li {
-	/* color: #282B39; */
-}
 
 #cab1,
 #cab2,
