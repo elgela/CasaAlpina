@@ -208,7 +208,15 @@ textarea {
 #cab3 img,
 #cab4 img {
 	width: 85%;
-	/* height: 80%; */
+}
+
+#cab1 img:hover,
+#cab2 img:hover,
+#cab3 img:hover,
+#cab4 img:hover {
+	cursor: pointer;
+	transform: scale(1.24);
+	transition: all 0.5s ease;
 }
 
 .del_pinar img,
