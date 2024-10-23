@@ -194,7 +194,6 @@ textarea {
 	text-align: center;
 }
 
-
 #cab1,
 #cab2,
 #cab3,
@@ -229,6 +228,35 @@ textarea {
 	border-radius: 25px;
 }
 
+#fotos-cabania {
+	text-align: end;
+	margin-top: -15px;
+	margin-bottom: 8px;
+}
+
+.sink div {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	margin: 20px;
+}
+
+.sink img {
+	width: 95%;
+	height: 95%;
+	border-radius: 7%;
+}
+
+#go-back {
+	margin-top: 10px;
+}
+
+#back-sink {
+	text-align: center;
+}
+
+.titulo {
+	font-size: larger;
+}
 
 /* Basic */
 
@@ -1846,6 +1874,7 @@ article label {
 	max-width: 100%;
 	margin-top: 2rem;
 	text-align: center;
+	margin-bottom: 2rem;
 }
 
 #footer .copyright {
