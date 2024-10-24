@@ -258,6 +258,23 @@ textarea {
 	font-size: larger;
 }
 
+.desayuno {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.desayuno img {
+	width: 100%;
+	height: 200px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+}
+
+.videos-desayuno {
+	display: flex;
+	margin-top: 0;
+}
+
 /* Basic */
 
 @-ms-viewport {
