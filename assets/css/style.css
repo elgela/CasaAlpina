@@ -1547,11 +1547,11 @@ body.is-preload #bg:before {
 	-moz-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
 	-webkit-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
 	-ms-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
-	transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
+	transition: max-height 8.75s ease, padding 8.75s ease, opacity 3.325s ease-in-out;
 	-moz-transition-delay: 0.25s;
 	-webkit-transition-delay: 0.25s;
 	-ms-transition-delay: 0.25s;
-	transition-delay: 0.25s;
+	transition-delay: 0.55s;
 	padding: 3rem 2rem;
 	max-height: 40rem;
 	overflow: hidden;
