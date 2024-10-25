@@ -275,6 +275,11 @@ textarea {
 	margin-top: 0;
 }
 
+#contacto > h5 {
+	text-align: right;
+	text-transform: lowercase;
+}
+
 /* Basic */
 
 @-ms-viewport {
