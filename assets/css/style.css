@@ -222,8 +222,10 @@ textarea {
 	border-radius: 25px;
 }
 
-#fotos-cabania {
-	text-align: end;
+#btn-cabania {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	/* text-align: end; */
 	margin-top: -15px;
 	margin-bottom: 8px;
 }
@@ -273,6 +275,8 @@ textarea {
 	text-align: right;
 	text-transform: lowercase;
 }
+
+
 
 /* Basic */
 
@@ -362,7 +366,7 @@ a {
 	-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 	-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 	transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-	border-bottom: dotted 1px rgba(255, 255, 255, 0.5);
+	/* border-bottom: dotted 1px rgba(255, 255, 255, 0.5); */
 	text-decoration: none;
 	color: inherit;
 }
