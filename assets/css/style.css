@@ -1503,7 +1503,7 @@ body.is-preload #bg:before {
 	-webkit-transition: opacity 0.325s ease-in-out;
 	-ms-transition: opacity 0.325s ease-in-out;
 	transition: opacity 0.325s ease-in-out;
-	position: relative;
+	/* position: relative; */
 	margin-top: 3.5rem;
 }
 
