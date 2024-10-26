@@ -256,7 +256,7 @@ textarea {
 
 .desayuno {
 	text-align: center;
-	justify-content: space-evenly;
+	/* justify-content: space-evenly; */
 }
 
 .desayuno img {
