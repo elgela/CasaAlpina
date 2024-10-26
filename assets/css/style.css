@@ -255,13 +255,13 @@ textarea {
 }
 
 .desayuno {
-	display: grid;
-	grid-template-columns: 1fr;
+	text-align: center;
+	justify-content: space-evenly;
 }
 
 .desayuno img {
-	width: 100%;
-	height: 200px;
+	width: 45%;
+	height: 150px;
 	margin-bottom: 20px;
 	border-radius: 5px;
 }
