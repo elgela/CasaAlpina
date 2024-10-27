@@ -1574,8 +1574,8 @@ body.is-preload #bg:before {
 }
 
 #header .logo {
-	width: 5.5rem;
-	height: 5.5rem;
+	width: 8.1rem;
+	height: 8.1rem;
 	line-height: 5.5rem;
 	border: solid 1px #ffffff;
 	border-radius: 100%;
@@ -1733,8 +1733,8 @@ body.is-preload #header .content .inner {
 	}
 
 	#header .logo {
-		width: 4.75rem;
-		height: 4.75rem;
+		width: 6.75rem;
+		height: 6.75rem;
 		line-height: 4.75rem;
 	}
 
@@ -1954,6 +1954,26 @@ article label {
 }
 
 #footer .copyright {
+	letter-spacing: 0.2rem;
+	font-size: 0.6rem;
+	opacity: 0.75;
+	margin-bottom: 0;
+	text-transform: uppercase;
+}
+
+#footerContacto {
+	-moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+	-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+	-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+	transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+	width: 100%;
+	max-width: 100%;
+	margin-top: 2rem;
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+#footerContacto .copyright {
 	letter-spacing: 0.2rem;
 	font-size: 0.6rem;
 	opacity: 0.75;
