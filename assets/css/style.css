@@ -271,12 +271,33 @@ textarea {
 	margin-top: 0;
 }
 
-#contacto > h5 {
+#contacto>h5 {
 	text-align: right;
 	text-transform: lowercase;
 }
 
+.whatsapp {
+	background-image: url("https://static1.squarespace.com/static/603d822ee30903742fb8d15f/t/64ed21482e1d4f0aec15a6f7/1693262152462/WhatsApp.png") !important;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 55px;
+	height: 175px;
+	position: fixed;
+	z-index: 999;
+	right: 5.15vw;
+	bottom: 0.15vh;
+	transform: scale(1);
+	/* transition: all .5s ease-in; */
+	filter: brightness(0.8);
+}
 
+.whatsapp:hover {
+	cursor: pointer;
+	transform: scale(1.2);
+	filter: brightness(1);
+	transition: all .4s ease-in;
+}
 
 /* Basic */
 
@@ -289,6 +310,14 @@ textarea {
 	html,
 	body {
 		min-width: 320px;
+	}
+
+	.whatsapp {
+		width: 35px;
+	}
+
+	.whatsapp:hover {
+		transform: scale(1.2);
 	}
 
 }
@@ -340,6 +369,15 @@ html {
 		font-size: 11pt;
 	}
 
+	.whatsapp {
+		width: 45px;
+	}
+
+	.whatsapp:hover {
+		transform: scale(1.3);
+	}
+
+
 }
 
 @media screen and (max-width: 360px) {
@@ -347,6 +385,15 @@ html {
 	html {
 		font-size: 10pt;
 	}
+
+	.whatsapp {
+		width: 25px;
+	}
+
+	.whatsapp:hover {
+		transform: scale(1.1);
+	}
+
 
 }
 
