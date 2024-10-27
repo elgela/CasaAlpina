@@ -1840,20 +1840,20 @@ body.is-preload #header .content .inner {
 	max-width: 100%;
 	background-color: rgba(27, 31, 34, 0.85);
 	border-radius: 4px;
-	opacity: 0;
+	opacity: 1;
 }
 
-#predio .services {
+#servicios .services {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 }
 
-#predio .services img {
+#servicios .services img {
 	margin-top: 20px;
 	opacity: 70%;
 }
 
-#predio .services div {
+#servicios .services div {
 	text-align: center;
 }
 
