@@ -299,6 +299,26 @@ textarea {
 	transition: all .4s ease-in;
 }
 
+#footer .developer {
+	letter-spacing: 0.2rem;
+    font-size: 0.8rem;
+    opacity: 0.75;
+    margin-bottom: 0;
+	margin-top: 4px;
+	font-style: oblique;
+}
+
+#footer .developer .link {
+	/* color: rgba(89, 255, 0, 0.585); */
+	font-weight: 900;
+}
+
+#footer .developer .link:hover {
+	color: red;
+	filter: brightness(2.5);
+}
+
+
 /* Basic */
 
 @-ms-viewport {
@@ -318,7 +338,7 @@ textarea {
 
 	.whatsapp:hover {
 		transform: scale(1.2);
-	}
+	}	
 
 }
 
@@ -361,6 +381,23 @@ html {
 		font-size: 12pt;
 	}
 
+	.icons .bxl-youtube:hover {
+		background-color: rgb(255, 0, 0);
+	}
+	
+	.icons .bxl-tiktok:hover {
+		background-color: #121415;
+	}
+	
+	.icons .fa-instagram:hover {
+		background-color: #F86F2F;
+	}
+	
+	.icons .fa-facebook-f:hover {
+		background-color: #1877f2;
+	}
+	
+
 }
 
 @media screen and (max-width: 736px) {
@@ -377,6 +414,22 @@ html {
 		transform: scale(1.3);
 	}
 
+	.icons .bxl-youtube:hover {
+		background-color: rgb(255, 0, 0);
+	}
+	
+	.icons .bxl-tiktok:hover {
+		background-color: #121415;
+	}
+	
+	.icons .fa-instagram:hover {
+		background-color: #F86F2F;
+	}
+	
+	.icons .fa-facebook-f:hover {
+		background-color: #1877f2;
+	}
+	
 
 }
 
@@ -394,7 +447,26 @@ html {
 		transform: scale(1.1);
 	}
 
+	#footer .developer .link:hover {
+		color: #ffffff;
+	}
 
+	.icons .bxl-youtube:hover {
+		background-color: rgba(255, 255, 255, 0.075);
+	}
+	
+	.icons .bxl-tiktok:hover {
+		background-color: rgba(255, 255, 255, 0.075);
+	}
+	
+	.icons .fa-instagram:hover {
+		background-color: rgba(255, 255, 255, 0.075);
+	}
+	
+	.icons .fa-facebook-f:hover {
+		background-color: rgba(255, 255, 255, 0.075);
+	}
+	
 }
 
 body,
@@ -650,6 +722,27 @@ form>.fields>.field.quarter {
 	form>.fields>.field.quarter {
 		width: calc(100% - 1.5rem);
 	}
+
+	#footer .developer .link:hover {
+		color: #ffffff;
+	}
+
+	.icons .bxl-youtube:hover {
+		background-color: rgba(255, 255, 255, 0.075);
+	}
+	
+	.icons .bxl-tiktok:hover {
+		background-color: rgba(255, 255, 255, 0.075);
+	}
+	
+	.icons .fa-instagram:hover {
+		background-color: rgba(255, 255, 255, 0.075);
+	}
+	
+	.icons .fa-facebook-f:hover {
+		background-color: rgba(255, 255, 255, 0.075);
+	}
+
 
 }
 
@@ -1515,7 +1608,6 @@ body.is-preload #bg:before {
 	#wrapper {
 		padding: 1rem;
 	}
-
 }
 
 /* Header */
@@ -1790,6 +1882,23 @@ body.is-preload #header .content .inner {
 	#header nav.use-middle:after {
 		display: none;
 	}
+
+	.icons .bxl-youtube:hover {
+		background-color: rgba(255, 255, 255, 0.075);
+	}
+	
+	.icons .bxl-tiktok:hover {
+		background-color: rgba(255, 255, 255, 0.075);
+	}
+	
+	.icons .fa-instagram:hover {
+		background-color: rgba(255, 255, 255, 0.075);
+	}
+	
+	.icons .fa-facebook-f:hover {
+		background-color: rgba(255, 255, 255, 0.075);
+	}
+
 
 }
 
