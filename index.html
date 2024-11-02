@@ -10,7 +10,6 @@
 	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 	<link rel="shortcut icon" href="images/logoRedondoYBorde.png" type="image/x-icon">
 	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
-	<script src="https://www.google.com/recaptcha/enterprise.js" async defer></script>
 	<!-- <script>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</script> -->
@@ -269,6 +268,11 @@
 							<input type="text" name="name" id="name" required />
 						</div>
 						<div class="field half">
+							<label for="name">Apellido</label>
+							<input type="text" name="name" id="name" required />
+						</div>
+
+						<div class="field half">
 							<label for="email">Email</label>
 							<input type="text" name="email" id="email" required />
 						</div>
@@ -277,12 +281,12 @@
 							<textarea name="message" id="message" rows="4"></textarea>
 						</div>
 					</div>
-					<form action="" method="POST">
+					<form action="#" method="POST">
 						<div class="g-recaptcha" data-sitekey="6LcaiHMqAAAAAGM2uORd1vxkDYCHim3JbQ02fq4B" data-action="LOGIN"></div>
 						<br/>
-						<input type="submit" value="Submit">
-						<li><input type="reset" value="Reset" /></li>
-					  </form>
+						<input type="submit" value="Enviar">
+						<input type="reset" value="Reset" />
+					</form>
 					<!-- <h3>CAPTCHA</h3>
 					<div class="suma">
 
@@ -342,6 +346,7 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script src="https://www.google.com/recaptcha/enterprise.js" async defer></script>
 
 </body>
 
