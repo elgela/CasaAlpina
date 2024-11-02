@@ -318,6 +318,11 @@ textarea {
 	filter: brightness(2.5);
 }
 
+.first_p {
+	border-top: 4px solid #ffff;
+	padding-top: 10px;
+}
+
 
 /* Basic */
 
