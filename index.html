@@ -10,7 +10,7 @@
 	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 	<link rel="shortcut icon" href="images/logoRedondoYBorde.png" type="image/x-icon">
 	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
-
+	<script src="https://www.google.com/recaptcha/enterprise.js" async defer></script>
 	<!-- <script>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</script> -->
@@ -277,7 +277,12 @@
 							<textarea name="message" id="message" rows="4"></textarea>
 						</div>
 					</div>
-					<h3>CAPTCHA</h3>
+					<form action="" method="POST">
+						<div class="g-recaptcha" data-sitekey="6LcaiHMqAAAAAGM2uORd1vxkDYCHim3JbQ02fq4B" data-action="LOGIN"></div>
+						<br/>
+						<input type="submit" value="Submit">
+					  </form>
+					<!-- <h3>CAPTCHA</h3>
 					<div class="suma">
 
 						<div id="captcha"></div>
@@ -293,7 +298,7 @@
 					<ul class="actions">
 						<li><input type="submit" value="Enviar mensaje" class="primary" /></li>
 						<li><input type="reset" value="Reset" /></li>
-					</ul>
+					</ul> -->
 				</form>
 				<footer id="footerContacto">
 					<p class="copyright">Casa Alpina</p>
