@@ -1905,7 +1905,26 @@ body.is-preload #header .content .inner {
 		display: block;
 	}
 	
-	
+	#header .menu-nav input[type="checkbox"],
+	#header .menu-nav .fa-bars,
+	#header .menu-nav .fa-times {
+		position: absolute;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		width: 30px;
+		height: 30px;
+	}
+
+	#header .menu-nav .fa-bars,
+	#header .menu-nav .fa-times {
+		font-size: 30px;
+		pointer-events: none;
+	}
+
+	#header .menu-nav input[type="checkbox"] {
+		opacity: 0;
+	}
 
 	.icons .bxl-youtube:hover {
 		background-color: rgba(255, 255, 255, 0.075);
