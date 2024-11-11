@@ -1898,7 +1898,7 @@ body.is-preload #header .content .inner {
 		display: none;
 	}
 
-	#header input:checked~ul {
+	#header input:checked ~ ul {
 		display: block;
 	}
 
