@@ -1917,7 +1917,7 @@ body.is-preload #header .content .inner {
 	.respmenu .fa-bars,
 	.respmenu .fa-times {
 		font-size: 15px;
-		/* pointer-events: visible; */
+		pointer-events: visible;
 	}
 
 	.respmenu nav .fa-bars,
