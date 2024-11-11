@@ -1598,6 +1598,11 @@ body.is-preload #bg:before {
 		padding: 3rem 2rem;
 	}
 
+	#header .menu-nav label {
+		display: none;
+	}
+
+
 }
 
 @media screen and (max-width: 736px) {
@@ -1887,6 +1892,20 @@ body.is-preload #header .content .inner {
 	#header nav.use-middle:after {
 		display: none;
 	}
+
+	#header .menu-nav ul {
+		display: none;
+	}
+
+	#header .menu-nav label {
+		display: block;
+	}
+
+	#header input:checked ~ ul {
+		display: block;
+	}
+	
+	
 
 	.icons .bxl-youtube:hover {
 		background-color: rgba(255, 255, 255, 0.075);
