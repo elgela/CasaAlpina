@@ -301,9 +301,9 @@ textarea {
 
 #footer .developer {
 	letter-spacing: 0.2rem;
-    font-size: 0.8rem;
-    opacity: 0.75;
-    margin-bottom: 0;
+	font-size: 0.8rem;
+	opacity: 0.75;
+	margin-bottom: 0;
 	margin-top: 4px;
 	font-style: oblique;
 }
@@ -343,7 +343,7 @@ textarea {
 
 	.whatsapp:hover {
 		transform: scale(1.2);
-	}	
+	}
 
 }
 
@@ -389,19 +389,19 @@ html {
 	.icons .bxl-youtube:hover {
 		background-color: rgba(255, 0, 0, 0.293);
 	}
-	
+
 	.icons .bxl-tiktok:hover {
 		background-color: #12141571;
 	}
-	
+
 	.icons .fa-instagram:hover {
 		background-color: #f86f2f46;
 	}
-	
+
 	.icons .fa-facebook-f:hover {
 		background-color: #1876f246;
 	}
-	
+
 
 }
 
@@ -422,19 +422,19 @@ html {
 	.icons .bxl-youtube:hover {
 		background-color: rgba(255, 0, 0, 0.47);
 	}
-	
+
 	.icons .bxl-tiktok:hover {
 		background-color: #1214158f;
 	}
-	
+
 	.icons .fa-instagram:hover {
 		background-color: #f7621d6d;
 	}
-	
+
 	.icons .fa-facebook-f:hover {
 		background-color: #1876f277;
 	}
-	
+
 
 }
 
@@ -459,19 +459,19 @@ html {
 	.icons .bxl-youtube:hover {
 		background-color: rgba(255, 255, 255, 0.075);
 	}
-	
+
 	.icons .bxl-tiktok:hover {
 		background-color: rgba(255, 255, 255, 0.075);
 	}
-	
+
 	.icons .fa-instagram:hover {
 		background-color: rgba(255, 255, 255, 0.075);
 	}
-	
+
 	.icons .fa-facebook-f:hover {
 		background-color: rgba(255, 255, 255, 0.075);
 	}
-	
+
 }
 
 body,
@@ -735,15 +735,15 @@ form>.fields>.field.quarter {
 	.icons .bxl-youtube:hover {
 		background-color: rgba(255, 255, 255, 0.075);
 	}
-	
+
 	.icons .bxl-tiktok:hover {
 		background-color: rgba(255, 255, 255, 0.075);
 	}
-	
+
 	.icons .fa-instagram:hover {
 		background-color: rgba(255, 255, 255, 0.075);
 	}
-	
+
 	.icons .fa-facebook-f:hover {
 		background-color: rgba(255, 255, 255, 0.075);
 	}
@@ -887,7 +887,7 @@ input[type="radio"]+label:before {
 	font-weight: 900;
 }
 
-input[type="checkbox"]+label:before,
+/* input[type="checkbox"]+label:before,
 input[type="radio"]+label:before {
 	-moz-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
 	-webkit-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
@@ -904,15 +904,15 @@ input[type="radio"]+label:before {
 	text-align: center;
 	top: -0.15rem;
 	width: 1.65rem;
-}
+} */
 
-input[type="checkbox"]:checked+label:before,
+/* input[type="checkbox"]:checked+label:before,
 input[type="radio"]:checked+label:before {
 	background: #ffffff !important;
 	border-color: #ffffff !important;
 	color: #1b1f22;
 	content: '\f00c';
-}
+} */
 
 input[type="checkbox"]:focus+label:before,
 input[type="radio"]:focus+label:before {
@@ -1598,7 +1598,7 @@ body.is-preload #bg:before {
 		padding: 3rem 2rem;
 	}
 
-	#header .menu-nav label {
+	#header nav label {
 		display: none;
 	}
 
@@ -1865,6 +1865,7 @@ body.is-preload #header .content .inner {
 	}
 
 	#header nav ul {
+		display: none;
 		-moz-flex-direction: column;
 		-webkit-flex-direction: column;
 		-ms-flex-direction: column;
@@ -1889,36 +1890,76 @@ body.is-preload #header .content .inner {
 		width: 100%;
 	}
 
+	#header nav label {
+		display: block;
+	}
+
 	#header nav.use-middle:after {
 		display: none;
 	}
 
-	#header .menu-nav ul {
+	#header input:checked~ul {
+		display: block;
+	}
+
+
+	.respmenu input[type="checkbox"],
+	.respmenu .fa-bars,
+	.respmenu .fa-times {
+		position: absolute;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		width: auto;
+		height: auto;
+	}
+
+	.respmenu .fa-bars,
+	.respmenu .fa-times {
+		font-size: 15px;
+		/* pointer-events: visible; */
+	}
+
+	.respmenu nav .fa-bars,
+	.respmenu nav .fa-times {
+		/* display: flex; */
+		padding-top: 10px;
+		margin-top: -30px;
+		margin-left: -50px;
+		color: #ffffff;
+		text-decoration: dashed;
+		filter: brightness(77%);
+	}
+
+	.respmenu {
+		width: 55%;
+		/* position: relative; */
+	}
+
+	.respmenu input:checked ~ nav {
+		display: block;
+	}
+
+	.respmenu input:checked ~ .fa-bars {
 		display: none;
 	}
 
-	#header .menu-nav label {
-		display: block;
+	.respmenu input:not(:checked) ~ .fa-times {
+		display: none;
 	}
-
-	#header input:checked ~ ul {
-		display: block;
-	}
-	
-	
 
 	.icons .bxl-youtube:hover {
 		background-color: rgba(255, 255, 255, 0.075);
 	}
-	
+
 	.icons .bxl-tiktok:hover {
 		background-color: rgba(255, 255, 255, 0.075);
 	}
-	
+
 	.icons .fa-instagram:hover {
 		background-color: rgba(255, 255, 255, 0.075);
 	}
-	
+
 	.icons .fa-facebook-f:hover {
 		background-color: rgba(255, 255, 255, 0.075);
 	}
