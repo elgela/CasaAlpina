@@ -6,6 +6,9 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
 
 html,
 body,
@@ -2000,10 +2003,6 @@ body.is-preload #header .content .inner {
         display: flex;
         flex-direction: column;
     }
-
-	a {
-		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-	}
 
 }
 
