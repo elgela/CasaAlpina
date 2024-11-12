@@ -1967,7 +1967,7 @@ body.is-preload #header .content .inner {
 
 	.bars__menu {
 		display: block;
-		width: 38px;
+		width: 30px;
 		height: 30px;
 		cursor: pointer;
 		margin-bottom: 10px;
@@ -2001,6 +2001,9 @@ body.is-preload #header .content .inner {
         flex-direction: column;
     }
 
+	a {
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	}
 
 }
 
