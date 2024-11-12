@@ -1922,10 +1922,10 @@ body.is-preload #header .content .inner {
 
 	.respmenu nav .fa-bars,
 	.respmenu nav .fa-times {
-		/* display: flex; */
+		display: flex;
 		padding-top: 10px;
 		margin-top: -30px;
-		margin-left: -50px;
+		margin-left: -115px;
 		color: #ffffff;
 		text-decoration: dashed;
 		filter: brightness(77%);
