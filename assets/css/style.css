@@ -1924,11 +1924,11 @@ body.is-preload #header .content .inner {
 	.respmenu nav .fa-times {
 		display: flex;
 		padding-top: 10px;
-		margin-top: -30px;
+		margin-top: -13px;
 		margin-left: -115px;
 		color: #ffffff;
 		text-decoration: dashed;
-		filter: brightness(77%);
+		filter: brightness(85%);
 	}
 
 	.respmenu {
