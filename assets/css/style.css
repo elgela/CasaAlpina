@@ -2008,6 +2008,7 @@ body.is-preload #header .content .inner {
 	.nav-list {
         display: flex;
         flex-direction: row;
+		justify-content: center;
     }
 
 }
