@@ -1891,6 +1891,7 @@ body.is-preload #header .content .inner {
 		line-height: 3rem;
 		min-width: 0;
 		width: 100%;
+		font-size: small;
 	}
 
 	#header nav label {
@@ -1934,7 +1935,7 @@ body.is-preload #header .content .inner {
 	}
 
 	.respmenu {
-		width: 55%;
+		width: 75%;
 		/* position: relative; */
 	}
 
