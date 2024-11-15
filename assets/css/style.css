@@ -455,6 +455,11 @@ html {
 		transform: scale(1.1);
 	}
 
+	p#menu {
+		margin-left: -2px;
+	}
+
+
 	#footer .developer .link:hover {
 		color: #ffffff;
 	}
