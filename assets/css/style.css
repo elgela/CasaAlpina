@@ -1911,6 +1911,8 @@ body.is-preload #header .content .inner {
 		display: block;
 	}
 
+	/*RESPMENU*/
+
 	.respmenu input[type="checkbox"],
 	.respmenu .fa-bars,
 	.respmenu .fa-times {
@@ -1954,6 +1956,18 @@ body.is-preload #header .content .inner {
 
 	.respmenu input:not(:checked)~.fa-times {
 		display: none;
+	}
+
+	.navmenu {
+		position: absolute;
+		margin-top: -340px;
+		margin-left: -12%;
+		width: 55px;
+	}
+
+	.nav-bar {
+		background-color: #232427;
+		max-width: 500px;
 	}
 
 	#menu {
@@ -2018,6 +2032,37 @@ body.is-preload #header .content .inner {
     }
 
 }
+
+@media screen and (max-width: 545px) {
+	.respmenu .navmenu {
+		margin-top: -370px;
+	}
+}
+
+@media screen and (max-width: 498px) {
+	.respmenu .navmenu {
+		margin-top: -390px;
+	}
+}
+
+@media screen and (max-width: 422px) {
+	.respmenu .navmenu {
+		margin-top: -410px;
+	}
+}
+
+@media screen and (max-width: 366px) {
+	.respmenu .navmenu {
+		margin-top: -430px;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	.respmenu .navmenu {
+		margin-top: -380px;
+	}
+}
+
 
 /* Main */
 
