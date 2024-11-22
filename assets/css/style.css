@@ -1907,8 +1907,12 @@ body.is-preload #header .content .inner {
 		display: none;
 	}
 
-	#header input:checked~ul {
+	#header input:checked~div ul {
 		display: block;
+	}
+
+	#header .logo {
+		margin-bottom: 20px;
 	}
 
 	/*RESPMENU*/
@@ -1959,17 +1963,22 @@ body.is-preload #header .content .inner {
 	}
 
 	.navmenu {
-		position: absolute;
+		position: relative;
 		margin-top: -340px;
-		margin-left: -12%;
-		width: 55px;
+		margin-left: -17%;
+		width: 100%;
 	}
 
 	.nav-bar {
-		background-color: #232427;
-		max-width: 500px;
+		display: grid;
+		width: 135%;
 	}
 
+	.nav-bar ul {
+		background-color: #232427;
+		position: relative;
+	}
+	
 	#menu {
 		display: flex;
 		margin-top: 5px;
@@ -2026,9 +2035,8 @@ body.is-preload #header .content .inner {
 	}
 	
 	.nav-list {
-        display: flex;
-        flex-direction: row;
-		justify-content: center;
+        display: block;
+		margin-left: -2%;
     }
 
 }
@@ -2041,7 +2049,7 @@ body.is-preload #header .content .inner {
 
 @media screen and (max-width: 498px) {
 	.respmenu .navmenu {
-		margin-top: -390px;
+		margin-top: -385px;
 	}
 }
 
