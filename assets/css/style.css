@@ -1973,11 +1973,6 @@ body.is-preload #header .content .inner {
 		display: grid;
 		width: 135%;
 	}
-
-	.nav-bar ul {
-		background-color: #232427;
-		position: relative;
-	}
 	
 	#menu {
 		display: flex;
@@ -2039,6 +2034,10 @@ body.is-preload #header .content .inner {
 		margin-left: -2%;
     }
 
+	.dropdown {
+		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+		background-color: #252526;
+	}	
 }
 
 @media screen and (max-width: 545px) {
