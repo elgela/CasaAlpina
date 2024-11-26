@@ -1878,8 +1878,8 @@ body.is-preload #header .content .inner {
 		-webkit-flex-direction: column;
 		-ms-flex-direction: column;
 		flex-direction: column;
-		min-width: 10rem;
-		max-width: 100%;
+		/* min-width: 10rem;
+		max-width: 100%; */
 	}
 
 	#header nav ul li {
@@ -1971,13 +1971,13 @@ body.is-preload #header .content .inner {
 		/* width: 100%; */
 	}
 
-	.nav-list {
+	/* .nav-list {
 		display: grid;
-		/* justify-content: space-between; */
-		/* align-items: center; */
-		/* grid-template-columns: repeat(2, max-content); */
+		justify-content: space-between;
+		align-items: center;
+		grid-template-columns: repeat(2, max-content);
 		width: 135%;
-	}
+	} */
 
 	
 	#menu {
@@ -2043,25 +2043,27 @@ body.is-preload #header .content .inner {
 
 	.dropdown {
 		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-		background-color: #37373b;
+		background-color: #2a2828;
 		position: absolute;
-		height: 25%;
-		width: 70%;
+		height: auto;
+		width: 30%;
 		top: 15.6rem;
 		/* bottom: 39%; */
-		left: 15px;
+		left: 0;
 		/* right: 0; */
 		padding: 0;
 		display: grid;
 		gap: 2em;
 		padding-left: 5%;
+		z-index: 1;
+		overflow-x: hidden;
 		transform: var(--state-menu);
-		transition: .3s transform;
+		transition: 0.5s;
 	}
 
-	.dropdown:target {
+	/* .dropdown:target {
 		--state-menu: translate(0);
-	}
+	} */
 }
 
 @media screen and (max-width: 545px) {
