@@ -2046,9 +2046,9 @@ body.is-preload #header .content .inner {
 		background-color: #2a2828;
 		position: absolute;
 		height: auto;
-		width: 30%;
+		width: 37%;
 		top: 15.6rem;
-		/* bottom: 39%; */
+		bottom: 39%;
 		left: 0;
 		/* right: 0; */
 		padding: 0;
