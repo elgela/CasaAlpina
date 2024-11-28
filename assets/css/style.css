@@ -2060,7 +2060,7 @@ body.is-preload #header .content .inner {
 		width: 37%;
 		top: 15.6rem;
 		bottom: 39%;
-		left: 0;
+		left: -2px;
 		/* right: 0; */
 		padding: 0;
 		display: grid;
