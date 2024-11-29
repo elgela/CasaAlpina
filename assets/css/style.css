@@ -1978,7 +1978,7 @@ body.is-preload #header .content .inner {
 
 	.navmenu {
 		display: flex;
-		margin-top: -350px;
+		margin-top: -360px;
 		/* width: 100%; */
 	}
 
@@ -2045,7 +2045,12 @@ body.is-preload #header .content .inner {
 	.activeline3__bars-menu {
 		transform: rotate(-45deg) translate(-4px, 2px);
 	}
-	
+
+	.activeline4__bars-menu {
+		opacity: 0;
+		margin-left: -30px;
+	}
+
 	.nav-bar {
         display: block;
 		margin-left: -2%;
@@ -2084,7 +2089,7 @@ body.is-preload #header .content .inner {
 	}
 
 	.navmenu {
-		margin-top: -380px;
+		margin-top: -390px;
 	}
 }
 
@@ -2103,14 +2108,14 @@ body.is-preload #header .content .inner {
 	}
 
 	.navmenu {
-		margin-top: -390px;
+		margin-top: -400px;
 	}
 
 }
 
 @media screen and (max-width: 496px) {
 	.navmenu {
-		margin-top: -405px;
+		margin-top: -410px;
 	}
 
 }
@@ -2122,8 +2127,7 @@ body.is-preload #header .content .inner {
 	}
 
 	.navmenu {
-		display: flex;
-		margin-top: -397px;
+		margin-top: -417px;
 	}
 
 }
@@ -2134,8 +2138,7 @@ body.is-preload #header .content .inner {
 	}
 
 	.navmenu {
-		display: flex;
-		margin-top: -370px;
+		margin-top: -390px;
 	}
 
 }
@@ -2146,8 +2149,7 @@ body.is-preload #header .content .inner {
 	}
 
 	.navmenu {
-		display: flex;
-		margin-top: -415px;
+		margin-top: -435px;
 	}
 
 }
@@ -2158,8 +2160,7 @@ body.is-preload #header .content .inner {
 	}
 
 	.navmenu {
-		display: flex;
-		margin-top: -440px;
+		margin-top: -455px;
 	}
 
 }
@@ -2170,8 +2171,7 @@ body.is-preload #header .content .inner {
 	}
 
 	.navmenu {
-		display: flex;
-		margin-top: -380px;
+		margin-top: -400px;
 	}
 
 }
