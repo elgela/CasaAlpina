@@ -2057,7 +2057,7 @@ body.is-preload #header .content .inner {
 		margin-top: 40%;
     }
 
-	.dropdown {
+	.drop {
 		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 		background-color: #2a2828;
 		position: absolute;
@@ -2072,18 +2072,14 @@ body.is-preload #header .content .inner {
 		gap: 2em;
 		padding-left: 5%;
 		z-index: 1;
-		overflow-x: hidden;
-		transform: var(--state-menu);
-		transition: 0.5s;
+		/* overflow-x: hidden; */
+		/* transform: var(--state-menu); */
 	}
-
-	/* .dropdown:target {
-		--state-menu: translate(0);
-	} */
+	
 }
 
 @media screen and (max-width: 545px) {
-	.dropdown {
+	.drop {
 		top: 15.6rem;
 		bottom: 21.2rem;
 	}
@@ -2094,7 +2090,7 @@ body.is-preload #header .content .inner {
 }
 
 @media screen and (max-width: 514px) {
-	.dropdown {
+	.drop {
 		top: 15.6rem;
 		bottom: 22.1rem;
 	}
@@ -2102,7 +2098,7 @@ body.is-preload #header .content .inner {
 }
 
 @media screen and (max-width: 498px) {
-	.dropdown {
+	.drop {
 		top: 15.6rem;
 		bottom: 22.2rem;
 	}
@@ -2121,7 +2117,7 @@ body.is-preload #header .content .inner {
 }
 
 @media screen and (max-width: 480px) {
-	.dropdown {
+	.drop {
 		top: 14.6rem;
 		bottom: 21.2rem;
 	}
@@ -2133,7 +2129,7 @@ body.is-preload #header .content .inner {
 }
 
 @media screen and (max-width: 422px) {
-	.dropdown {
+	.drop {
 		top: 9.2rem;
 	}
 
@@ -2144,7 +2140,7 @@ body.is-preload #header .content .inner {
 }
 
 @media screen and (max-width: 421px) {
-	.dropdown {
+	.drop {
 		top: 14.6rem;
 	}
 
@@ -2155,7 +2151,7 @@ body.is-preload #header .content .inner {
 }
 
 @media screen and (max-width: 366px) {
-	.dropdown {
+	.drop {
 		top: 14.6rem;
 	}
 
@@ -2166,7 +2162,7 @@ body.is-preload #header .content .inner {
 }
 
 @media screen and (max-width: 360px) {
-	.dropdown {
+	.drop {
 		top: 14.8rem;
 	}
 
