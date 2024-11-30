@@ -1621,6 +1621,9 @@ body.is-preload #bg:before {
 		display: none;
 	}
 
+	.nav-icons {
+		display: none;
+	}
 
 }
 
@@ -2077,6 +2080,7 @@ body.is-preload #header .content .inner {
 	}
 
 	.nav-icons {
+		display: block;
 		position: absolute;
 		margin: -1px 0 0 -52px;
 		background-color: #2a2828;
