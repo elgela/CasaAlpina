@@ -1750,6 +1750,10 @@ body.is-preload #bg:before {
 	overflow: hidden;
 }
 
+#header .content .inner h2 {
+	font-size: .6rem;
+}
+
 #header .content .inner> :last-child {
 	margin-bottom: 0;
 }
