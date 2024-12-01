@@ -2311,24 +2311,26 @@ body.is-preload #header .content .inner {
 	opacity: 1;
 }
 
-#servicios .services {
+.services {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
-#servicios .services img {
-	margin-top: 20px;
-	opacity: 70%;
-}
+/* .services img {
+	opacity: 90%;
+} */
 
-#servicios .services div {
+.services div {
 	text-align: center;
 }
 
-#div-wifi {
-	display: flex;
-	justify-content: center;
-	opacity: 70%;
+#desayuno,
+#mucama,
+#pet,
+#seguridad,
+#wifi {
+	width: 90%;
+	height: 80%;
 }
 
 article label {
