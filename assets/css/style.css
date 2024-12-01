@@ -617,7 +617,7 @@ h6 {
 @media screen and (max-width: 736px) {
 
 	h1 {
-		font-size: 2.75rem;
+		font-size: 3.4rem;
 		line-height: 1.4;
 	}
 
@@ -1708,8 +1708,8 @@ body.is-preload #bg:before {
 }
 
 #header .logo {
-	width: 8.1rem;
-	height: 8.1rem;
+	width: 18rem;
+	height: 18rem;
 	line-height: 5.5rem;
 	/* border: solid 1px #ffffff; */
 	/* border-radius: 100%; */
@@ -1867,8 +1867,8 @@ body.is-preload #header .content .inner {
 	}
 
 	#header .logo {
-		width: 6.75rem;
-		height: 6.75rem;
+		width: 15rem;
+		height: 15rem;
 		/* line-height: 4.75rem; */
 	}
 
@@ -1893,7 +1893,12 @@ body.is-preload #header .content .inner {
 	} */
 
 	#header .content .inner {
-		padding: 0 2.5rem;
+		padding: 1rem 2.5rem;
+	}
+
+	h1 {
+		font-size: 2.9rem;
+		line-height: 1.4;
 	}
 
 	#header nav ul {
@@ -1943,6 +1948,8 @@ body.is-preload #header .content .inner {
 
 	#header .logo {
 		margin-bottom: 20px;
+		width: 13rem;
+		height: 13rem;
 	}
 
 	/*RESPMENU*/
@@ -2176,6 +2183,18 @@ body.is-preload #header .content .inner {
 		top: 43.85rem;
 	}
 
+	#header .logo {
+		margin-bottom: 20px;
+		width: 11rem;
+		height: 11rem;
+	}
+
+	h1 {
+		font-size: 2.5rem;
+		line-height: 1.4;
+	}
+
+
 }
 
 /* @media screen and (max-width: 409px) {
@@ -2196,6 +2215,12 @@ body.is-preload #header .content .inner {
 	.drop {
 		top: 45.7rem;
 	}
+
+	h1 {
+		font-size: 2rem;
+		line-height: 1.4;
+	}
+
 
 }
 
