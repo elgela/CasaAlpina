@@ -1712,7 +1712,7 @@ body.is-preload #bg:before {
 	height: 8.1rem;
 	line-height: 5.5rem;
 	/* border: solid 1px #ffffff; */
-	border-radius: 100%;
+	/* border-radius: 100%; */
 	transition: all 8.0s ease;
 	transition-delay: 0.71s;
 }
