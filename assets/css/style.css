@@ -1992,7 +1992,7 @@ body.is-preload #header .content .inner {
 	} */
 
 	.respmenu {
-		width: 100%;
+		width: 10%;
 	}
 
 	p#menu {
@@ -2018,6 +2018,10 @@ body.is-preload #header .content .inner {
 		align-items: center;
 	}
 
+	.navmenu label {
+		display: block;
+		width: auto;
+	}
 	
 	/* #menu {
 		display: flex;
