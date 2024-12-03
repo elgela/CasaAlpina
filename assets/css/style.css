@@ -198,10 +198,16 @@ textarea {
 }
 
 #detalles ul {
-	list-style-type: none;
 	display: grid;
+	list-style-type: none;
 	grid-template-columns: 1fr 1fr;
 	text-align: center;
+	padding: 30px;
+}
+
+#detalles ul li i {
+	color: rgb(138, 201, 138);
+	font-size: 8px;
 }
 
 #cab1,
@@ -209,22 +215,23 @@ textarea {
 #cab3,
 #cab4 {
 	display: grid;
-	grid-template-columns: 50% 50%;
+	/* grid-template-columns: 50% 50%; */
 }
 
 #cab1 img,
 #cab2 img,
 #cab3 img,
 #cab4 img {
-	width: 85%;
+	width: 100%;
+	margin-bottom: 2rem;
 }
 
 #cab1 img:hover,
 #cab2 img:hover,
 #cab3 img:hover,
 #cab4 img:hover {
-	cursor: pointer;
-	transform: scale(1.24);
+	/* cursor: pointer; */
+	/* transform: scale(1.24); */
 	transition: all 0.5s ease;
 }
 
@@ -233,7 +240,7 @@ textarea {
 .del_puente img,
 .casagrande img {
 	margin: auto;
-	height: auto;
+	/* height: auto; */
 	padding: 20px;
 	border-radius: 25px;
 }
