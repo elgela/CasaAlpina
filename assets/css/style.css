@@ -10,6 +10,19 @@
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /*para quitar fondo azul click links*/
 }
 
+.ir-arriba{
+	display:none;
+	background-repeat:no-repeat;
+	font-size:40px;
+	color:rgb(247, 245, 245);
+	cursor:pointer;
+	position:fixed;
+	bottom:-10px;
+	left:20px;
+	z-index:2;
+	position: static;
+  }
+
 html,
 body,
 div,
@@ -1902,6 +1915,12 @@ body.is-preload #header .content .inner {
 		font-size: 4rem;
 	}
 	
+	.ir-arriba{
+		position: static;
+		font-size:40px;
+		cursor:pointer;
+		bottom: -16px;
+	  }
 
 }
 
@@ -1971,6 +1990,11 @@ body.is-preload #header .content .inner {
 		height: 13rem;
 	}
 
+	.ir-arriba{
+		font-size:40px;
+		cursor:pointer;
+		bottom: -20px;
+	  }
 	/*RESPMENU*/
 
 	/* .respmenu input[type="checkbox"] {
