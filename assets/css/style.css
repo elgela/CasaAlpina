@@ -725,12 +725,14 @@ h6.major {
 
 h1 {
 	font-size: 3rem;
+	letter-spacing: 0.2rem;
+	font-weight: 600;
+	font-family: serif;
+	/* font-size: 3rem;
 	line-height: 1;
 	letter-spacing: 0.1rem;
 	font-family: cursive;
-	/* font-optical-sizing: auto; */
-	font-weight: 600;
-	/* font-style: normal; */
+	font-weight: 600; */
 }
 
 h2 {
@@ -1897,6 +1899,13 @@ body.is-preload #bg:before {
 
 #header .content .inner h1 {
 	font-size: 5rem;
+	line-height: 1;
+	letter-spacing: 0.1rem;
+	font-family: cursive;
+	/* font-optical-sizing: auto; */
+	font-weight: 600;
+	/* font-style: normal; */
+
 }
 
 #header .content .inner h2 {
