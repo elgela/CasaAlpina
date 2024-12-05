@@ -200,6 +200,11 @@ textarea {
 	background-size: cover;
 }
 
+.descripcion h1 {
+	text-align: center;
+	color: bisque;
+}
+
 #detalles ul {
 	display: grid;
 	list-style-type: none;
