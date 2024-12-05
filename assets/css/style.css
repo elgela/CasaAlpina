@@ -206,6 +206,7 @@ textarea {
 	grid-template-columns: 1fr 1fr;
 	text-align: center;
 	padding: 30px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #detalles ul li i {
@@ -245,6 +246,7 @@ textarea {
 #cab3 img,
 #cab4 img {
 	width: 100%;
+	height: 600px;
 }
 
 /* #cab1 img:hover,
@@ -253,6 +255,11 @@ textarea {
 #cab4 img:hover {
 	transition: all 0.5s ease;
 } */
+
+p#interior {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	color: rgb(138, 201, 138);
+}
 
 @keyframes slide {
 	0% {margin-left: 0%;}
@@ -592,9 +599,9 @@ i {
 	font-style: italic;
 }
 
-p {
+/* p {
 	margin: 0 0 2rem 0;
-}
+} */
 
 /* h1 {
   font-family: "Parkinsans", sans-serif;
@@ -645,11 +652,10 @@ h1 {
 	font-size: 3rem;
 	line-height: 1;
 	letter-spacing: 0.1rem;
-	font-family: "Parkinsans", sans-serif;
+	font-family: cursive;
 	/* font-optical-sizing: auto; */
 	font-weight: 600;
 	/* font-style: normal; */
-
 }
 
 h2 {
@@ -1930,7 +1936,7 @@ body.is-preload #header .content .inner {
 	#cab3 img,
 	#cab4 img {
 		width: 100%;
-		height: 700px;
+		height: 600px;
 	}
 
 
@@ -1969,13 +1975,13 @@ body.is-preload #header .content .inner {
 		font-size: 4rem;
 	}
 
-	#cab1 img,
+	/* #cab1 img,
 	#cab2 img,
 	#cab3 img,
 	#cab4 img {
 		width: 100%;
-		height: 500px;
-	}
+		height: 600px;
+	} */
 
 
 	.ir-arriba {
@@ -2104,7 +2110,7 @@ body.is-preload #header .content .inner {
 	#cab3 img,
 	#cab4 img {
 		width: 100%;
-		height: 500px;
+		height: 600px;
 	}
 
 
