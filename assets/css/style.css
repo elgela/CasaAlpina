@@ -472,6 +472,10 @@ p#interior {
 	filter: brightness(2.5);
 }
 
+#footer {
+	display: none;
+}
+
 .first_p {
 	border-top: 2.5px solid #ffff;
 	padding-top: 10px;
@@ -660,7 +664,7 @@ html {
 	.btn-reserva,
 	.btn-fotos {
 		zoom:70%;
-	}
+	}	
 
 }
 
@@ -948,6 +952,11 @@ form>.fields>.field.quarter {
 
 	.icons .fa-facebook-f:hover {
 		background-color: rgba(255, 255, 255, 0.075);
+	}
+
+	#footer {
+		display: block;
+		padding: 80px;
 	}
 
 
