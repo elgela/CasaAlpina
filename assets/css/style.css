@@ -235,7 +235,7 @@ textarea {
 	display: flex;
 	padding: 0;
 	width: 400%;
-	animation: slide 25s infinite alternate ease-in-out;
+	animation: slide 25s infinite ease-in-out;
 }
 
 #cab1 li,
@@ -251,7 +251,7 @@ textarea {
 #cab3 img,
 #cab4 img {
 	width: 100%;
-	height: 600px;
+	height: 440px;
 }
 
 .slider img {
@@ -261,7 +261,6 @@ textarea {
 
 .container {
 	margin: auto;
-	/* background-color: #f5f1f1; */
 	padding: 30px;
 }
 
@@ -388,11 +387,17 @@ p#interior {
 	text-align: center;
 }
 
-.titulo {
-	/* display: grid; */
+.titulo h1 {
+	font-family: "Parkinsans", serif;
+	font-size: 3rem;
+	line-height: 1;
+	letter-spacing: 0.1rem;
+	font-optical-sizing: auto;
+	font-weight: 600;
+	font-style: normal;
 	width: 100%;
-	position: fixed;
 	background-color: #2a28288d;
+	margin-top: 10px;
 }
 
 .desayuno {
@@ -489,6 +494,13 @@ p#interior {
 	.whatsapp:hover {
 		transform: scale(1.2);
 	}
+
+	#go-back,
+	.btn-reserva,
+	.btn-fotos {
+		zoom:80%;
+	}
+
 
 }
 
@@ -634,6 +646,16 @@ html {
 
 	.icons .fa-facebook-f:hover {
 		background-color: rgba(255, 255, 255, 0.075);
+	}
+
+	h1 {
+		font-size: 1.8rem;
+	}
+
+	#go-back,
+	.btn-reserva,
+	.btn-fotos {
+		zoom:70%;
 	}
 
 }
@@ -1898,14 +1920,14 @@ body.is-preload #bg:before {
 }
 
 #header .content .inner h1 {
+	font-family: "Parkinsans", serif;
 	font-size: 5rem;
 	line-height: 1;
 	letter-spacing: 0.1rem;
-	font-family: cursive;
-	/* font-optical-sizing: auto; */
+	font-optical-sizing: auto;
 	font-weight: 600;
-	/* font-style: normal; */
-
+	font-style: normal;
+	
 }
 
 #header .content .inner h2 {
@@ -2020,7 +2042,7 @@ body.is-preload #header .content .inner {
 	#cab3 img,
 	#cab4 img {
 		width: 100%;
-		height: 600px;
+		/* height: 440px; */
 	}
 
 
@@ -2059,13 +2081,13 @@ body.is-preload #header .content .inner {
 		font-size: 4rem;
 	}
 
-	/* #cab1 img,
+	#cab1 img,
 	#cab2 img,
 	#cab3 img,
 	#cab4 img {
-		width: 100%;
-		height: 600px;
-	} */
+		/* width: 100%; */
+		height: 400px;
+	}
 
 
 	.ir-arriba {
@@ -2193,8 +2215,8 @@ body.is-preload #header .content .inner {
 	#cab2 img,
 	#cab3 img,
 	#cab4 img {
-		width: 100%;
-		height: 600px;
+		/* width: 100%; */
+		height: 380px;
 	}
 
 
@@ -2312,6 +2334,28 @@ body.is-preload #header .content .inner {
 
 }
 
+
+@media screen and (max-width: 532px) {
+	#go-back,
+	.btn-reserva,
+	.btn-fotos {
+		zoom:90%;
+	}
+
+	.titulo h1 {
+		font-size: 2.7rem;
+	}
+
+	#cab1 img,
+	#cab2 img,
+	#cab3 img,
+	#cab4 img {
+		height: 370px;
+	}
+
+
+}
+
 @media screen and (max-width: 523px) {
 	.drop {
 		top: 46.84rem;
@@ -2331,16 +2375,42 @@ body.is-preload #header .content .inner {
 		top: 48.4rem;
 	}
 
-	#header .content .inner h1 {
+	/* #header .content .inner h1 {
 		font-size: 2.5rem;
+	} */
+
+
+}
+
+@media screen and (max-width: 481px) {
+	#go-back,
+	.btn-reserva,
+	.btn-fotos {
+		zoom:78%;
 	}
 
+	#cab1 img,
+	#cab2 img,
+	#cab3 img,
+	#cab4 img {
+		height: 360px;
+	}
 
 }
 
 @media screen and (max-width: 480px) {
 	.drop {
 		top: 47.3rem;
+	}
+
+	#go-back,
+	.btn-reserva,
+	.btn-fotos {
+		zoom:80%;
+	}
+
+	.titulo h1 {
+		font-size: 2.5rem;
 	}
 
 }
@@ -2364,10 +2434,43 @@ body.is-preload #header .content .inner {
 	}
 
 	h1 {
-		font-size: 2.5rem;
+		font-size: 2.1rem;
 		line-height: 1.4;
 	}
 
+}
+
+@media screen and (max-width: 430px) {
+	#go-back,
+	.btn-reserva,
+	.btn-fotos {
+		zoom:77%;
+	}
+
+}
+
+@media screen and (max-width: 415px) {
+	#go-back,
+	.btn-reserva,
+	.btn-fotos {
+		zoom:72%;
+	}
+
+	#cab1 img,
+	#cab2 img,
+	#cab3 img,
+	#cab4 img {
+		height: 350px;
+	}
+
+}
+
+@media screen and (max-width: 411px) {
+	#go-back,
+	.btn-reserva,
+	.btn-fotos {
+		zoom:73%;
+	}
 
 }
 
@@ -2383,10 +2486,27 @@ body.is-preload #header .content .inner {
 
 }
 
+@media screen and (max-width: 396px) {
+	#go-back,
+	.btn-reserva,
+	.btn-fotos {
+		zoom:69%;
+	}
+
+}
+
 @media screen and (max-width: 384px) {
 	.drop {
 		top: 46.58rem;
 	}
+
+	#cab1 img,
+	#cab2 img,
+	#cab3 img,
+	#cab4 img {
+		height: 330px;
+	}
+
 
 }
 
@@ -2396,12 +2516,25 @@ body.is-preload #header .content .inner {
 		top: 48rem;
 	}
 
+	#go-back,
+	.btn-reserva,
+	.btn-fotos {
+		zoom:67%;
+	}
+
 }
 
 @media screen and (max-width: 366px) {
 	.drop {
 		top: 48rem;
 	}
+
+	#go-back,
+	.btn-reserva,
+	.btn-fotos {
+		zoom:66%;
+	}
+
 
 }
 
@@ -2410,12 +2543,28 @@ body.is-preload #header .content .inner {
 		top: 46.8rem;
 	}
 
+	#cab1 img,
+	#cab2 img,
+	#cab3 img,
+	#cab4 img {
+		height: 330px;
+	}
+
+
 }
 
 @media screen and (max-width: 343px) {
 	.drop {
 		top: 48.1rem;
 	}
+
+	#cab1 img,
+	#cab2 img,
+	#cab3 img,
+	#cab4 img {
+		height: 310px;
+	}
+
 
 }
 
