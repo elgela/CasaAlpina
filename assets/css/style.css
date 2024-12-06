@@ -1944,6 +1944,7 @@ body.is-preload #bg:before {
 }
 
 #header .content .inner h2 {
+	margin-top: 15px;
 	font-size: .6rem;
 }
 
@@ -2410,9 +2411,9 @@ body.is-preload #header .content .inner {
 		top: 48.4rem;
 	}
 
-	/* #header .content .inner h1 {
+	#header .content .inner h1 {
 		font-size: 2.5rem;
-	} */
+	}
 
 
 }
