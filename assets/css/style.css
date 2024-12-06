@@ -380,7 +380,9 @@ p#interior {
 }
 
 #go-back {
-	margin-top: 10px;
+	margin: 10px 2% 0 0;
+	/* margin-top: 10px;
+	margin-right: 5%; */
 }
 
 #back-sink {
@@ -397,7 +399,9 @@ p#interior {
 	font-style: normal;
 	width: 100%;
 	background-color: #2a28288d;
-	margin-top: 10px;
+	/* margin-top: 10px;
+	margin-bottom: 10px; */
+	margin: 10px 0;
 }
 
 .desayuno {
@@ -2001,6 +2005,11 @@ body.is-preload #bg:before {
 	border-left: 0;
 }
 
+/* #go-back {
+	margin: 10px 3% 0 0;
+
+} */
+
 body.is-article-visible #header {
 	-moz-transform: scale(0.95);
 	-webkit-transform: scale(0.95);
@@ -2081,6 +2090,12 @@ body.is-preload #header .content .inner {
 		font-size: 4rem;
 	}
 
+	/* .div-buttons {
+		position: absolute;
+		margin: 70% 10%;
+		align-items: center;
+	} */
+
 	#cab1 img,
 	#cab2 img,
 	#cab3 img,
@@ -2095,6 +2110,11 @@ body.is-preload #header .content .inner {
 		font-size: 40px;
 		cursor: pointer;
 		bottom: -16px;
+	}
+
+	#go-back {
+		margin: 4px 4% 0 0;
+
 	}
 
 	.del_puente {
@@ -2304,9 +2324,15 @@ body.is-preload #header .content .inner {
 		margin-left: -30px;
 	}
 
-
 	.nav-bar {
 		display: grid;
+	}
+
+	.div-buttons {
+		position: absolute;
+		margin: 385px 0 0 70px;
+		align-items: center;
+		
 	}
 
 	.drop {
@@ -2548,8 +2574,14 @@ body.is-preload #header .content .inner {
 	#cab3 img,
 	#cab4 img {
 		height: 330px;
+		/* object-fit: cover; */ /*adapta la imagen al espacio*/
 	}
 
+	.div-buttons {
+		position: absolute;
+		margin: 355px 0 0 50px;
+		align-items: center;
+	}
 
 }
 
