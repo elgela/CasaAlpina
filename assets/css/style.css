@@ -472,9 +472,9 @@ p#interior {
 	filter: brightness(2.5);
 }
 
-#footer {
+/* #footer {
 	display: none;
-}
+} */
 
 .first_p {
 	border-top: 2.5px solid #ffff;
