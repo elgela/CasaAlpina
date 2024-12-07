@@ -787,6 +787,12 @@ h6 {
 	font-size: 0.6rem;
 }
 
+#cabanias h3 {
+	margin-top: 25px;
+	margin-bottom: -20px;
+	font-size: large;
+}
+
 @media screen and (max-width: 736px) {
 
 	h1 {
