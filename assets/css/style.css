@@ -205,18 +205,21 @@ textarea {
 	color: bisque;
 }
 
-#detalles ul {
+#detalles {
+	position: relative;
 	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
 	list-style-type: none;
-	grid-template-columns: 1fr 1fr;
+	/* grid-template-columns: 1fr 1fr; */
 	text-align: center;
 	padding: 30px;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-#detalles ul li i {
-	color: rgb(138, 201, 138);
-	font-size: 8px;
+#detalles div {
+	margin-bottom: 15px;
+	/* color: rgb(138, 201, 138); */
+	/* font-size: 8px; */
 }
 
 #cab1,
