@@ -1673,11 +1673,11 @@ button.small,
 	line-height: 2.0625rem;
 }
 
-input[type="submit"].primary,
-input[type="reset"].primary,
-input[type="button"].primary,
-button.primary,
-.button.primary {
+input[type="submit"].button,
+input[type="reset"].button,
+input[type="button"].button,
+button.button,
+.button.button {
 	background-color: #ffffff;
 	color: #1b1f22 !important;
 	font-weight: 600;
