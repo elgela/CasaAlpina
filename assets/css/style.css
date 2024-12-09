@@ -13,8 +13,15 @@
 	/*para quitar fondo azul click links*/
 }
 
+.ir-arriba p {
+	position: absolute;
+	/* display: flex; */
+	font-size: medium;
+	margin-top: -20px;
+}
+
 .ir-arriba {
-	display: none;
+	/* display: none; */
 	background-repeat: no-repeat;
 	font-size: 40px;
 	color: rgb(247, 245, 245);
@@ -24,6 +31,10 @@
 	left: 20px;
 	z-index: 2;
 	position: static;
+}
+
+.bxs-chevron-up-circle {
+	margin-left: 3px;
 }
 
 html,
@@ -205,22 +216,32 @@ textarea {
 	color: bisque;
 }
 
-#detalles {
+.detalles {
 	position: relative;
 	display: grid;
-	grid-template-columns: repeat(3, minmax(0, 1fr));
+	grid-template-columns: repeat(2, minmax(0, 1fr));
 	list-style-type: none;
-	/* grid-template-columns: 1fr 1fr; */
 	text-align: center;
-	padding: 30px;
+	/* padding: 20px; */
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 
-#detalles div {
-	margin-bottom: 15px;
-	/* color: rgb(138, 201, 138); */
-	/* font-size: 8px; */
+.label-detalles {
+	position: relative;
+	padding-bottom: 30px;
+	margin: 0;
+	text-align: center;
+	font-size: xx-large;
+	font-family: serif;
+	color: wheat;
 }
+
+/* .detalles div {
+	margin-bottom: 15px;
+	color: rgb(138, 201, 138);
+	font-size: 8px;
+} */
 
 #cab1,
 #cab2,
@@ -386,6 +407,10 @@ p#interior {
 	margin: 10px 2% 0 0;
 	/* margin-top: 10px;
 	margin-right: 5%; */
+}
+
+.volver {
+	margin-top: 10px;
 }
 
 #back-sink {
@@ -2379,7 +2404,7 @@ body.is-preload #header .content .inner {
 
 	.div-buttons {
 		position: absolute;
-		margin: 385px 0 0 70px;
+		margin: 385px 0 0 30%;
 		align-items: center;
 	}
 
@@ -2399,7 +2424,20 @@ body.is-preload #header .content .inner {
 		z-index: 1;
 	}
 
+	.detalles {
+		/* margin-top: 100px; */
+		display: grid;
+		/* grid-template-columns: repeat(2, minmax(0, 1fr)); */
+	}
 
+	.label-detalles {
+		/* position: relative; */
+		/* padding-bottom: 30px; */
+		margin-top: 100px;
+		text-align: center;
+		font-size: x-large;
+	}
+	
 }
 
 @media screen and (max-width: 571px) {
@@ -2628,12 +2666,12 @@ body.is-preload #header .content .inner {
 	#cab3 img,
 	#cab4 img {
 		height: 330px;
-		/* object-fit: cover; */ /*adapta la imagen al espacio*/
+		/* object-fit: cover; */ /*adapta la imagen al espacio */
 	}
 
 	.div-buttons {
 		position: absolute;
-		margin: 355px 0 0 50px;
+		margin: 355px 0 0 30%;
 		align-items: center;
 	}
 
