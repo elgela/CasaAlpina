@@ -995,7 +995,7 @@ form>.fields>.field.quarter {
 
 	#footer {
 		display: block;
-		padding: 80px;
+		/* padding: 80px; */
 	}
 
 
@@ -2303,8 +2303,8 @@ body.is-preload #header .content .inner {
 
 	.nav-list {
 		display: grid;
-		justify-content: space-between;
-		align-items: center;
+		/* justify-content: space-between; */
+		/* align-items: center; */
 	}
 
 	.navmenu label {
@@ -2381,7 +2381,6 @@ body.is-preload #header .content .inner {
 		position: absolute;
 		margin: 385px 0 0 70px;
 		align-items: center;
-		
 	}
 
 	.drop {
@@ -2389,9 +2388,9 @@ body.is-preload #header .content .inner {
 		background-color: #2a2828;
 		color: aliceblue;
 		position: absolute;
-		height: 30%;
+		/* height: 30%; */
 		width: 75%;
-		top: 45.4rem;
+		top: 43.4rem;
 		left: 12.5%;
 		padding: 0;
 		display: flex;
@@ -2400,11 +2399,12 @@ body.is-preload #header .content .inner {
 		z-index: 1;
 	}
 
+
 }
 
 @media screen and (max-width: 571px) {
 	.drop {
-		top: 46.9rem;
+		top: 44.9rem;
 	}
 
 }
@@ -2433,21 +2433,21 @@ body.is-preload #header .content .inner {
 
 @media screen and (max-width: 523px) {
 	.drop {
-		top: 46.84rem;
+		top: 44.84rem;
 	}
 
 }
 
 @media screen and (max-width: 514px) {
 	.drop {
-		top: 46.9em;
+		top: 43.9em;
 	}
 
 }
 
 @media screen and (max-width: 493px) {
 	.drop {
-		top: 48.4rem;
+		top: 45.4rem;
 	}
 
 	#header .content .inner h1 {
@@ -2480,7 +2480,7 @@ body.is-preload #header .content .inner {
 
 @media screen and (max-width: 480px) {
 	.drop {
-		top: 47.3rem;
+		top: 44.3rem;
 	}
 
 	#go-back,
@@ -2497,14 +2497,14 @@ body.is-preload #header .content .inner {
 
 @media screen and (max-width: 472px) {
 	.drop {
-		top: 48.2rem;
+		top: 45.2rem;
 	}
 
 }
 
 @media screen and (max-width: 439px) {
 	.drop {
-		top: 47.2rem;
+		top: 44.2rem;
 	}
 
 	#header .logo {
@@ -2556,7 +2556,7 @@ body.is-preload #header .content .inner {
 
 @media screen and (max-width: 400px) {
 	.drop {
-		top: 46.5rem;
+		top: 44.5rem;
 	}
 
 	h1 {
@@ -2577,7 +2577,7 @@ body.is-preload #header .content .inner {
 
 @media screen and (max-width: 384px) {
 	.drop {
-		top: 46.58rem;
+		top: 44.58rem;
 	}
 
 	#cab1 img,
@@ -2593,7 +2593,7 @@ body.is-preload #header .content .inner {
 
 @media screen and (max-width: 375px) {
 	.drop {
-		top: 48rem;
+		top: 46rem;
 	}
 
 	#go-back,
@@ -2606,7 +2606,7 @@ body.is-preload #header .content .inner {
 
 @media screen and (max-width: 366px) {
 	.drop {
-		top: 48rem;
+		top: 45.8rem;
 	}
 
 	#go-back,
@@ -2641,7 +2641,7 @@ body.is-preload #header .content .inner {
 
 @media screen and (max-width: 343px) {
 	.drop {
-		top: 48.1rem;
+		top: 46.1rem;
 	}
 
 	#cab1 img,
