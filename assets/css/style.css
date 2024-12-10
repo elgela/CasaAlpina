@@ -288,7 +288,8 @@ textarea {
 	padding: 30px;
 }
 
-ul, li {
+ul,
+li {
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -360,17 +361,37 @@ p#interior {
 }
 
 @keyframes slide {
-	0% {margin-left: 0%;}
-	20% {margin-left: 0%;}
+	0% {
+		margin-left: 0%;
+	}
 
-	25% {margin-left: -100%;}
-	45% {margin-left: -100%;}
+	20% {
+		margin-left: 0%;
+	}
 
-	50% {margin-left: -200%;}
-	70% {margin-left: -200%;}
+	25% {
+		margin-left: -100%;
+	}
 
-	75% {margin-left: -300%;}
-	95% {margin-left: -300%;}
+	45% {
+		margin-left: -100%;
+	}
+
+	50% {
+		margin-left: -200%;
+	}
+
+	70% {
+		margin-left: -200%;
+	}
+
+	75% {
+		margin-left: -300%;
+	}
+
+	95% {
+		margin-left: -300%;
+	}
 }
 
 .del_pinar img,
@@ -483,6 +504,10 @@ p#interior {
 	transform: scale(1.2);
 }
 
+.whatsapp p,
+.mail p {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
 /* .bx-envelope {
 	font-size: 300%;
@@ -563,7 +588,7 @@ p#interior {
 	#go-back,
 	.btn-reserva,
 	.btn-fotos {
-		zoom:80%;
+		zoom: 80%;
 	}
 
 
@@ -721,8 +746,8 @@ html {
 	#go-back,
 	.btn-reserva,
 	.btn-fotos {
-		zoom:70%;
-	}	
+		zoom: 70%;
+	}
 
 }
 
@@ -1878,7 +1903,7 @@ body.is-preload #bg:before {
 		display: none;
 	}
 
-	
+
 
 }
 
@@ -1991,7 +2016,7 @@ body.is-preload #bg:before {
 	-webkit-transition-delay: 0.25s;
 	-ms-transition-delay: 0.25s;
 	transition-delay: 0.55s;
-	padding: 3rem 2rem;
+	padding: 3rem 2rem; /*mas separado y tarda mas en abrir*/
 	max-height: 40rem;
 	overflow: hidden;
 }
@@ -2004,7 +2029,7 @@ body.is-preload #bg:before {
 	font-optical-sizing: auto;
 	font-weight: 600;
 	font-style: normal;
-	
+
 }
 
 #header .content .inner h2 {
@@ -2033,6 +2058,19 @@ body.is-preload #bg:before {
 	padding-left: 0;
 	border: solid 1px #ffffff;
 	border-radius: 4px;
+
+	-moz-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
+	-webkit-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
+	-ms-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
+	transition: max-height 8.75s ease, padding 8.75s ease, opacity 3.325s ease-in-out;
+	-moz-transition-delay: 0.25s;
+	-webkit-transition-delay: 0.25s;
+	-ms-transition-delay: 0.25s;
+	transition-delay: 0.55s;
+	/* padding: 3rem 2rem; */
+	max-height: 40rem;
+	overflow: hidden;
+
 }
 
 #header nav ul li {
@@ -2437,7 +2475,7 @@ body.is-preload #header .content .inner {
 		text-align: center;
 		font-size: x-large;
 	}
-	
+
 }
 
 @media screen and (max-width: 571px) {
@@ -2449,10 +2487,11 @@ body.is-preload #header .content .inner {
 
 
 @media screen and (max-width: 532px) {
+
 	#go-back,
 	.btn-reserva,
 	.btn-fotos {
-		zoom:90%;
+		zoom: 90%;
 	}
 
 	.titulo h1 {
@@ -2501,10 +2540,11 @@ body.is-preload #header .content .inner {
 }
 
 @media screen and (max-width: 481px) {
+
 	#go-back,
 	.btn-reserva,
 	.btn-fotos {
-		zoom:78%;
+		zoom: 78%;
 	}
 
 	#cab1 img,
@@ -2524,11 +2564,16 @@ body.is-preload #header .content .inner {
 	#go-back,
 	.btn-reserva,
 	.btn-fotos {
-		zoom:80%;
+		zoom: 80%;
 	}
 
 	.titulo h1 {
 		font-size: 2.5rem;
+	}
+
+	.whatsapp p,
+	.mail p {
+		font-size: x-small;
 	}
 
 }
@@ -2559,19 +2604,21 @@ body.is-preload #header .content .inner {
 }
 
 @media screen and (max-width: 430px) {
+
 	#go-back,
 	.btn-reserva,
 	.btn-fotos {
-		zoom:77%;
+		zoom: 77%;
 	}
 
 }
 
 @media screen and (max-width: 415px) {
+
 	#go-back,
 	.btn-reserva,
 	.btn-fotos {
-		zoom:72%;
+		zoom: 72%;
 	}
 
 	#cab1 img,
@@ -2584,10 +2631,11 @@ body.is-preload #header .content .inner {
 }
 
 @media screen and (max-width: 411px) {
+
 	#go-back,
 	.btn-reserva,
 	.btn-fotos {
-		zoom:73%;
+		zoom: 73%;
 	}
 
 }
@@ -2605,10 +2653,11 @@ body.is-preload #header .content .inner {
 }
 
 @media screen and (max-width: 396px) {
+
 	#go-back,
 	.btn-reserva,
 	.btn-fotos {
-		zoom:69%;
+		zoom: 69%;
 	}
 
 }
@@ -2637,7 +2686,7 @@ body.is-preload #header .content .inner {
 	#go-back,
 	.btn-reserva,
 	.btn-fotos {
-		zoom:67%;
+		zoom: 67%;
 	}
 
 }
@@ -2650,7 +2699,7 @@ body.is-preload #header .content .inner {
 	#go-back,
 	.btn-reserva,
 	.btn-fotos {
-		zoom:66%;
+		zoom: 66%;
 	}
 
 
@@ -2666,7 +2715,8 @@ body.is-preload #header .content .inner {
 	#cab3 img,
 	#cab4 img {
 		height: 330px;
-		/* object-fit: cover; */ /*adapta la imagen al espacio */
+		/* object-fit: cover; */
+		/*adapta la imagen al espacio */
 	}
 
 	.div-buttons {
