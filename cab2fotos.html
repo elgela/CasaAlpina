@@ -13,49 +13,73 @@
 <body>
 
     <div class="container">
-        
-        <ul class="slider">
-            <li id="slide1">
-                <img src="images/Cabañas/cab2/cab2_comedor.heic" alt="">
-                <a href="cabania2.html"><button id="go-back">Volver</button></a>
-            </li>
-            <li id="slide2">
-                <img src="images/Cabañas/cab2/cab2_cocina.heic" alt="">
-            </li>
-            <li id="slide3">
-                <img src="images/Cabañas/cab2/cab2_escalera.heic" alt="">
-            </li>
-            <li id="slide4">
-                <img src="images/Cabañas/cab2/cab2_arriba.heic" alt="">
-            </li>
+        <div class="content-all">
+            <div class="content-img" id="img1">
+                <a href="#img4"><i class='bx bxs-chevron-left'></i></a>
+                <img src="images/Cabañas/cab2/cab2_comedor.heic">
+                <a href="#img2"><i class='bx bxs-chevron-right'></i></a>
+            </div>
+            <div class="content-img" id="img2">
+                <a href="#img1"><i class='bx bxs-chevron-left'></i></a>
+                <img src="images/Cabañas/cab2/cab2_cocina.heic">
+                <a href="#img3"><i class='bx bxs-chevron-right'></i></a>
+            </div>
+            <div class="content-img" id="img3">
+                <a href="#img2"><i class='bx bxs-chevron-left'></i></a>
+                <img src="images/Cabañas/cab2/cab2_escalera.heic">
+                <a href="#img4"><i class='bx bxs-chevron-right'></i></a>
+            </div>
+            <div class="content-img" id="img4">
+                <a href="#img3"><i class='bx bxs-chevron-left'></i></a>
+                <img src="images/Cabañas/cab2/cab2_arriba.heic">
+                <a href="#img1"><i class='bx bxs-chevron-right'></i></a>
+            </div>
+        </div>
+        <a href="cabania2.html"><button id="go-back">Volver</button></a>
 
-        </ul>
-        <ul class="menuImg">
-            <li>
-                <p>1</p>
-                <a href="#slide1"></a>
-            </li>
-            <li>
-                <p>2</p>
-                <a href="#slide2"></a>
-            </li>
-            <li>
-                <p>3</p>
-                <a href="#slide3"></a>
-            </li>
-            <li>
-                <p>4</p>
-                <a href="#slide4"></a>
-            </li>
-        </ul>
     </div>
     <footer id="footer">
         <p class="copyright">2024 &copy; Casa Alpina</p>
         <p class="copyright">Icalma 2904 - Paraje El Centinela
             Tandil - Buenos Aires
             Argentina</p>
-        <p class="copyright">Desarrollo: <a href="https://github.com/elgela" target="_blank">Marcelo Gelato</a>.</p>
-    </footer>
-    <script src="js/main.js"></script>
+            <p class="copyright">Desarrollo: <a href="https://github.com/elgela" target="_blank">Marcelo Gelato</a>.</p>
+        </footer>
+        <script src="js/main.js"></script>
+        
+    </body>
+    
+    <!-- <ul class="slider">
+        <li id="slide1">
+            <img src="images/Cabañas/cab2/cab2_comedor.heic" alt="">
+            <a href="cabania2.html"><button id="go-back">Volver</button></a>
+        </li>
+        <li id="slide2">
+            <img src="images/Cabañas/cab2/cab2_cocina.heic" alt="">
+        </li>
+        <li id="slide3">
+            <img src="images/Cabañas/cab2/cab2_escalera.heic" alt="">
+        </li>
+        <li id="slide4">
+            <img src="images/Cabañas/cab2/cab2_arriba.heic" alt="">
+        </li>
 
-</body>
+    </ul>
+    <ul class="menuImg">
+        <li>
+            <p>1</p>
+            <a href="#slide1"></a>
+        </li>
+        <li>
+            <p>2</p>
+            <a href="#slide2"></a>
+        </li>
+        <li>
+            <p>3</p>
+            <a href="#slide3"></a>
+        </li>
+        <li>
+            <p>4</p>
+            <a href="#slide4"></a>
+        </li>
+    </ul> -->
