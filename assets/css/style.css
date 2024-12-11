@@ -2041,7 +2041,7 @@ body.is-preload #bg:before {
 #header .logo {
 	display: flex;
 	width: 28rem;
-	height: 18rem;
+	height: 28rem;
 	line-height: 5.5rem;
 	/* border: solid 1px #ffffff; */
 	/* border-radius: 100%; */
@@ -2239,7 +2239,7 @@ body.is-preload #header .content .inner {
 
 	#header .logo {
 		width: 25rem;
-		height: 15rem;
+		height: 25rem;
 		/* line-height: 4.75rem; */
 	}
 
@@ -2355,7 +2355,7 @@ body.is-preload #header .content .inner {
 	#header .logo {
 		margin-bottom: 20px;
 		width: 23rem;
-		height: 13rem;
+		height: 23rem;
 	}
 
 	.ir-arriba {
@@ -2669,8 +2669,8 @@ body.is-preload #header .content .inner {
 
 	#header .logo {
 		margin-bottom: 20px;
-		width: 19rem;
-		height: 9rem;
+		width: 15rem;
+		height: 15rem;
 	}
 
 	h1 {
