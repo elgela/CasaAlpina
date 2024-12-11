@@ -2510,7 +2510,7 @@ body.is-preload #header .content .inner {
 		position: absolute;
 		/* height: 30%; */
 		width: 75%;
-		top: 43.4rem;
+		top: 37.8rem;
 		left: 12.5%;
 		padding: 0;
 		display: flex;
@@ -2535,9 +2535,16 @@ body.is-preload #header .content .inner {
 
 }
 
-@media screen and (max-width: 571px) {
+/* @media screen and (max-width: 571px) {
 	.drop {
-		top: 44.9rem;
+		top: 37.7rem;
+	}
+
+} */
+
+@media screen and (max-width: 541px) {
+	.drop {
+		top: 39.5rem;
 	}
 
 }
@@ -2567,21 +2574,21 @@ body.is-preload #header .content .inner {
 
 @media screen and (max-width: 523px) {
 	.drop {
-		top: 44.84rem;
+		top: 39.8rem;
 	}
 
 }
 
 @media screen and (max-width: 514px) {
 	.drop {
-		top: 43.9em;
+		top: 39em;
 	}
 
 }
 
 @media screen and (max-width: 493px) {
 	.drop {
-		top: 45.4rem;
+		top: 38.7rem;
 	}
 
 	#header .content .inner h1 {
@@ -2615,7 +2622,7 @@ body.is-preload #header .content .inner {
 
 @media screen and (max-width: 480px) {
 	.drop {
-		top: 44.3rem;
+		top: 37.3rem;
 	}
 
 	#go-back,
@@ -2637,14 +2644,27 @@ body.is-preload #header .content .inner {
 
 @media screen and (max-width: 472px) {
 	.drop {
-		top: 45.2rem;
+		top: 37.2rem;
 	}
 
 }
 
+@media screen and (max-width: 465px) {
+	.drop {
+		top: 38.8rem;
+	}
+
+}
+
+@media screen and (max-width: 442px) {
+	.drop {
+		top: 39.5rem;
+	}
+}
+
 @media screen and (max-width: 439px) {
 	.drop {
-		top: 44.2rem;
+		top: 35.8rem;
 	}
 
 	#header .logo {
@@ -2697,9 +2717,18 @@ body.is-preload #header .content .inner {
 
 }
 
+@media screen and (max-width: 409px) {
+	.drop {
+		top: 37rem;
+	}
+
+
+}
+
+
 @media screen and (max-width: 400px) {
 	.drop {
-		top: 44.5rem;
+		top: 37rem;
 	}
 
 	h1 {
@@ -2721,7 +2750,7 @@ body.is-preload #header .content .inner {
 
 @media screen and (max-width: 384px) {
 	.drop {
-		top: 44.58rem;
+		top: 37rem;
 	}
 
 	#cab1 img,
@@ -2737,7 +2766,7 @@ body.is-preload #header .content .inner {
 
 @media screen and (max-width: 375px) {
 	.drop {
-		top: 46rem;
+		top: 37.2rem;
 	}
 
 	#go-back,
@@ -2750,7 +2779,7 @@ body.is-preload #header .content .inner {
 
 @media screen and (max-width: 366px) {
 	.drop {
-		top: 45.8rem;
+		top: 37.5rem;
 	}
 
 	#go-back,
@@ -2764,7 +2793,7 @@ body.is-preload #header .content .inner {
 
 @media screen and (max-width: 360px) {
 	.drop {
-		top: 46.8rem;
+		top: 37.8rem;
 	}
 
 	#cab1 img,
@@ -2786,7 +2815,7 @@ body.is-preload #header .content .inner {
 
 @media screen and (max-width: 343px) {
 	.drop {
-		top: 46.1rem;
+		top: 37.3rem;
 	}
 
 	#cab1 img,
