@@ -14,6 +14,7 @@
 }
 
 .ir-arriba p {
+	font-family: fantasy;
 	position: absolute;
 	/* display: flex; */
 	font-size: medium;
@@ -476,8 +477,8 @@ p#interior {
 	border-radius: 7%;
 }
 
-#go-back {
-	margin: 10px 2% 0 0;
+.container #go-back {
+	margin: 30px 2% 0 0;
 	/* margin-top: 10px;
 	margin-right: 5%; */
 }
@@ -2170,11 +2171,6 @@ body.is-preload #bg:before {
 	border-left: 0;
 }
 
-/* #go-back {
-	margin: 10px 3% 0 0;
-
-} */
-
 body.is-article-visible #header {
 	-moz-transform: scale(0.95);
 	-webkit-transform: scale(0.95);
@@ -2277,8 +2273,8 @@ body.is-preload #header .content .inner {
 		bottom: -16px;
 	}
 
-	#go-back {
-		margin: 4px 4% 0 0;
+	.container #go-back {
+		margin: 30px 4% 0 0;
 
 	}
 
