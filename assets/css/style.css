@@ -322,18 +322,26 @@ textarea {
 	height: 100%;
 }
 
-.bxs-chevron-left {
+.bxs-chevron-right-circle {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	font-size: 35px;
+
+}
+
+/* .bxs-chevron-left {
 	position: absolute;
 	top: 50%;
 	left: 0;
 	font-size: 40px;
-}
+} */
 
-.bxs-chevron-right {
+.bxs-chevron-left-circle {
 	position: absolute;
 	top: 50%;
-	right: 0;
-	font-size: 40px;
+	left: 0;
+	font-size: 35px;
 }
 
 .container {
