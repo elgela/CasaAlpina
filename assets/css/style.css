@@ -279,6 +279,14 @@ textarea {
 	height: 440px;
 }
 
+#chrisTree_cab img {
+	position: relative;
+	left: 5px;
+	height: 35px;
+	width: 35px;
+	margin-top: auto;
+}
+
 /* .slider img {
 	width: 100%;
 	height: 400px;
@@ -1003,7 +1011,7 @@ h6 {
 }
 
 #guirnalda-cabanias  {
-	position: absolute;
+	position: relative;
 	display: grid;
 	top: -80px;
 	width: 95%;
