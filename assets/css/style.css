@@ -2252,6 +2252,11 @@ body.is-preload #bg:before {
 	border-left: 0;
 }
 
+#chrisTree {
+	display: flex;
+	height: 80px;
+}
+
 body.is-article-visible #header {
 	-moz-transform: scale(0.95);
 	-webkit-transform: scale(0.95);
@@ -2372,12 +2377,12 @@ body.is-preload #header .content .inner {
 
 	.navidad {
 		zoom: 80%;
-		left: 15%;
+		left: 5%;
 	}
 	
 	.new-year {
 		zoom: 100%;
-		right: 10%;
+		margin-right: -20px;
 	}
 
 }
@@ -2625,12 +2630,12 @@ body.is-preload #header .content .inner {
 
 	.navidad {
 		zoom: 65%;
-		left: 18%;
+		margin-left: -200px;
 	}
 	
 	.new-year {
 		zoom: 80%;
-		right: 13%;
+		margin-right: -180px;
 	}
 
 
