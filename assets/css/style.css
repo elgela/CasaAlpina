@@ -788,6 +788,8 @@ html {
 		color: #ffffff;
 	}
 
+
+
 }
 
 @media screen and (max-width: 736px) {
@@ -998,6 +1000,14 @@ h6 {
 	margin-top: 25px;
 	margin-bottom: -20px;
 	font-size: large;
+}
+
+#guirnalda-cabanias  {
+	position: absolute;
+	display: grid;
+	top: -80px;
+	width: 95%;
+	left: 0;
 }
 
 @media screen and (max-width: 736px) {
@@ -2027,7 +2037,10 @@ body.is-preload #bg:before {
 		display: none;
 	}
 
-
+	#guirnalda-cabanias  {
+		top: -70px;
+	}
+	
 
 }
 
@@ -2308,6 +2321,17 @@ body.is-preload #header .content .inner {
 	.new-year {
 		zoom: 120%;
 	}
+
+	#guirnalda-cabanias  {
+		top: -60px;
+	}
+	
+}
+
+@media screen and (max-width: 850px) {
+	#guirnalda-cabanias  {
+		top: -50px;
+	}
 	
 }
 
@@ -2384,6 +2408,11 @@ body.is-preload #header .content .inner {
 		zoom: 100%;
 		margin-right: -20px;
 	}
+
+	#guirnalda-cabanias  {
+		top: -50px;
+	}
+	
 
 }
 
@@ -2638,6 +2667,10 @@ body.is-preload #header .content .inner {
 		margin-right: -180px;
 	}
 
+	#guirnalda-cabanias  {
+		top: -40px;
+	}
+	
 
 }
 
@@ -2706,6 +2739,10 @@ body.is-preload #header .content .inner {
 		font-size: 200%;
 	}
 
+	#guirnalda-cabanias  {
+		top: -30px;
+	}
+	
 
 }
 
@@ -2835,6 +2872,11 @@ body.is-preload #header .content .inner {
 	#cab4 img {
 		height: 350px;
 	}
+
+	#guirnalda-cabanias  {
+		top: -20px;
+	}
+	
 
 }
 
