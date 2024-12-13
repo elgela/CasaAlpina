@@ -493,6 +493,21 @@ p#interior {
 	border-radius: 7%;
 }
 
+#logoExt {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: auto;
+}
+
+#logoExt img {
+	/* position: relative; */
+	margin-top: 25px;
+	margin-left: 1.5rem;
+	width: 15%;
+	text-align: center;
+}
+
 .container #go-back {
 	margin: 30px 2% 0 0;
 	/* margin-top: 10px;
