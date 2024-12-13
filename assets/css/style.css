@@ -283,7 +283,7 @@ textarea {
 	position: relative;
 	left: 5px;
 	height: 35px;
-	width: 35px;
+	width: 40px;
 	margin-top: auto;
 }
 
@@ -2144,7 +2144,7 @@ body.is-preload #bg:before {
 	font-size: 2rem;
 }
 
-#header #chrisTree {
+#chrisTree {
 	height: 200px;
 }
 
