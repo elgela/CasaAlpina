@@ -293,8 +293,8 @@ textarea {
 } */
 
 .content-all {
-	width: 100%;
-	height: 410px;
+	width: 800px;
+	height: 510px;
 	position: relative;
 	display: flex;
 	margin: auto;
@@ -1537,7 +1537,7 @@ input[type="radio"]+label:before {
 		width: 100%;
 		height: 400px;
 	}
-	
+
 }
 
 @media screen and (max-width: 600px) {
@@ -2360,11 +2360,23 @@ body.is-preload #header .content .inner {
 		top: -60px;
 	}
 
+	.content-all {
+		width: 700px;
+		height: 470px;
+
+
+	}
+
 }
 
 @media screen and (max-width: 850px) {
 	#guirnalda-cabanias {
 		top: -50px;
+	}
+
+	.content-all {
+		width: 650px;
+		height: 420px;
 	}
 
 }
@@ -2447,8 +2459,13 @@ body.is-preload #header .content .inner {
 		top: -50px;
 	}
 
+	.content-all {
+		width: 520px;
+		height: 410px;
+	}
 
 }
+
 
 @media screen and (max-width: 600px) {
 
@@ -2705,6 +2722,10 @@ body.is-preload #header .content .inner {
 		top: -40px;
 	}
 
+	.content-all {
+		width: 450px;
+		height: 310px;
+	}
 
 }
 
@@ -2740,6 +2761,11 @@ body.is-preload #header .content .inner {
 	#cab3 img,
 	#cab4 img {
 		height: 370px;
+	}
+
+	.content-all {
+		width: 420px;
+		height: 300px;
 	}
 
 
@@ -2827,6 +2853,10 @@ body.is-preload #header .content .inner {
 		right: 10%;
 	}
 
+	.content-all {
+		width: 380px;
+		height: 350px;
+	}
 
 }
 
@@ -2841,6 +2871,12 @@ body.is-preload #header .content .inner {
 	.drop {
 		top: 50.5rem;
 	}
+
+	.content-all {
+		width: 350px;
+		height: 310px;
+	}
+
 
 }
 
@@ -2889,6 +2925,12 @@ body.is-preload #header .content .inner {
 	.btn-fotos {
 		zoom: 77%;
 	}
+
+	.content-all {
+		width: 320px;
+		height: 300px;
+	}
+
 
 }
 
@@ -2982,6 +3024,12 @@ body.is-preload #header .content .inner {
 		zoom: 67%;
 	}
 
+	.content-all {
+		width: 290px;
+		height: 290px;
+	}
+
+
 }
 
 @media screen and (max-width: 366px) {
@@ -3018,6 +3066,11 @@ body.is-preload #header .content .inner {
 		align-items: center;
 	}
 
+	.content-all {
+		width: 280px;
+		height: 280px;
+	}
+
 }
 
 @media screen and (max-width: 343px) {
@@ -3031,6 +3084,12 @@ body.is-preload #header .content .inner {
 	#cab4 img {
 		height: 310px;
 	}
+
+	.content-all {
+		width: 260px;
+		height: 250px;
+	}
+
 
 
 }
