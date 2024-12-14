@@ -971,7 +971,6 @@ h6 a {
 }
 
 h1.major,
-h2.major,
 h3.major,
 h4.major,
 h5.major,
@@ -984,6 +983,17 @@ h6.major {
 	padding-bottom: 0.5rem;
 	margin: 25px 0 2rem 0;
 }
+
+h2.major {
+	border-bottom: solid 1px #ffffff;
+	width: -moz-max-content;
+	width: -webkit-max-content;
+	width: -ms-max-content;
+	width: max-content;
+	padding-bottom: 0.5rem;
+	margin: 50px 0 2rem 0;
+}
+
 
 h1 {
 	font-size: 3rem;
@@ -1025,6 +1035,16 @@ h6 {
 	font-size: large;
 }
 
+#guirCab {
+	position: absolute;
+	margin-left: -40px;
+	margin-top: auto;
+	top: 30px;
+	width: 100%;
+	height: 150px;
+	filter: brightness(80%);
+}
+
 #guirnalda-cabanias {
 	position: relative;
 	display: grid;
@@ -1044,6 +1064,11 @@ h6 {
 		font-size: 1.25em;
 		line-height: 1.5;
 	}
+
+	h2.major {
+		margin: 75px 0 2rem 0;
+	}
+	
 
 }
 
@@ -1205,7 +1230,10 @@ form>.fields>.field.quarter {
 		/* padding: 80px; */
 	}
 
-
+	h2.major {
+		margin: 85px 0 2rem 0;
+	}
+	
 }
 
 label {
@@ -2098,6 +2126,11 @@ body.is-preload #bg:before {
 		padding: 2rem 1rem;
 	}
 
+	#guirCab {
+		margin-left: -30px;
+	}
+	
+
 }
 
 @media screen and (max-width: 480px) {
@@ -2105,6 +2138,11 @@ body.is-preload #bg:before {
 	#wrapper {
 		padding: 1rem;
 	}
+
+	#guirCab {
+		margin-left: -22px;
+	}
+
 }
 
 /* Header */
