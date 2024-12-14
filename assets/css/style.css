@@ -292,6 +292,11 @@ textarea {
 	height: 400px;
 } */
 
+.container {
+	/* margin: auto; */
+	/* padding: 30px; */
+}
+
 .content-all {
 	width: 100%;
 	height: 100%;
@@ -352,10 +357,6 @@ textarea {
 	font-size: 35px;
 }
 
-.container {
-	margin: auto;
-	padding: 30px;
-}
 
 ul,
 li {
