@@ -140,8 +140,8 @@ section {
 	display: block;
 }
 
-footer {
-	display: none;
+#footer {
+	display: block;
 }
 
 body {
@@ -551,7 +551,8 @@ p#interior {
 
 .redes {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 5fr 1fr;
+	width: 50%;
 }
 
 .bxl-whatsapp {
@@ -1572,7 +1573,7 @@ ol li {
 
 ul {
 	list-style: disc;
-	margin: 0 0 2rem 0;
+	margin: 2rem 0 2rem 0;
 	padding-left: 1em;
 }
 
@@ -2050,6 +2051,11 @@ body.is-preload #bg:before {
 	content: '';
 	display: block;
 }
+
+#informacion {
+	display: none;
+}
+
 
 @media screen and (max-width: 1680px) {
 
@@ -2663,7 +2669,7 @@ body.is-preload #header .content .inner {
 
 	.div-buttons {
 		position: absolute;
-		margin: 385px 0 0 30%;
+		margin: 425px 0 0 30%;
 		align-items: center;
 	}
 
@@ -2674,7 +2680,7 @@ body.is-preload #header .content .inner {
 		position: absolute;
 		/* height: 30%; */
 		width: 75%;
-		top: 52rem;
+		/* top: 52rem; */
 		left: 12.5%;
 		padding: 0;
 		display: flex;
@@ -2729,12 +2735,11 @@ body.is-preload #header .content .inner {
 
 } */
 
-@media screen and (max-width: 541px) {
+/* @media screen and (max-width: 541px) {
 	.drop {
 		top: 53rem;
 	}
-
-}
+} */
 
 
 @media screen and (max-width: 532px) {
@@ -2767,24 +2772,22 @@ body.is-preload #header .content .inner {
 
 }
 
-@media screen and (max-width: 523px) {
+/* @media screen and (max-width: 523px) {
 	.drop {
 		top: 52.5rem;
 	}
+} */
 
-}
-
-@media screen and (max-width: 514px) {
+/* @media screen and (max-width: 514px) {
 	.drop {
 		top: 52em;
 	}
-
-}
+} */
 
 @media screen and (max-width: 493px) {
-	.drop {
+	/* .drop {
 		top: 51.2rem;
-	}
+	} */
 
 	#header .content .inner h1 {
 		font-size: 2.5rem;
@@ -2820,9 +2823,9 @@ body.is-preload #header .content .inner {
 }
 
 @media screen and (max-width: 480px) {
-	.drop {
+	/* .drop {
 		top: 50rem;
-	}
+	} */
 
 	#go-back,
 	.btn-reserva,
@@ -2860,36 +2863,33 @@ body.is-preload #header .content .inner {
 
 }
 
-@media screen and (max-width: 472px) {
+/* @media screen and (max-width: 472px) {
 	.drop {
 		top: 50rem;
 	}
+} */
 
-}
-
-@media screen and (max-width: 465px) {
+/* @media screen and (max-width: 465px) {
 	.drop {
 		top: 50.5rem;
 	}
 
-	/* .content-all {
+	.content-all {
 		width: 350px;
 		height: 310px;
-	} */
+	}
+} */
 
-
-}
-
-@media screen and (max-width: 442px) {
+/* @media screen and (max-width: 442px) {
 	.drop {
 		top: 51.5rem;
 	}
-}
+} */
 
 @media screen and (max-width: 439px) {
-	.drop {
+	/* .drop {
 		top: 43rem;
-	}
+	} */
 
 	#header .logo {
 		margin-bottom: 20px;
@@ -2919,7 +2919,12 @@ body.is-preload #header .content .inner {
 		height: 70%;
 	}
 
-	footer {
+	#footer {
+		display: block;
+		padding-top: 3.5rem;
+	}
+
+	#informacion {
 		display: block;
 		padding-top: 3.5rem;
 	}
@@ -2975,19 +2980,17 @@ body.is-preload #header .content .inner {
 
 }
 
-@media screen and (max-width: 409px) {
+/* @media screen and (max-width: 409px) {
 	.drop {
 		top: 44.5rem;
 	}
-
-
-}
+} */
 
 
 @media screen and (max-width: 400px) {
-	.drop {
+	/* .drop {
 		top: 44.5rem;
-	}
+	} */
 
 	h1 {
 		font-size: 2rem;
@@ -3007,9 +3010,9 @@ body.is-preload #header .content .inner {
 }
 
 @media screen and (max-width: 384px) {
-	.drop {
+	/* .drop {
 		top: 44rem;
-	}
+	} */
 
 	#cab1 img,
 	#cab2 img,
@@ -3017,15 +3020,13 @@ body.is-preload #header .content .inner {
 	#cab4 img {
 		height: 330px;
 	}
-
-
 }
 
 
 @media screen and (max-width: 375px) {
-	.drop {
+	/* .drop {
 		top: 44.2rem;
-	}
+	} */
 
 	#go-back,
 	.btn-reserva,
@@ -3042,23 +3043,21 @@ body.is-preload #header .content .inner {
 }
 
 @media screen and (max-width: 366px) {
-	.drop {
+	/* .drop {
 		top: 44rem;
-	}
+	} */
 
 	#go-back,
 	.btn-reserva,
 	.btn-fotos {
 		zoom: 66%;
 	}
-
-
 }
 
 @media screen and (max-width: 360px) {
-	.drop {
+	/* .drop {
 		top: 44rem;
-	}
+	} */
 
 	#cab1 img,
 	#cab2 img,
@@ -3071,7 +3070,7 @@ body.is-preload #header .content .inner {
 
 	.div-buttons {
 		position: absolute;
-		margin: 355px 0 0 30%;
+		margin: 375px 0 0 30%;
 		align-items: center;
 	}
 
@@ -3083,9 +3082,9 @@ body.is-preload #header .content .inner {
 }
 
 @media screen and (max-width: 343px) {
-	.drop {
+	/* .drop {
 		top: 44rem;
-	}
+	} */
 
 	#cab1 img,
 	#cab2 img,
@@ -3262,6 +3261,26 @@ article label {
 	margin-top: 2rem;
 	text-align: center;
 	margin-bottom: 2rem;
+}
+
+#informacion {
+	-moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+	-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+	-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+	transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+	width: 100%;
+	max-width: 100%;
+	margin-top: 2rem;
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+#informacion .copyright {
+	letter-spacing: 0.2rem;
+	font-size: 0.6rem;
+	opacity: 0.75;
+	margin-bottom: 0;
+	text-transform: uppercase;
 }
 
 #footer .copyright {
