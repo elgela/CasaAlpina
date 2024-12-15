@@ -132,13 +132,16 @@ aside,
 details,
 figcaption,
 figure,
-footer,
 header,
 hgroup,
 menu,
 nav,
 section {
 	display: block;
+}
+
+footer {
+	display: none;
 }
 
 body {
@@ -294,13 +297,14 @@ textarea {
 } */
 
 .container {
-	margin: auto;
-	padding: 30px;
+	/* margin: auto; */
+	/* padding: 30px; */
+	height: 90%;
 }
 
 .content-all {
 	width: 100%;
-	height: 100%;
+	height: 70%;
 	display: flex;
 	margin: auto;
 	overflow: hidden;
@@ -489,8 +493,15 @@ p#interior {
 	margin: 30px 2% 0 0;
 }
 
+.volver-cab_fotos {
+	position: absolute;
+	right: 2%;
+	margin-top: -3.5rem;
+}
+
 .volver {
 	margin-top: 10px;
+	right: 0;
 }
 
 #back-sink {
@@ -616,10 +627,6 @@ p#interior {
 	color: red;
 	filter: brightness(2.5);
 }
-
-/* #footer {
-	display: none;
-} */
 
 .first_p {
 	border-top: 2.5px solid #ffff;
@@ -1175,12 +1182,6 @@ form>.fields>.field.quarter {
 		background-color: rgba(255, 255, 255, 0.075);
 	}
 
-	#footer {
-		display: block;
-		/* padding: 80px; */
-	}
-
-
 }
 
 label {
@@ -1530,7 +1531,7 @@ input[type="radio"]+label:before {
 
 }
 
-@media screen and (max-width: 600px) { /*hacer container en dos columnas en 600px o menos*/
+@media screen and (max-width: 600px) { /*hacer container en dos columnas en mas de 600px*/
 
 	.image.main {
 		margin: 2.5rem 0;
@@ -2350,12 +2351,10 @@ body.is-preload #header .content .inner {
 		top: -60px;
 	}
 
-	.content-all {
+	/* .content-all {
 		width: 700px;
 		height: 470px;
-
-
-	}
+	} */
 
 }
 
@@ -2364,10 +2363,10 @@ body.is-preload #header .content .inner {
 		top: -50px;
 	}
 
-	.content-all {
+	/* .content-all {
 		width: 650px;
 		height: 420px;
-	}
+	} */
 
 }
 
@@ -2449,10 +2448,10 @@ body.is-preload #header .content .inner {
 		top: -50px;
 	}
 
-	.content-all {
+	/* .content-all {
 		width: 520px;
 		height: 410px;
-	}
+	} */
 
 }
 
@@ -2712,10 +2711,14 @@ body.is-preload #header .content .inner {
 		top: -40px;
 	}
 
-	.content-all {
-		width: 450px;
-		height: 310px;
+	.content-img {
+		height: 90%;
 	}
+
+	/* .content-all {
+		width: 100%;
+		height: 310px;
+	} */
 
 }
 
@@ -2753,11 +2756,14 @@ body.is-preload #header .content .inner {
 		height: 370px;
 	}
 
-	.content-all {
+	/* .content-all {
 		width: 420px;
 		height: 300px;
-	}
+	} */
 
+	.volver-cab_fotos {
+		margin-top: -3.2rem;
+	}
 
 }
 
@@ -2843,9 +2849,13 @@ body.is-preload #header .content .inner {
 		right: 10%;
 	}
 
-	.content-all {
+	/* .content-all {
 		width: 380px;
 		height: 350px;
+	} */
+
+	.volver-cab_fotos {
+		margin-top: -3rem;
 	}
 
 }
@@ -2862,10 +2872,10 @@ body.is-preload #header .content .inner {
 		top: 50.5rem;
 	}
 
-	.content-all {
+	/* .content-all {
 		width: 350px;
 		height: 310px;
-	}
+	} */
 
 
 }
@@ -2905,6 +2915,15 @@ body.is-preload #header .content .inner {
 		top: 10%;
 	}
 
+	.content-img {
+		height: 70%;
+	}
+
+	footer {
+		display: block;
+		padding-top: 3.5rem;
+	}
+
 
 }
 
@@ -2916,10 +2935,10 @@ body.is-preload #header .content .inner {
 		zoom: 77%;
 	}
 
-	.content-all {
+	/* .content-all {
 		width: 320px;
 		height: 300px;
-	}
+	} */
 
 
 }
@@ -3014,10 +3033,10 @@ body.is-preload #header .content .inner {
 		zoom: 67%;
 	}
 
-	.content-all {
+	/* .content-all {
 		width: 290px;
 		height: 290px;
-	}
+	} */
 
 
 }
@@ -3056,10 +3075,10 @@ body.is-preload #header .content .inner {
 		align-items: center;
 	}
 
-	.content-all {
+	/* .content-all {
 		width: 280px;
 		height: 280px;
-	}
+	} */
 
 }
 
@@ -3075,12 +3094,10 @@ body.is-preload #header .content .inner {
 		height: 310px;
 	}
 
-	.content-all {
+	/* .content-all {
 		width: 260px;
 		height: 250px;
-	}
-
-
+	} */
 
 }
 
