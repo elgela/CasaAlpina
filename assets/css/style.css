@@ -1530,7 +1530,7 @@ input[type="radio"]+label:before {
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) { /*hacer container en dos columnas en 600px o menos*/
 
 	.image.main {
 		margin: 2.5rem 0;
