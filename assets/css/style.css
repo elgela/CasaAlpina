@@ -14,9 +14,9 @@
 }
 
 .ir-arriba p {
-	font-family: fantasy;
+	font-family: sans-serif;
 	position: absolute;
-	/* display: flex; */
+	display: flex;
 	font-size: medium;
 	margin-top: -20px;
 }
@@ -523,26 +523,6 @@ p#interior {
 	margin: 10px 0;
 }
 
-.desayuno {
-	text-align: center;
-	margin-top: 40px;
-}
-
-.desayuno h3 {
-	text-align: left;
-}
-
-.desayuno img {
-	width: 45%;
-	height: 150px;
-	margin-bottom: 20px;
-	border-radius: 5px;
-}
-
-.videos-desayuno {
-	display: flex;
-	margin-top: 0;
-}
 
 #contacto>h5 {
 	text-align: right;
@@ -3151,26 +3131,53 @@ body.is-preload #header .content .inner {
 	opacity: 1;
 }
 
-.services {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-}
-
-/* .services img {
-	opacity: 90%;
-} */
-
-.services div {
-	text-align: center;
-}
-
 #desayuno,
 #mucama,
 #pet,
 #seguridad,
 #wifi {
 	width: 90%;
-	height: 80%;
+	height: 50%;
+}
+
+.services {
+	display: inline-flex;
+	height: 200px;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: -20%;
+}
+
+.services img {
+	border-radius: 10%;
+	width: 20px;
+	height: 100px;
+}
+
+.services div {
+	text-align: center;
+}
+
+.desayuno {
+	position: relative;
+	text-align: center;
+	margin-top: 40px;
+}
+
+.desayuno h3 {
+	text-align: left;
+}
+
+.desayuno img {
+	width: 45%;
+	height: 150px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+}
+
+.videos-desayuno {
+	display: flex;
+	margin-top: 0;
 }
 
 article label {
