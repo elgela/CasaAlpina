@@ -1,0 +1,16 @@
+{
+    "name": "casaalpina",
+    "short_name": "casaalpinaApp",
+    "icons": [
+      {
+        "src": "",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#000000"
+  }
+  
