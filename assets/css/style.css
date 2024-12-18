@@ -542,6 +542,7 @@ p#interior {
 	display: block;
 	cursor: pointer;
 	color: rgba(153, 205, 50, 0.58);
+	margin-left: 5px;
 }
 
 
@@ -550,6 +551,7 @@ p#interior {
 	display: block;
 	cursor: pointer;
 	color: rgba(245, 222, 179, 0.639);
+	margin-left: -5px;
 }
 
 .bxl-whatsapp:hover,
