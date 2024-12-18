@@ -2700,6 +2700,16 @@ body.is-preload #header .content .inner {
 	.content-img {
 		height: 90%;
 	}
+	
+	#des2 {
+		opacity: 0;
+	}
+
+	#des1 {
+		display: grid;
+		position: absolute;
+		width: 90%;
+	}
 
 	/* .content-all {
 		width: 100%;
@@ -3142,7 +3152,7 @@ body.is-preload #header .content .inner {
 
 .services {
 	display: inline-flex;
-	height: 200px;
+	/* height: 200px; */
 	justify-content: center;
 	align-items: center;
 	margin-bottom: -20%;
@@ -3156,6 +3166,30 @@ body.is-preload #header .content .inner {
 
 .services div {
 	text-align: center;
+}
+
+.servicios-desayuno h3 {
+	margin-top: 20px;
+}
+
+.servicios-desayuno {
+	display: block;
+	width: 100%;
+}
+
+.servicios-desayuno-allimg {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	height: 23rem;
+	text-align: center;
+}
+
+.servicios-desayuno-allimg img {
+	margin: 0;
+	width: 90%;
+	height: 17rem;
+	border-radius: 15px;
+	margin: 30px 0;
 }
 
 .desayuno {
