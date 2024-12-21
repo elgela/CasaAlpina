@@ -321,7 +321,7 @@ textarea {
 	left: 0px;
 	transform: translateX(-100%); /*rotateY(360deg) para que gire imagen al cambiar*/
 	opacity: 0;
-	transition: all 1s;
+	transition: all 2s;
 }
 
 #img1 {
