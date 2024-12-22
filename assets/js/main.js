@@ -504,6 +504,40 @@ if ('serviceWorker' in navigator) {
 		});
 }
 
+////////////////////para instalacion manual de PWA///////////////////////////
+
+let deferredPrompt;
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  // Evita que la mini barra de información aparezca.
+  e.preventDefault();
+  // Guarda el evento para que pueda ser lanzado después.
+  deferredPrompt = e;
+  // Actualiza la IU para notificar al usuario que puede instalar el PWA
+  const installButton = document.getElementById('installButton');
+  installButton.style.display = 'block';
+
+  installButton.addEventListener('click', (e) => {
+    // Oculta la interfaz de usuario de instalación
+    installButton.style.display = 'none';
+    // Muestra el mensaje de instalación
+    deferredPrompt.prompt();
+    // Espera a que el usuario responda al mensaje
+    deferredPrompt.userChoice.then((choiceResult) => {
+      if (choiceResult.outcome === 'accepted') {
+        console.log('El usuario aceptó la instalación');
+      } else {
+        console.log('El usuario rechazó la instalación');
+      }
+      deferredPrompt = null;
+    });
+  });
+});
+
+window.addEventListener('appinstalled', (evt) => {
+  console.log('a2hs instalado');
+});
+
 
 ////////////////////////barra menu/////////////////////////////////////////
 
