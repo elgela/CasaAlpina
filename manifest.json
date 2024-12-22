@@ -1,0 +1,20 @@
+{
+    "name": "casaalpina",
+    "short_name": "casaalpina",
+    "description": "Cabañas de alojamiento en las sierras.",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "icons": [
+      {
+        "src": "images/Logos/favicon/logo-512x512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      },
+      {
+        "src": "images/Logos/favicon/logo-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ]
+  }
+  
