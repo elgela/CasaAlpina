@@ -504,7 +504,7 @@ if ('serviceWorker' in navigator) {
 		});
 }
 
-////////////////////para instalacion manual de PWA///////////////////////////
+////////////////////para instalacion manual de PWA//////////////////////////
 
 let deferredPrompt;
 
