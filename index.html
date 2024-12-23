@@ -2,17 +2,39 @@
 <html>
 
 <head>
-	<title>Casa Alpina</title>
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/style.css" />
 	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-	<link rel="shortcut icon" href="images/logoFondoBlancoRedondoYBorde.png" type="image/x-icon">
+	<link rel="shortcut icon" href="images/Logos/favicon/android-icon-144x144 - copia-redonda.png" type="image/x-icon">
 	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@600&display=swap" rel="stylesheet">
+	<!--favicon-->
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<!-- <link rel="manifest" href="/manifest.json"> -->
 	<!-- <script>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</script> -->
+	<title>casaalpina - Inicio</title>
 </head>
 
 <body class="is-preload clear-mode">
@@ -22,15 +44,19 @@
 
 		<!-- Header -->
 		<header id="header">
-			<a href="https://wa.me/2494549919" target="_blank">
-				<div class="whatsapp"> </div>
-			</a>
+			<div class="estrella-arribaIzq">
+				<img src="images/Logos/estrella_navidad-arribaIzq-removebg.png">
+			</div>
+			<div class="estrella-arribaDer">
+				<img src="images/Logos/estrella_navidad-arribaDer-removebg.png">
+			</div>
 			<div class="logo">
-				<img src="images/logoFondoBlanco.jpg" class="logo-mobile" alt="Logo Casa Alpina">
+				<img src="images/Logos/logo-sin_fondo.png" class="logo-mobile" alt="Logo Casa Alpina">
 			</div>
 			<div class="content">
+				<img src="images/Logos/christmas-garlands-with-balls-vector-removebg.png" id="guirnalda">
 				<div class="inner">
-					<h1>Casa Alpina</h1>
+					<h1>casaalpina</h1>
 					<h2>Algo más que apacibles sierras</h2>
 					<p class="presentacion">
 						Cuatro cabañas totalmente equipadas, independientes y de reciente construcción... cada una de
@@ -39,20 +65,33 @@
 					</p>
 				</div>
 			</div>
-			<nav class="menu-nav">
-				<input type="checkbox" id="menu">
-				<label for="menu">
-					<i class="fas fa-bars"></i>
-					<i class="fas fa-times"></i>
-				</label>
-				<ul>
-					<li><a href="#cabanias">Cabañas</a></li>
-					<li><a href="#servicios">Servicios</a></li>
-					<li><a href="#predio">Predio</a></li>
-					<li><a href="#ubicacion">Ubicación</a></li>
-					<li><a href="#contacto">Contacto</a></li>
-				</ul>
-			</nav>
+			<div class="respmenu">
+				<nav class="navmenu">
+					<input type="checkbox" id="menu">
+					<label for="menu">
+						<!-- <i class="fas fa-bars">Menu</i>
+						<i class="fas fa-times"></i> -->
+						<div class="nav-bar">
+							<div class="bars__menu">
+								<span class="line1__bars-menu"></span>
+								<span class="line2__bars-menu"></span>
+								<span class="line3__bars-menu"></span>
+								<span class="line4__bars-menu"></span>
+								<p id="menu">Menu</p>
+							</div>
+						</div>
+					</label>
+					<div class="nav-list">
+						<ul class="drop">
+							<li><a href="#predio">Predio</a></li>
+							<li><a href="#cabanias">Cabañas</a></li>
+							<li><a href="#servicios">Servicios</a></li>
+							<li><a href="#ubicacion">Ubicación</a></li>
+						</ul>
+					</div>
+				</nav>
+
+			</div>
 		</header>
 
 		<!-- Main -->
@@ -60,11 +99,16 @@
 
 			<!-- Cabañas -->
 			<article id="cabanias">
+				<!-- <img src="/images/Logos/christmas-garlands-with-balls-vector-removebg.png" id="guirnalda-cabanias"> -->
+				<div id="chrisTree">
+					<img src="images/Logos/Arbol-Navidad-03-unscreen.gif">
+				</div>
 				<h2 class="major">Cabañas</h2>
+
 				<h3>Del Pinar</h3>
 				<span class="image main"><img src="images/Cabañas/del_pinar.jpg" alt="cabaña del pinar" /></span>
 				<div id="btn-cabania">
-					<button class="btn-fotos"><a href="cabania1.html">Ver fotos</button></a>
+					<button class="btn-comodidades"><a href="cabania1.html">Comodidades</button></a>
 					<button class="btn-consulta"><a href="https://booking.avirato.com/?code=49886329&id_habitacion=1"
 							target="_blank">Reservar</button></a>
 
@@ -87,7 +131,7 @@
 				<h3>Del Solar</h3>
 				<span class="image main"><img src="images/Cabañas/del_solar.jpg" alt="cabaña del solar" /></span>
 				<div id="btn-cabania">
-					<button class="btn-fotos"><a href="cabania2.html">Ver fotos</button></a>
+					<button class="btn-comodidades"><a href="cabania2.html">Comodidades</button></a>
 					<button class="btn-consulta"><a href="https://booking.avirato.com/?code=49886329&id_habitacion=3"
 							target="_blank">Reservar</button></a>
 				</div>
@@ -104,7 +148,7 @@
 				<h3>Del Puente</h3>
 				<span class="image main"><img src="images/Cabañas/del_puente.jpg" alt="cabaña del puente" /></span>
 				<div id="btn-cabania">
-					<button class="btn-fotos"><a href="cabania3.html">Ver fotos</button></a>
+					<button class="btn-comodidades"><a href="cabania3.html">Comodidades</button></a>
 					<button class="btn-consulta"><a href="https://booking.avirato.com/?code=49886329&id_habitacion=6"
 							target="_blank">Reservar</button></a>
 				</div>
@@ -120,7 +164,7 @@
 				<h3>Casagrande</h3>
 				<span class="image main"><img src="images/Cabañas/casagrande.jpg" alt="cabaña casagrande" /></span>
 				<div id="btn-cabania">
-					<button class="btn-fotos"><a href="cabania4.html">Ver fotos</button></a>
+					<button class="btn-comodidades"><a href="cabania4.html">Comodidades</button></a>
 					<button class="btn-consulta"><a href="https://booking.avirato.com/?code=49886329&id_habitacion=9"
 							target="_blank">Reservar</button></a>
 				</div>
@@ -136,40 +180,63 @@
 					predio y a las
 					serranías cercanas.</p>
 				<p>Tiene cochera adjunta techada e individual, y parrilla techada familiar, con amplia mesada.</p>
+				<span class="ir-arriba">
+					<i class='bx bxs-chevron-up-circle'></i>
+					<p>Ir arriba</p>
+				</span>
 			</article>
 
 			<!-- Servicios -->
 			<article id="servicios">
-				<h2 class="major">Servicios</h2>
-				<div class="services">
-					<div>
-						<img src="images/desayuno.jpg" alt="desayuno">
-						<label>Desayuno</label>
-						<img src="images/mucama.jpg" alt="mucama">
-						<label>Mucama</label>
-					</div>
-					<div>
-						<img src="images/Pet-friendly.jpg" alt="amigo animales">
-						<label>Apto animales</label>
-						<img src="images/guardia-de-seguridad-privada-icono.jpg" alt="seguridad">
-						<label>Seguridad</label>
-					</div>
+				<!-- <img src="/images/Logos/christmas-garlands-with-balls-vector-removebg.png" id="guirnalda-cabanias"> -->
+				<div id="chrisTree">
+					<img src="images/Logos/Arbol-Navidad-03-unscreen.gif">
 				</div>
-				<div id="div-wifi">
-					<img src="images/wifi.jpg" class="wifi" alt="wifi">
-				</div>
-				<label>WiFi</label>
 
-				<h3>Desayuno artesanal</h3>
-				<div class="desayuno">
-					<img src="images/Desayuno/20231118_102807.jpg" alt="bandeja de desayuno">
-					<img src="images/Desayuno/20231118_102822.jpg" alt="bandeja de desayuno">
-				</div>
-				<h3>Elaboración propia</h3>
-				<div class="videos-desayuno">
-					<video src="images/Desayuno/20240328_154741.mp4" loop autoplay muted></video>
-					<video src="images/Desayuno/20240328_154910.mp4" loop autoplay muted></video>
-					<video src="images/Desayuno/20240328_154756.mp4" loop autoplay muted></video>
+				<h2 class="major">Servicios</h2>
+				<div>
+					<div class="services">
+						<div>
+							<img src="./images/Logos/desayuno-fondo_negro.png" alt="desayuno" id="desayuno">
+							<!-- <label>Desayuno</label> -->
+						</div>
+						<div>
+							<img src="./images/Logos/limpieza-sin_fondo.png" alt="mucama" id="mucama">
+							<!-- <label>Servicio de mucama</label> -->
+						</div>
+						<div>
+							<img src="./images/Logos/mascotas-sin_fondo.png" alt="amigo animales" id="pet">
+							<!-- <label>Apto animales</label> -->
+						</div>
+						<div>
+							<img src="./images/Logos/seguridad-fondo_negro.png" alt="seguridad" id="seguridad">
+							<!-- <label>Seguridad</label> -->
+						</div>
+						<div>
+							<img src="./images/Logos/wifi-fondo_negro.png" class="wifi" alt="wifi" id="wifi">
+							<!-- <label>WiFi</label> -->
+						</div>
+					</div>
+
+					<div class="servicios-desayuno">
+						<h3>Desayuno artesanal</h3>
+						<div class="servicios-desayuno-allimg">
+							<div class="servicios-desayuno-img" id="des1">
+								<a href="desayuno.html"><img src="images/Desayunos/IMG_0414.jpg"
+										alt="bandeja de desayuno con pileta al fondo"></a>
+							</div>
+							<div class="servicios-desayuno-img" id="des2">
+								<a href="desayuno.html"><img src="images/Desayunos/IMG_0835.jpg"
+										alt="bandeja de desayuno con rotonda al fondo"></a>
+							</div>
+						</div>
+						<h3>Cuenta con elaboración propia</h3>
+						<div class="videos-desayuno">
+							<video src="images/Desayunos/20240328_154741.mp4" loop autoplay muted></video>
+							<video src="images/Desayunos/20240328_154910.mp4" loop autoplay muted></video>
+							<video src="images/Desayunos/20240328_154756.mp4" loop autoplay muted></video>
+						</div>
+					</div>
 				</div>
 			</article>
 
@@ -204,12 +271,16 @@
 
 			<!-- Predio -->
 			<article id="predio">
+				<!-- <img src="/images/Logos/christmas-garlands-with-balls-vector-removebg.png" id="guirnalda-cabanias"> -->
+				<div id="chrisTree">
+					<img src="images/Logos/Arbol-Navidad-03-unscreen.gif">
+				</div>
 				<h2 class="major">Predio</h2>
 				<span class="image main">
 					<div id="videos">
-						<video src="images/Cabañas/Videos/cabaniasAtras.mp4" loop autoplay muted></video>
-						<video src="images/Cabañas/Videos/recorrido.mp4" loop autoplay muted></video>
-						<video src="images/Cabañas/Videos/Vídeo-1.mp4" loop autoplay muted></video>
+						<video src="./Videos/cabaniasAtras.mp4" loop autoplay muted></video>
+						<video src="./Videos/recorrido.mp4" loop autoplay muted></video>
+						<video src="./Videos/Video1.mp4" loop autoplay muted></video>
 					</div>
 				</span>
 				<p>
@@ -228,10 +299,22 @@
 					perfectamente delimitados.</p>
 				<p>El predio se encuentra iluminado, desde el portón de ingreso, hasta los caminos y jardines.
 				</p>
+				<!-- <div style="display: grid;"> -->
+				<h3 class="major">Exteriores</h3>
+				<!-- <a href="exterior.html"><button id="fotos-exterior">Fotos</button></a> -->
+				<!-- </div> -->
+				<div class="image main">
+					<a href="exterior.html"><img src="./images/Exterior/562e14f6-15da-482b-a1c6-a18ebba5621e.jpeg"
+							alt="rotonda con luces navidad" style="cursor: pointer;"></a>
+				</div>
 				<!--Pileta-->
+				<!-- <div style="display: grid;"> -->
 				<h3 class="major">Pileta</h3>
-				<span class="image main"><img src="images/Pileta/20230221_121749.jpg" alt="Pileta" /></span>
-				<a href="pileta.html"><button id="fotos-pileta">Ver fotos</button></a>
+				<!-- <a href="pileta.html"><button id="fotos-pileta" alt="pileta">Fotos</button></a> -->
+				<!-- </div> -->
+				<div class="image main">
+					<a href="pileta.html"><img src="./images/Pileta/IMG_1498.jpg" alt="pileta" style="cursor: pointer;" /></a>
+				</div>
 				<p>
 					Un conjunto desarrollado para el descanso y la recreación.
 					Una piscina de 8 x 4 mts y 1,40 mts. de profundidad, de 45.000 lts de cristalina agua.
@@ -245,6 +328,11 @@
 
 			<!--Ubicación-->
 			<article id="ubicacion">
+				<!-- <img src="/images/Logos/christmas-garlands-with-balls-vector-removebg.png" id="guirnalda-cabanias"> -->
+
+				<div id="chrisTree">
+					<img src="images/Logos/Arbol-Navidad-03-unscreen.gif">
+				</div>
 				<h2 class="major">Ubicación</h2>
 				<p>Ubicadas en una de las mejores zonas serranas de Tandil, en las laderas del Cerro El Centinela y a
 					solo 4 km. del centro de la ciudad.</p>
@@ -258,94 +346,58 @@
 					width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
 					referrerpolicy="no-referrer-when-downgrade"></iframe>
 			</article>
-			<!-- Contacto-->
-			<a href="https://wa.me/2494549919" target="_blank">
-				<div class="whatsapp"> </div>
-			</a>
-			<article id="contacto">
-
-				<h2 class="major">Contacto</h2>
-				<h5>Realiza tu consulta y a la brevedad te responderemos</h5>
-				<form method="post" action="#">
-					<div class="fields">
-						<div class="field half">
-							<label for="name">Nombre *</label>
-							<input type="text" name="name" id="name" placeholder="su nombre" required />
-						</div>
-						<div class="field half">
-							<label for="name">Apellido *</label>
-							<input type="text" name="name" id="name" placeholder="su apellido" required />
-						</div>
-						<div class="field half">
-							<label for="email">Email *</label>
-							<input type="text" name="email" id="email" placeholder="su correo electrónico" required />
-						</div>
-						<div class="field half">
-							<label for="number">Teléfono / Celular</label>
-							<input type="text" name="number" id="number" placeholder="su número"/>
-						</div>
-						<div class="field">
-							<label for="message">Mensaje *</label>
-							<textarea name="message" id="message" rows="4" placeholder="ingrese su mensaje" ></textarea>
-						</div>
-						<label style="margin: 30px; font-style: oblique;">* campos obligatorios</label>
-					</div>
-					<form action="#" method="POST">
-						<div class="g-recaptcha" data-sitekey="6LcaiHMqAAAAANrRROk4N8CUdzgFWb-sTc9G0q4k"
-							data-action="LOGIN"></div>
-						<br />
-						<ul class="actions">
-							<li><input type="submit" value="Enviar mensaje" class="primary" /></li>
-							<li><input type="reset" value="Reset" /></li>
-						</ul>
-					</form>
-					<!-- <h3>CAPTCHA</h3>
-					<div class="suma">
-
-						<div id="captcha"></div>
-
-						<input type="text" id="respuesta" required>
-
-
-						<p id="resultado"></p>
-					</div>
-					<div>
-						<button type="submit" id="btn-captcha">Responder</button>
-					</div>
-					<ul class="actions">
-						<li><input type="submit" value="Enviar mensaje" class="primary" /></li>
-						<li><input type="reset" value="Reset" /></li>
-					</ul> -->
-				</form>
-				<footer id="footerContacto">
-					<p class="copyright">Casa Alpina</p>
-					<p class="copyright">WhatsApp: 2494549919</p>
-					<p class="copyright">Email: contacto@casaalpina.com.ar</p>
-					<p class="copyright">Icalma 2904 - Paraje El Centinela, Tandil - Buenos Aires - Argentina</p>
-				</footer>
+			<footer id="footerContacto">
+				<p class="copyright">Casa Alpina</p>
+				<p class="copyright">WhatsApp: 2494549919</p>
+				<p class="copyright">Email: contacto@casaalpina.com.ar</p>
+				<p class="copyright">Icalma 2904 - Paraje El Centinela, Tandil - Buenos Aires - Argentina</p>
+			</footer>
 			</article>
 		</div>
 
 		<!-- Footer -->
-		<footer id="footer">
-			<ul class="icons">
-				<li><a href="https://www.facebook.com/casaalpina.tandil" target="_blank"
-						class="icon brands fa-facebook-f"><span class="label"></span></a></li>
-				<li><a href="https://www.instagram.com/casaalpina/" target="_blank"
-						class="icon brands fa-instagram"><span class="label"></span></a></li>
-				<li><a href="https://www.tiktok.com/@casaalpina" target="_blank" class='bx bxl-tiktok'><span
-							class="label"></span></a></li>
-				<li><a href="https://www.youtube.com/c/Caba%C3%B1asCASAALPINATandil" target="_blank"
-						class='bx bxl-youtube'><span class="label"></span></a></li>
+		<ul class="icons">
+			<li><a href="https://www.facebook.com/casaalpina.tandil" target="_blank"
+					class="icon brands fa-facebook-f"><span class="label"></span></a></li>
+			<li><a href="https://www.instagram.com/casaalpina/" target="_blank" class="icon brands fa-instagram"><span
+						class="label"></span></a></li>
+			<li><a href="https://www.tiktok.com/@casaalpina" target="_blank" class='bx bxl-tiktok'><span
+						class="label"></span></a></li>
+			<li><a href="https://www.youtube.com/c/Caba%C3%B1asCASAALPINATandil" target="_blank"
+					class='bx bxl-youtube'><span class="label"></span></a></li>
 
-			</ul>
+
+		</ul>
+		<div class="redes">
+			<div class="whatsapp">
+				<p>WhatsApp</p>
+				<a href="https://wa.me/2494549919" target="_blank">
+					<i class='bx bxl-whatsapp'></i>
+				</a>
+			</div>
+			<div class="mail">
+				<p>E-Mail</p>
+				<a href="mailto:contacto@casaalpina.com.ar">
+					<i class='bx bx-mail-send'></i>
+				</a>
+			</div>
+		</div>
+		<footer id="footer">
 			<p class="copyright first_p">&copy;2024</p>
-			<p class="copyright">Casa Alpina</p>
+			<p class="copyright">casaalpina</p>
 			<p class="copyright">WhatsApp: 2494549919</p>
 			<p class="copyright">Email: contacto@casaalpina.com.ar</p>
 			<p class="copyright">Icalma 2904 - Paraje El Centinela, Tandil - Buenos Aires - Argentina</p>
 			<p class="developer">Developed by <a href="https://github.com/elgela" target="_blank" class="link">Marcelo
 					Gelato</a></p>
+			<!-- <div class="estrellas"> -->
+			<div class="estrella-abajoDer">
+				<img src="images/Logos/estrella_navidad-abajoDer-removebg.png">
+			</div>
+			<div class="estrella-abajoIzq">
+				<img src="images/Logos/estrella_navidad-abajoIzq-removebg.png">
+			</div>
+			<!-- </div> -->
 		</footer>
 
 	</div>
@@ -364,3 +416,62 @@
 </body>
 
 </html>
+
+<!-- <h3>CAPTCHA</h3>
+	<div class="suma">
+		
+	<div id="captcha"></div>
+	
+	<input type="text" id="respuesta" required>
+	
+	
+	<p id="resultado"></p>
+</div>
+<div>
+	<button type="submit" id="btn-captcha">Responder</button>
+</div>
+<ul class="actions">
+	<li><input type="submit" value="Enviar mensaje" class="primary" /></li>
+	<li><input type="reset" value="Reset" /></li>
+</ul> -->
+
+
+<!-- Contacto-->
+<!-- <article id="contacto">
+	<h2 class="major">Contacto</h2>
+	<h5>Realiza tu consulta y a la brevedad te responderemos</h5>
+	<form method="post" action="#">
+		<div class="fields">
+			<div class="field half">
+				<label for="name">Nombre *</label>
+				<input type="text" name="name" id="name" placeholder="su nombre" required />
+			</div>
+			<div class="field half">
+				<label for="name">Apellido *</label>
+				<input type="text" name="name" id="name" placeholder="su apellido" required />
+			</div>
+			<div class="field half">
+				<label for="email">Email *</label>
+				<input type="text" name="email" id="email" placeholder="su correo electrónico" required />
+			</div>
+			<div class="field half">
+				<label for="number">Teléfono / Celular</label>
+				<input type="text" name="number" id="number" placeholder="su número" />
+			</div>
+			<div class="field">
+				<label for="message">Mensaje *</label>
+				<textarea name="message" id="message" rows="4" placeholder="ingrese su mensaje"></textarea>
+			</div>
+			<label style="margin: 30px; font-style: oblique;">* campos obligatorios</label>
+		</div>
+		<form action="#" method="POST">
+			<div class="g-recaptcha" data-sitekey="6LfaBYgqAAAAACAKoq_-9WQ5mIcXEoLDUcKBWYxp"
+				data-action="LOGIN">
+			</div>
+			<br />
+			<ul class="actions">
+				<li><input type="submit" value="Enviar mensaje" class="button" /></li>
+				<li><input type="reset" value="Reset" /></li>
+			</ul>
+		</form>
+	</form> -->
