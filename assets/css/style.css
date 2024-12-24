@@ -2169,7 +2169,7 @@ body.is-preload #bg:before {
 	border-style: solid;
 	border-color: #ffffff;
 	border-top-width: 1px;
-	border-top-style: hidden;
+	/* border-top-style: hidden; */
 	border-bottom-width: 1px;
 	max-width: 100%;
 	margin-top: -20px;
