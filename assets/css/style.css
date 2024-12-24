@@ -345,20 +345,18 @@ textarea {
 	background-color: #2a2828;
 }
 
-.bxs-chevron-right {
+.bxs-chevron-right-circle {
 	position: absolute;
 	top: 50%;
 	right: 0;
-	font-size: 65px;
-	color: #878383;
+	font-size: 35px;
 }
 
-.bxs-chevron-left {
+.bxs-chevron-left-circle {
 	position: absolute;
 	top: 50%;
 	left: 0;
-	font-size: 65px;
-	color: #878383;
+	font-size: 35px;
 }
 
 ul,

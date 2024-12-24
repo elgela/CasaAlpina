@@ -1,16 +1,13 @@
 "use strict";
-"use strict";
 /*
 	Dimension by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-(function ($) {
-(function ($) {
+(function($) {
 
-	var $window = $(window),
-	var $window = $(window),
+	var	$window = $(window),
 		$body = $('body'),
 		$wrapper = $('#wrapper'),
 		$header = $('#header'),
@@ -19,700 +16,424 @@
 		$main_articles = $main.children('article');
 
 	// Breakpoints.
-	breakpoints({
-		xlarge: ['1281px', '1680px'],
-		large: ['981px', '1280px'],
-		medium: ['737px', '980px'],
-		small: ['481px', '736px'],
-		xsmall: ['361px', '480px'],
-		xxsmall: [null, '360px']
-	});
-	breakpoints({
-		xlarge: ['1281px', '1680px'],
-		large: ['981px', '1280px'],
-		medium: ['737px', '980px'],
-		small: ['481px', '736px'],
-		xsmall: ['361px', '480px'],
-		xxsmall: [null, '360px']
-	});
+		breakpoints({
+			xlarge:   [ '1281px',  '1680px' ],
+			large:    [ '981px',   '1280px' ],
+			medium:   [ '737px',   '980px'  ],
+			small:    [ '481px',   '736px'  ],
+			xsmall:   [ '361px',   '480px'  ],
+			xxsmall:  [ null,      '360px'  ]
+		});
 
 	// Play initial animations on page load.
-	$window.on('load', function () {
-		window.setTimeout(function () {
-			$body.removeClass('is-preload');
-		}, 100);
-	});
-	$window.on('load', function () {
-		window.setTimeout(function () {
-			$body.removeClass('is-preload');
-		}, 100);
-	});
+		$window.on('load', function() {
+			window.setTimeout(function() {
+				$body.removeClass('is-preload');
+			}, 100);
+		});
 
 	// Fix: Flexbox min-height bug on IE.
-	if (browser.name == 'ie') {
-	if (browser.name == 'ie') {
+		if (browser.name == 'ie') {
 
-		var flexboxFixTimeoutId;
-		var flexboxFixTimeoutId;
+			var flexboxFixTimeoutId;
 
-		$window.on('resize.flexbox-fix', function () {
-		$window.on('resize.flexbox-fix', function () {
+			$window.on('resize.flexbox-fix', function() {
 
-			clearTimeout(flexboxFixTimeoutId);
-			clearTimeout(flexboxFixTimeoutId);
+				clearTimeout(flexboxFixTimeoutId);
 
-			flexboxFixTimeoutId = setTimeout(function () {
-			flexboxFixTimeoutId = setTimeout(function () {
+				flexboxFixTimeoutId = setTimeout(function() {
 
-				if ($wrapper.prop('scrollHeight') > $window.height())
-					$wrapper.css('height', 'auto');
-				else
-					$wrapper.css('height', '100vh');
-				if ($wrapper.prop('scrollHeight') > $window.height())
-					$wrapper.css('height', 'auto');
-				else
-					$wrapper.css('height', '100vh');
+					if ($wrapper.prop('scrollHeight') > $window.height())
+						$wrapper.css('height', 'auto');
+					else
+						$wrapper.css('height', '100vh');
 
-			}, 250);
-			}, 250);
+				}, 250);
 
-		}).triggerHandler('resize.flexbox-fix');
-		}).triggerHandler('resize.flexbox-fix');
+			}).triggerHandler('resize.flexbox-fix');
 
-	}
-	}
+		}
 
 	// Nav.
-	var $nav = $header.children('nav'),
-		$nav_li = $nav.find('li');
-	var $nav = $header.children('nav'),
-		$nav_li = $nav.find('li');
+		var $nav = $header.children('nav'),
+			$nav_li = $nav.find('li');
 
-	// Add "middle" alignment classes if we're dealing with an even number of items.
-	if ($nav_li.length % 2 == 0) {
-	// Add "middle" alignment classes if we're dealing with an even number of items.
-	if ($nav_li.length % 2 == 0) {
+		// Add "middle" alignment classes if we're dealing with an even number of items.
+			if ($nav_li.length % 2 == 0) {
 
-		$nav.addClass('use-middle');
-		$nav_li.eq(($nav_li.length / 2)).addClass('is-middle');
-		$nav.addClass('use-middle');
-		$nav_li.eq(($nav_li.length / 2)).addClass('is-middle');
+				$nav.addClass('use-middle');
+				$nav_li.eq( ($nav_li.length / 2) ).addClass('is-middle');
 
-	}
-	}
+			}
 
 	// Main.
-	var delay = 325,
-		locked = false;
-	var delay = 325,
-		locked = false;
-
-	// Methods.
-	$main._show = function (id, initial) {
-	// Methods.
-	$main._show = function (id, initial) {
-
-		var $article = $main_articles.filter('#' + id);
-		var $article = $main_articles.filter('#' + id);
-
-		// No such article? Bail.
-		if ($article.length == 0)
-			return;
-		// No such article? Bail.
-		if ($article.length == 0)
-			return;
-
-		// Handle lock.
-		// Handle lock.
-
-		// Already locked? Speed through "show" steps w/o delays.
-		if (locked || (typeof initial != 'undefined' && initial === true)) {
-		// Already locked? Speed through "show" steps w/o delays.
-		if (locked || (typeof initial != 'undefined' && initial === true)) {
-
-			// Mark as switching.
-			$body.addClass('is-switching');
-			// Mark as switching.
-			$body.addClass('is-switching');
-
-			// Mark as visible.
-			$body.addClass('is-article-visible');
-			// Mark as visible.
-			$body.addClass('is-article-visible');
-
-			// Deactivate all articles (just in case one's already active).
-			$main_articles.removeClass('active');
-			// Deactivate all articles (just in case one's already active).
-			$main_articles.removeClass('active');
-
-			// Hide header, footer.
-			$header.hide();
-			$footer.hide();
-			// Hide header, footer.
-			$header.hide();
-			$footer.hide();
-
-			// Show main, article.
-			$main.show();
-			$article.show();
-			// Show main, article.
-			$main.show();
-			$article.show();
-
-			// Activate article.
-			$article.addClass('active');
-			// Activate article.
-			$article.addClass('active');
-
-			// Unlock.
-			locked = false;
-			// Unlock.
+		var	delay = 325,
 			locked = false;
 
-			// Unmark as switching.
-			setTimeout(function () {
-				$body.removeClass('is-switching');
-			}, (initial ? 1000 : 0));
-			// Unmark as switching.
-			setTimeout(function () {
-				$body.removeClass('is-switching');
-			}, (initial ? 1000 : 0));
+		// Methods.
+			$main._show = function(id, initial) {
 
-			return;
-			return;
+				var $article = $main_articles.filter('#' + id);
 
-		}
-		}
+				// No such article? Bail.
+					if ($article.length == 0)
+						return;
 
-		// Lock.
-		locked = true;
-		// Lock.
-		locked = true;
+				// Handle lock.
 
-		// Article already visible? Just swap articles.
-		if ($body.hasClass('is-article-visible')) {
-		// Article already visible? Just swap articles.
-		if ($body.hasClass('is-article-visible')) {
+					// Already locked? Speed through "show" steps w/o delays.
+						if (locked || (typeof initial != 'undefined' && initial === true)) {
 
-			// Deactivate current article.
-			var $currentArticle = $main_articles.filter('.active');
-			// Deactivate current article.
-			var $currentArticle = $main_articles.filter('.active');
+							// Mark as switching.
+								$body.addClass('is-switching');
 
-			$currentArticle.removeClass('active');
-			$currentArticle.removeClass('active');
+							// Mark as visible.
+								$body.addClass('is-article-visible');
 
-			// Show article.
-			setTimeout(function () {
-			// Show article.
-			setTimeout(function () {
+							// Deactivate all articles (just in case one's already active).
+								$main_articles.removeClass('active');
 
-				// Hide current article.
-				$currentArticle.hide();
-				// Hide current article.
-				$currentArticle.hide();
+							// Hide header, footer.
+								$header.hide();
+								$footer.hide();
 
-				// Show article.
-				$article.show();
-				// Show article.
-				$article.show();
+							// Show main, article.
+								$main.show();
+								$article.show();
 
-				// Activate article.
-				setTimeout(function () {
-				// Activate article.
-				setTimeout(function () {
+							// Activate article.
+								$article.addClass('active');
 
-					$article.addClass('active');
-					$article.addClass('active');
+							// Unlock.
+								locked = false;
 
-					// Window stuff.
-					$window
-						.scrollTop(0)
-						.triggerHandler('resize.flexbox-fix');
-					// Window stuff.
-					$window
-						.scrollTop(0)
-						.triggerHandler('resize.flexbox-fix');
+							// Unmark as switching.
+								setTimeout(function() {
+									$body.removeClass('is-switching');
+								}, (initial ? 1000 : 0));
 
-					// Unlock.
-					setTimeout(function () {
-						locked = false;
+							return;
+
+						}
+
+					// Lock.
+						locked = true;
+
+				// Article already visible? Just swap articles.
+					if ($body.hasClass('is-article-visible')) {
+
+						// Deactivate current article.
+							var $currentArticle = $main_articles.filter('.active');
+
+							$currentArticle.removeClass('active');
+
+						// Show article.
+							setTimeout(function() {
+
+								// Hide current article.
+									$currentArticle.hide();
+
+								// Show article.
+									$article.show();
+
+								// Activate article.
+									setTimeout(function() {
+
+										$article.addClass('active');
+
+										// Window stuff.
+											$window
+												.scrollTop(0)
+												.triggerHandler('resize.flexbox-fix');
+
+										// Unlock.
+											setTimeout(function() {
+												locked = false;
+											}, delay);
+
+									}, 25);
+
+							}, delay);
+
+					}
+
+				// Otherwise, handle as normal.
+					else {
+
+						// Mark as visible.
+							$body
+								.addClass('is-article-visible');
+
+						// Show article.
+							setTimeout(function() {
+
+								// Hide header, footer.
+									$header.hide();
+									$footer.hide();
+
+								// Show main, article.
+									$main.show();
+									$article.show();
+
+								// Activate article.
+									setTimeout(function() {
+
+										$article.addClass('active');
+
+										// Window stuff.
+											$window
+												.scrollTop(0)
+												.triggerHandler('resize.flexbox-fix');
+
+										// Unlock.
+											setTimeout(function() {
+												locked = false;
+											}, delay);
+
+									}, 25);
+
+							}, delay);
+
+					}
+
+			};
+
+			$main._hide = function(addState) {
+
+				var $article = $main_articles.filter('.active');
+
+				// Article not visible? Bail.
+					if (!$body.hasClass('is-article-visible'))
+						return;
+
+				// Add state?
+					if (typeof addState != 'undefined'
+					&&	addState === true)
+						history.pushState(null, null, '#');
+
+				// Handle lock.
+
+					// Already locked? Speed through "hide" steps w/o delays.
+						if (locked) {
+
+							// Mark as switching.
+								$body.addClass('is-switching');
+
+							// Deactivate article.
+								$article.removeClass('active');
+
+							// Hide article, main.
+								$article.hide();
+								$main.hide();
+
+							// Show footer, header.
+								$footer.show();
+								$header.show();
+
+							// Unmark as visible.
+								$body.removeClass('is-article-visible');
+
+							// Unlock.
+								locked = false;
+
+							// Unmark as switching.
+								$body.removeClass('is-switching');
+
+							// Window stuff.
+								$window
+									.scrollTop(0)
+									.triggerHandler('resize.flexbox-fix');
+
+							return;
+
+						}
+
+					// Lock.
+						locked = true;
+
+				// Deactivate article.
+					$article.removeClass('active');
+
+				// Hide article.
+					setTimeout(function() {
+
+						// Hide article, main.
+							$article.hide();
+							$main.hide();
+
+						// Show footer, header.
+							$footer.show();
+							$header.show();
+
+						// Unmark as visible.
+							setTimeout(function() {
+
+								$body.removeClass('is-article-visible');
+
+								// Window stuff.
+									$window
+										.scrollTop(0)
+										.triggerHandler('resize.flexbox-fix');
+
+								// Unlock.
+									setTimeout(function() {
+										locked = false;
+									}, delay);
+
+							}, 25);
+
 					}, delay);
-					// Unlock.
-					setTimeout(function () {
-						locked = false;
-					}, delay);
-
-				}, 25);
-				}, 25);
-
-			}, delay);
-			}, delay);
-
-		}
-		}
-
-		// Otherwise, handle as normal.
-		else {
-		// Otherwise, handle as normal.
-		else {
-
-			// Mark as visible.
-			$body
-				.addClass('is-article-visible');
-			// Mark as visible.
-			$body
-				.addClass('is-article-visible');
-
-			// Show article.
-			setTimeout(function () {
-			// Show article.
-			setTimeout(function () {
-
-				// Hide header, footer.
-				$header.hide();
-				$footer.hide();
-				// Hide header, footer.
-				$header.hide();
-				$footer.hide();
-
-				// Show main, article.
-				$main.show();
-				$article.show();
-				// Show main, article.
-				$main.show();
-				$article.show();
-
-				// Activate article.
-				setTimeout(function () {
-				// Activate article.
-				setTimeout(function () {
-
-					$article.addClass('active');
-					$article.addClass('active');
-
-					// Window stuff.
-					$window
-						.scrollTop(0)
-						.triggerHandler('resize.flexbox-fix');
-					// Window stuff.
-					$window
-						.scrollTop(0)
-						.triggerHandler('resize.flexbox-fix');
-
-					// Unlock.
-					setTimeout(function () {
-						locked = false;
-					}, delay);
-					// Unlock.
-					setTimeout(function () {
-						locked = false;
-					}, delay);
-
-				}, 25);
-				}, 25);
-
-			}, delay);
-			}, delay);
-
-		}
-		}
-
-	};
-	};
-
-	$main._hide = function (addState) {
-	$main._hide = function (addState) {
-
-		var $article = $main_articles.filter('.active');
-		var $article = $main_articles.filter('.active');
-
-		// Article not visible? Bail.
-		if (!$body.hasClass('is-article-visible'))
-			return;
-		// Article not visible? Bail.
-		if (!$body.hasClass('is-article-visible'))
-			return;
-
-		// Add state?
-		if (typeof addState != 'undefined'
-			&& addState === true)
-			history.pushState(null, null, '#');
-		// Add state?
-		if (typeof addState != 'undefined'
-			&& addState === true)
-			history.pushState(null, null, '#');
-
-		// Handle lock.
-		// Handle lock.
-
-		// Already locked? Speed through "hide" steps w/o delays.
-		if (locked) {
-		// Already locked? Speed through "hide" steps w/o delays.
-		if (locked) {
-
-			// Mark as switching.
-			$body.addClass('is-switching');
-			// Mark as switching.
-			$body.addClass('is-switching');
-
-			// Deactivate article.
-			$article.removeClass('active');
-			// Deactivate article.
-			$article.removeClass('active');
-
-			// Hide article, main.
-			$article.hide();
-			$main.hide();
-			// Hide article, main.
-			$article.hide();
-			$main.hide();
-
-			// Show footer, header.
-			$footer.show();
-			$header.show();
-			// Show footer, header.
-			$footer.show();
-			$header.show();
-
-			// Unmark as visible.
-			$body.removeClass('is-article-visible');
-			// Unmark as visible.
-			$body.removeClass('is-article-visible');
-
-			// Unlock.
-			locked = false;
-			// Unlock.
-			locked = false;
-
-			// Unmark as switching.
-			$body.removeClass('is-switching');
-			// Unmark as switching.
-			$body.removeClass('is-switching');
-
-			// Window stuff.
-			$window
-				.scrollTop(0)
-				.triggerHandler('resize.flexbox-fix');
-			// Window stuff.
-			$window
-				.scrollTop(0)
-				.triggerHandler('resize.flexbox-fix');
-
-			return;
-			return;
-
-		}
-		}
-
-		// Lock.
-		locked = true;
-		// Lock.
-		locked = true;
-
-		// Deactivate article.
-		$article.removeClass('active');
-		// Deactivate article.
-		$article.removeClass('active');
-
-		// Hide article.
-		setTimeout(function () {
-		// Hide article.
-		setTimeout(function () {
-
-			// Hide article, main.
-			$article.hide();
-			$main.hide();
-			// Hide article, main.
-			$article.hide();
-			$main.hide();
-
-			// Show footer, header.
-			$footer.show();
-			$header.show();
-			// Show footer, header.
-			$footer.show();
-			$header.show();
-
-			// Unmark as visible.
-			setTimeout(function () {
-			// Unmark as visible.
-			setTimeout(function () {
-
-				$body.removeClass('is-article-visible');
-				$body.removeClass('is-article-visible');
-
-				// Window stuff.
-				$window
-					.scrollTop(0)
-					.triggerHandler('resize.flexbox-fix');
-				// Window stuff.
-				$window
-					.scrollTop(0)
-					.triggerHandler('resize.flexbox-fix');
-
-				// Unlock.
-				setTimeout(function () {
-					locked = false;
-				}, delay);
-				// Unlock.
-				setTimeout(function () {
-					locked = false;
-				}, delay);
-
-			}, 25);
-			}, 25);
-
-		}, delay);
-		}, delay);
 
 
-	};
-	};
+			};
 
-	// Articles.
-	$main_articles.each(function () {
-	// Articles.
-	$main_articles.each(function () {
+		// Articles.
+			$main_articles.each(function() {
 
-		var $this = $(this);
-		var $this = $(this);
+				var $this = $(this);
 
-		// Close.
-		$('<div class="close">Close</div>')
-			.appendTo($this)
-			.on('click', function () {
-				location.hash = '';
-			});
-		// Close.
-		$('<div class="close">Close</div>')
-			.appendTo($this)
-			.on('click', function () {
-				location.hash = '';
+				// Close.
+					$('<div class="close">Close</div>')
+						.appendTo($this)
+						.on('click', function() {
+							location.hash = '';
+						});
+
+				// Prevent clicks from inside article from bubbling.
+					$this.on('click', function(event) {
+						event.stopPropagation();
+					});
+
 			});
 
-		// Prevent clicks from inside article from bubbling.
-		$this.on('click', function (event) {
-			event.stopPropagation();
-		});
-		// Prevent clicks from inside article from bubbling.
-		$this.on('click', function (event) {
-			event.stopPropagation();
-		});
-
-	});
-	});
-
-	// Events.
-	$body.on('click', function (event) {
-	// Events.
-	$body.on('click', function (event) {
-
-		// Article visible? Hide.
-		if ($body.hasClass('is-article-visible'))
-			$main._hide(true);
-		// Article visible? Hide.
-		if ($body.hasClass('is-article-visible'))
-			$main._hide(true);
-
-	});
-	});
-
-	$window.on('keyup', function (event) {
-	$window.on('keyup', function (event) {
-
-		switch (event.keyCode) {
-		switch (event.keyCode) {
-
-			case 27:
-			case 27:
+		// Events.
+			$body.on('click', function(event) {
 
 				// Article visible? Hide.
-				if ($body.hasClass('is-article-visible'))
-					$main._hide(true);
-				// Article visible? Hide.
-				if ($body.hasClass('is-article-visible'))
-					$main._hide(true);
+					if ($body.hasClass('is-article-visible'))
+						$main._hide(true);
 
-				break;
-				break;
-
-			default:
-				break;
-			default:
-				break;
-
-		}
-		}
-
-	});
-	});
-
-	$window.on('hashchange', function (event) {
-	$window.on('hashchange', function (event) {
-
-		// Empty hash?
-		if (location.hash == ''
-			|| location.hash == '#') {
-		// Empty hash?
-		if (location.hash == ''
-			|| location.hash == '#') {
-
-			// Prevent default.
-			event.preventDefault();
-			event.stopPropagation();
-			// Prevent default.
-			event.preventDefault();
-			event.stopPropagation();
-
-			// Hide.
-			$main._hide();
-			// Hide.
-			$main._hide();
-
-		}
-		}
-
-		// Otherwise, check for a matching article.
-		else if ($main_articles.filter(location.hash).length > 0) {
-		// Otherwise, check for a matching article.
-		else if ($main_articles.filter(location.hash).length > 0) {
-
-			// Prevent default.
-			event.preventDefault();
-			event.stopPropagation();
-			// Prevent default.
-			event.preventDefault();
-			event.stopPropagation();
-
-			// Show article.
-			$main._show(location.hash.substr(1));
-			// Show article.
-			$main._show(location.hash.substr(1));
-
-		}
-		}
-
-	});
-	});
-
-	// Scroll restoration.
-	// This prevents the page from scrolling back to the top on a hashchange.
-	if ('scrollRestoration' in history)
-		history.scrollRestoration = 'manual';
-	else {
-	// Scroll restoration.
-	// This prevents the page from scrolling back to the top on a hashchange.
-	if ('scrollRestoration' in history)
-		history.scrollRestoration = 'manual';
-	else {
-
-		var oldScrollPos = 0,
-			scrollPos = 0,
-			$htmlbody = $('html,body');
-		var oldScrollPos = 0,
-			scrollPos = 0,
-			$htmlbody = $('html,body');
-
-		$window
-			.on('scroll', function () {
-		$window
-			.on('scroll', function () {
-
-				oldScrollPos = scrollPos;
-				scrollPos = $htmlbody.scrollTop();
-				oldScrollPos = scrollPos;
-				scrollPos = $htmlbody.scrollTop();
-
-			})
-			.on('hashchange', function () {
-				$window.scrollTop(oldScrollPos);
-			});
-			})
-			.on('hashchange', function () {
-				$window.scrollTop(oldScrollPos);
 			});
 
-	}
-	}
+			$window.on('keyup', function(event) {
 
-	// Initialize.
-	// Initialize.
+				switch (event.keyCode) {
 
-	// Hide main, articles.
-	$main.hide();
-	$main_articles.hide();
-	// Hide main, articles.
-	$main.hide();
-	$main_articles.hide();
+					case 27:
 
-	// Initial article.
-	if (location.hash != ''
-		&& location.hash != '#')
-		$window.on('load', function () {
-			$main._show(location.hash.substr(1), true);
-		});
-	// Initial article.
-	if (location.hash != ''
-		&& location.hash != '#')
-		$window.on('load', function () {
-			$main._show(location.hash.substr(1), true);
-		});
+						// Article visible? Hide.
+							if ($body.hasClass('is-article-visible'))
+								$main._hide(true);
+
+						break;
+
+					default:
+						break;
+
+				}
+
+			});
+
+			$window.on('hashchange', function(event) {
+
+				// Empty hash?
+					if (location.hash == ''
+					||	location.hash == '#') {
+
+						// Prevent default.
+							event.preventDefault();
+							event.stopPropagation();
+
+						// Hide.
+							$main._hide();
+
+					}
+
+				// Otherwise, check for a matching article.
+					else if ($main_articles.filter(location.hash).length > 0) {
+
+						// Prevent default.
+							event.preventDefault();
+							event.stopPropagation();
+
+						// Show article.
+							$main._show(location.hash.substr(1));
+
+					}
+
+			});
+
+		// Scroll restoration.
+		// This prevents the page from scrolling back to the top on a hashchange.
+			if ('scrollRestoration' in history)
+				history.scrollRestoration = 'manual';
+			else {
+
+				var	oldScrollPos = 0,
+					scrollPos = 0,
+					$htmlbody = $('html,body');
+
+				$window
+					.on('scroll', function() {
+
+						oldScrollPos = scrollPos;
+						scrollPos = $htmlbody.scrollTop();
+
+					})
+					.on('hashchange', function() {
+						$window.scrollTop(oldScrollPos);
+					});
+
+			}
+
+		// Initialize.
+
+			// Hide main, articles.
+				$main.hide();
+				$main_articles.hide();
+
+			// Initial article.
+				if (location.hash != ''
+				&&	location.hash != '#')
+					$window.on('load', function() {
+						$main._show(location.hash.substr(1), true);
+					});
 
 })(jQuery);
 
 function mostrarNumero() {
 
-	let num1 = Math.floor(Math.random() * 10) + 1;
-	let num2 = Math.floor(Math.random() * 10) + 1;
-	let num3 = Math.floor(Math.random() * 10) + 1;
-	const suma = num1 + num2 + num3;
-	let num1 = Math.floor(Math.random() * 10) + 1;
-	let num2 = Math.floor(Math.random() * 10) + 1;
-	let num3 = Math.floor(Math.random() * 10) + 1;
-	const suma = num1 + num2 + num3;
+    let num1 = Math.floor(Math.random() * 10) + 1;
+    let num2 = Math.floor(Math.random() * 10) + 1;
+    let num3 = Math.floor(Math.random() * 10) + 1;
+    const suma = num1 + num2 + num3;
 
-	document.querySelector("#captcha").innerHTML = num1 + " + " + num2 + " + " + num3 + " = " + "?";
-	document.querySelector("#captcha").innerHTML = num1 + " + " + num2 + " + " + num3 + " = " + "?";
+    document.querySelector("#captcha").innerHTML = num1 + " + " + num2 + " + " + num3 + " = " + "?";
 
-	return suma;
-	return suma;
+    return suma;
 }
 function verificar(resultado) {
 
-	let respuesta = parseInt(document.querySelector("#respuesta").value);
-	let respuesta = parseInt(document.querySelector("#respuesta").value);
+    let respuesta = parseInt(document.querySelector("#respuesta").value);
 
-	if (resultado === respuesta) {
-		document.querySelector("#resultado").innerHTML = "Correcto, eres humano.";
-	}
-	else {
-		document.querySelector("#resultado").innerHTML = "Respuesta incorrecta.";
-	}
-	if (resultado === respuesta) {
-		document.querySelector("#resultado").innerHTML = "Correcto, eres humano.";
-	}
-	else {
-		document.querySelector("#resultado").innerHTML = "Respuesta incorrecta.";
-	}
+    if (resultado === respuesta) {
+        document.querySelector("#resultado").innerHTML = "Correcto, eres humano.";
+    }
+    else {
+        document.querySelector("#resultado").innerHTML = "Respuesta incorrecta.";
+    }
 }
 document.addEventListener("DOMContentLoaded", function () {
-	let resultado = mostrarNumero();
-	document.querySelector("#btn-captcha").addEventListener("click", function () {
-		verificar(resultado);
-		resultado = mostrarNumero();
-	});
-	let resultado = mostrarNumero();
-	document.querySelector("#btn-captcha").addEventListener("click", function () {
-		verificar(resultado);
-		resultado = mostrarNumero();
-	});
+    let resultado = mostrarNumero();
+    document.querySelector("#btn-captcha").addEventListener("click", function () {
+        verificar(resultado);
+        resultado = mostrarNumero();
+    });
 });
 
 ///////////////////////////////captcha//////////////////////////////////////////////////////////////
 
-const { RecaptchaEnterpriseServiceClient } = require('@google-cloud/recaptcha-enterprise');
-const { RecaptchaEnterpriseServiceClient } = require('@google-cloud/recaptcha-enterprise');
+const {RecaptchaEnterpriseServiceClient} = require('@google-cloud/recaptcha-enterprise');
 
 /**
   * Crea una evaluación para analizar el riesgo de una acción de la IU.
@@ -723,140 +444,53 @@ const { RecaptchaEnterpriseServiceClient } = require('@google-cloud/recaptcha-en
   * recaptchaAction: El nombre de la acción que corresponde al token.
   */
 async function createAssessment({
-	// PENDIENTE: Reemplaza el token y las variables de acción de reCAPTCHA antes de ejecutar la muestra.
-	projectID = "alpina-1730577314449",
-	recaptchaKey = "6LcaiHMqAAAAAGM2uORd1vxkDYCHim3JbQ02fq4B",
-	token = "action-token",
-	recaptchaAction = "action-name",
-	// PENDIENTE: Reemplaza el token y las variables de acción de reCAPTCHA antes de ejecutar la muestra.
-	projectID = "alpina-1730577314449",
-	recaptchaKey = "6LcaiHMqAAAAAGM2uORd1vxkDYCHim3JbQ02fq4B",
-	token = "action-token",
-	recaptchaAction = "action-name",
+  // PENDIENTE: Reemplaza el token y las variables de acción de reCAPTCHA antes de ejecutar la muestra.
+  projectID = "alpina-1730577314449",
+  recaptchaKey = "6LcaiHMqAAAAAGM2uORd1vxkDYCHim3JbQ02fq4B",
+  token = "action-token",
+  recaptchaAction = "action-name",
 }) {
-	// Crea el cliente de reCAPTCHA.
-	// TODO: almacena en caché el código de generación de clientes (recomendado) o llama a client.close() antes de salir del método.
-	const client = new RecaptchaEnterpriseServiceClient();
-	const projectPath = client.projectPath(projectID);
-	// Crea el cliente de reCAPTCHA.
-	// TODO: almacena en caché el código de generación de clientes (recomendado) o llama a client.close() antes de salir del método.
-	const client = new RecaptchaEnterpriseServiceClient();
-	const projectPath = client.projectPath(projectID);
+  // Crea el cliente de reCAPTCHA.
+  // TODO: almacena en caché el código de generación de clientes (recomendado) o llama a client.close() antes de salir del método.
+  const client = new RecaptchaEnterpriseServiceClient();
+  const projectPath = client.projectPath(projectID);
 
-	// Crea la solicitud de evaluación.
-	const request = ({
-		assessment: {
-			event: {
-				token: token,
-				siteKey: recaptchaKey,
-			},
-		},
-		parent: projectPath,
-	});
-	// Crea la solicitud de evaluación.
-	const request = ({
-		assessment: {
-			event: {
-				token: token,
-				siteKey: recaptchaKey,
-			},
-		},
-		parent: projectPath,
-	});
-
-	const [response] = await client.createAssessment(request);
-	const [response] = await client.createAssessment(request);
-
-	// Verifica si el token es válido.
-	if (!response.tokenProperties.valid) {
-		console.log(`The CreateAssessment call failed because the token was: ${response.tokenProperties.invalidReason}`);
-		return null;
-	}
-	// Verifica si el token es válido.
-	if (!response.tokenProperties.valid) {
-		console.log(`The CreateAssessment call failed because the token was: ${response.tokenProperties.invalidReason}`);
-		return null;
-	}
-
-	// Verifica si se ejecutó la acción esperada.
-	// The `action` property is set by user client in the grecaptcha.enterprise.execute() method.
-	if (response.tokenProperties.action === recaptchaAction) {
-		// Obtén la puntuación de riesgo y los motivos.
-		// Para obtener más información sobre cómo interpretar la evaluación, consulta:
-		// https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment
-		console.log(`The reCAPTCHA score is: ${response.riskAnalysis.score}`);
-		response.riskAnalysis.reasons.forEach((reason) => {
-			console.log(reason);
-		});
-	// Verifica si se ejecutó la acción esperada.
-	// The `action` property is set by user client in the grecaptcha.enterprise.execute() method.
-	if (response.tokenProperties.action === recaptchaAction) {
-		// Obtén la puntuación de riesgo y los motivos.
-		// Para obtener más información sobre cómo interpretar la evaluación, consulta:
-		// https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment
-		console.log(`The reCAPTCHA score is: ${response.riskAnalysis.score}`);
-		response.riskAnalysis.reasons.forEach((reason) => {
-			console.log(reason);
-		});
-
-		return response.riskAnalysis.score;
-	} else {
-		console.log("The action attribute in your reCAPTCHA tag does not match the action you are expecting to score");
-		return null;
-	}
-		return response.riskAnalysis.score;
-	} else {
-		console.log("The action attribute in your reCAPTCHA tag does not match the action you are expecting to score");
-		return null;
-	}
-}
-
-//////////////registro de Service Worker (sw)///////////////
-
-if ('serviceWorker' in navigator) {
-	navigator.serviceWorker.register('/sw.js')
-		.then(function (registration) {
-			console.log('Service Worker registrado con éxito:', registration);
-		})
-		.catch(function (error) {
-			console.log('Error al registrar el Service Worker:', error);
-		});
-}
-
-////////////////////para instalacion manual de PWA//////////////////////////
-
-let deferredPrompt;
-
-window.addEventListener('beforeinstallprompt', (e) => {
-  // Evita que la mini barra de información aparezca.
-  e.preventDefault();
-  // Guarda el evento para que pueda ser lanzado después.
-  deferredPrompt = e;
-  // Actualiza la IU para notificar al usuario que puede instalar el PWA
-  const installButton = document.getElementById('installButton');
-  installButton.style.display = 'block';
-
-  installButton.addEventListener('click', (e) => {
-    // Oculta la interfaz de usuario de instalación
-    installButton.style.display = 'none';
-    // Muestra el mensaje de instalación
-    deferredPrompt.prompt();
-    // Espera a que el usuario responda al mensaje
-    deferredPrompt.userChoice.then((choiceResult) => {
-      if (choiceResult.outcome === 'accepted') {
-        console.log('El usuario aceptó la instalación');
-      } else {
-        console.log('El usuario rechazó la instalación');
-      }
-      deferredPrompt = null;
-    });
+  // Crea la solicitud de evaluación.
+  const request = ({
+    assessment: {
+      event: {
+        token: token,
+        siteKey: recaptchaKey,
+      },
+    },
+    parent: projectPath,
   });
-});
 
-window.addEventListener('appinstalled', (evt) => {
-  console.log('a2hs instalado');
-});
+  const [ response ] = await client.createAssessment(request);
 
+  // Verifica si el token es válido.
+  if (!response.tokenProperties.valid) {
+    console.log(`The CreateAssessment call failed because the token was: ${response.tokenProperties.invalidReason}`);
+    return null;
+  }
+
+  // Verifica si se ejecutó la acción esperada.
+  // The `action` property is set by user client in the grecaptcha.enterprise.execute() method.
+  if (response.tokenProperties.action === recaptchaAction) {
+    // Obtén la puntuación de riesgo y los motivos.
+    // Para obtener más información sobre cómo interpretar la evaluación, consulta:
+    // https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment
+    console.log(`The reCAPTCHA score is: ${response.riskAnalysis.score}`);
+    response.riskAnalysis.reasons.forEach((reason) => {
+      console.log(reason);
+    });
+
+    return response.riskAnalysis.score;
+  } else {
+    console.log("The action attribute in your reCAPTCHA tag does not match the action you are expecting to score");
+    return null;
+  }
+}
 
 ////////////////////////barra menu/////////////////////////////////////////
 
