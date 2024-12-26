@@ -703,9 +703,13 @@ p#interior {
 		min-width: 320px;
 	}
 
-	/* .whatsapp {
-		width: 35px;
-	} */
+	#wrapper {
+		padding: 1rem;
+	}
+
+	#main article {
+		padding: 3rem 1.5rem 0.5rem 1.5rem;
+	}
 
 	#go-back,
 	.btn-reserva,
@@ -713,6 +717,126 @@ p#interior {
 		zoom: 80%;
 	}
 
+	.titulo h1 {
+		font-size: 2.5rem;
+	}
+
+	.whatsapp p,
+	.mail p {
+		font-size: x-small;
+	}
+
+	/* .navidad {
+		zoom: 60%;
+		left: 15%;
+	} */
+
+	.new-year {
+		zoom: 80%;
+		right: 10%;
+	}
+
+	.volver-cab_fotos {
+		margin-top: -3rem;
+	}
+
+	form>.fields {
+		width: calc(100% + 3rem);
+		margin: -1.5rem 0 2rem -1.5rem;
+	}
+
+	form>.fields>.field {
+		padding: 1.5rem 0 0 1.5rem;
+		width: calc(100% - 1.5rem);
+	}
+
+	form>.fields>.field.half {
+		width: calc(100% - 1.5rem);
+	}
+
+	form>.fields>.field.third {
+		width: calc(100% - 1.5rem);
+	}
+
+	form>.fields>.field.quarter {
+		width: calc(100% - 1.5rem);
+	}
+
+	#footer .developer .link:hover {
+		color: #ffffff;
+	}
+
+	.icons .bxl-youtube:hover {
+		background-color: rgba(255, 255, 255, 0.075);
+	}
+
+	.icons .bxl-tiktok:hover {
+		background-color: rgba(255, 255, 255, 0.075);
+	}
+
+	.icons .fa-instagram:hover {
+		background-color: rgba(255, 255, 255, 0.075);
+	}
+
+	.icons .fa-facebook-f:hover {
+		background-color: rgba(255, 255, 255, 0.075);
+	}
+
+	.image.main {
+		margin: 1.5rem 0;
+	}
+
+	.image.main img {
+		width: 100%;
+		height: 200px;
+	}
+
+	ul.actions:not(.fixed) {
+		-moz-flex-direction: column;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		margin-left: 0;
+		width: 100% !important;
+	}
+
+	ul.actions:not(.fixed) li {
+		-moz-flex-grow: 1;
+		-webkit-flex-grow: 1;
+		-ms-flex-grow: 1;
+		flex-grow: 1;
+		-moz-flex-shrink: 1;
+		-webkit-flex-shrink: 1;
+		-ms-flex-shrink: 1;
+		flex-shrink: 1;
+		padding: 1rem 0 0 0;
+		text-align: center;
+		width: 100%;
+	}
+
+	ul.actions:not(.fixed) li>* {
+		width: 100%;
+	}
+
+	ul.actions:not(.fixed) li:first-child {
+		padding-top: 0;
+	}
+
+	ul.actions:not(.fixed) li input[type="submit"],
+	ul.actions:not(.fixed) li input[type="reset"],
+	ul.actions:not(.fixed) li input[type="button"],
+	ul.actions:not(.fixed) li button,
+	ul.actions:not(.fixed) li .button {
+		width: 100%;
+	}
+
+	ul.actions:not(.fixed) li input[type="submit"].icon:before,
+	ul.actions:not(.fixed) li input[type="reset"].icon:before,
+	ul.actions:not(.fixed) li input[type="button"].icon:before,
+	ul.actions:not(.fixed) li button.icon:before,
+	ul.actions:not(.fixed) li .button.icon:before {
+		margin-left: -0.5em;
+	}
 
 }
 
