@@ -2179,7 +2179,7 @@ body.is-preload #bg:before {
 #header .logo-mobile {
 	width: 100%;
 	/* height: 50%; */
-	filter: brightness(90%);
+	filter: brightness(85%);
 }
 
 #header .logo .icon:before {
