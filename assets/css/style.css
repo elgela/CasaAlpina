@@ -209,10 +209,19 @@ textarea {
 .del_puente,
 .casagrande {
 	/* display: flex; */
+	width: 100%;
+	overflow: hidden;
 	text-align: center;
 	background-color: #1b1f22;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+.del_pinar img,
+.del_solar img,
+.del_puente img,
+.casagrande img {
+	border-radius: 5px;
 }
 
 .descripcion h1 {
@@ -232,8 +241,8 @@ textarea {
 }
 
 .label-detalles {
-	position: relative;
-	padding-bottom: 30px;
+	/* padding-top: 20%; */
+	/* padding-bottom: 30px; */
 	margin: 0;
 	text-align: center;
 	font-size: xx-large;
@@ -247,22 +256,24 @@ textarea {
 	font-size: 8px;
 } */
 
-#cab1,
+/* #cab1,
 #cab2,
 #cab3,
 #cab4 {
 	width: 100%;
-	height: auto;
+	height: 500px;
 	overflow: hidden;
-}
+} */
 
 #cab1 ul,
 #cab2 ul,
 #cab3 ul,
 #cab4 ul {
 	display: flex;
+	margin: 0;
 	padding: 0;
 	width: 400%;
+	/* height: 100%; */
 	animation: slide 16s infinite ease-in-out;
 }
 
@@ -278,8 +289,8 @@ textarea {
 #cab2 img,
 #cab3 img,
 #cab4 img {
-	width: 100%;
-	height: 500px;
+	width: 90%;
+	height: 80%;
 }
 
 #chrisTree_cab img {
@@ -463,16 +474,6 @@ p#interior {
 	95% {
 		margin-left: -300%;
 	}
-}
-
-.del_pinar img,
-.del_solar img,
-.del_puente img,
-.casagrande img {
-	margin: auto;
-	/* height: auto; */
-	/* padding: 20px; */
-	/* border-radius: 25px; */
 }
 
 #btn-cabania {
@@ -2331,8 +2332,7 @@ body.is-preload #header .content .inner {
 	#cab2 img,
 	#cab3 img,
 	#cab4 img {
-		width: 100%;
-		/* height: 440px; */
+		height: 100%;
 	}
 
 	.navidad {
@@ -2363,6 +2363,14 @@ body.is-preload #header .content .inner {
 		width: 650px;
 		height: 420px;
 	} */
+
+	/* #cab1 img,
+	#cab2 img,
+	#cab3 img,
+	#cab4 img {
+		width: 90%;
+	} */
+
 
 }
 
@@ -2405,13 +2413,12 @@ body.is-preload #header .content .inner {
 		align-items: center;
 	} */
 
-	#cab1 img,
+	/* #cab1 img,
 	#cab2 img,
 	#cab3 img,
 	#cab4 img {
-		/* width: 100%; */
-		height: 400px;
-	}
+		width: 90%;
+	} */
 
 
 	.ir-arriba {
@@ -2426,7 +2433,10 @@ body.is-preload #header .content .inner {
 
 	}
 
-	.del_puente {
+	.del_pinar,
+	.del_solar,
+	.del_puente,
+	.casagrande {
 		font-size: medium;
 	}
 
@@ -2564,8 +2574,7 @@ body.is-preload #header .content .inner {
 	#cab2 img,
 	#cab3 img,
 	#cab4 img {
-		/* width: 100%; */
-		height: 380px;
+		height: 80%;
 	}
 
 
@@ -2659,7 +2668,7 @@ body.is-preload #header .content .inner {
 
 	.div-buttons {
 		position: absolute;
-		margin: 425px 0 0 30%;
+		margin: 50% 0 0 30%;
 		align-items: center;
 	}
 
@@ -2688,7 +2697,7 @@ body.is-preload #header .content .inner {
 	.label-detalles {
 		/* position: relative; */
 		/* padding-bottom: 30px; */
-		margin-top: 100px;
+		margin-top: 10%;
 		text-align: center;
 		font-size: x-large;
 	}
@@ -2754,12 +2763,12 @@ body.is-preload #header .content .inner {
 		font-size: 2.7rem;
 	}
 
-	#cab1 img,
+	/* #cab1 img,
 	#cab2 img,
 	#cab3 img,
 	#cab4 img {
 		height: 370px;
-	}
+	} */
 
 	/* .content-all {
 		width: 420px;
@@ -2813,12 +2822,12 @@ body.is-preload #header .content .inner {
 		zoom: 78%;
 	}
 
-	#cab1 img,
+	/* #cab1 img,
 	#cab2 img,
 	#cab3 img,
 	#cab4 img {
 		height: 360px;
-	}
+	} */
 
 }
 
@@ -2956,12 +2965,12 @@ body.is-preload #header .content .inner {
 		zoom: 72%;
 	}
 
-	#cab1 img,
+	/* #cab1 img,
 	#cab2 img,
 	#cab3 img,
 	#cab4 img {
 		height: 350px;
-	}
+	} */
 
 	#guirnalda-cabanias {
 		top: -20px;
@@ -3014,12 +3023,12 @@ body.is-preload #header .content .inner {
 		top: 44rem;
 	} */
 
-	#cab1 img,
+	/* #cab1 img,
 	#cab2 img,
 	#cab3 img,
 	#cab4 img {
 		height: 330px;
-	}
+	} */
 }
 
 
@@ -3059,20 +3068,18 @@ body.is-preload #header .content .inner {
 		top: 44rem;
 	} */
 
-	#cab1 img,
+	/* #cab1 img,
 	#cab2 img,
 	#cab3 img,
 	#cab4 img {
 		height: 330px;
-		/* object-fit: cover; */
-		/*adapta la imagen al espacio */
-	}
+	} */
 
-	.div-buttons {
+	/* .div-buttons {
 		position: absolute;
 		margin: 375px 0 0 30%;
 		align-items: center;
-	}
+	} */
 
 	/* .content-all {
 		width: 280px;
@@ -3086,12 +3093,12 @@ body.is-preload #header .content .inner {
 		top: 44rem;
 	} */
 
-	#cab1 img,
+	/* #cab1 img,
 	#cab2 img,
 	#cab3 img,
 	#cab4 img {
 		height: 310px;
-	}
+	} */
 
 	/* .content-all {
 		width: 260px;
