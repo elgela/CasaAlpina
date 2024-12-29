@@ -250,21 +250,6 @@ textarea {
 	color: wheat;
 }
 
-/* .detalles div {
-	margin-bottom: 15px;
-	color: rgb(138, 201, 138);
-	font-size: 8px;
-} */
-
-/* #cab1,
-#cab2,
-#cab3,
-#cab4 {
-	width: 100%;
-	height: 500px;
-	overflow: hidden;
-} */
-
 #cab1 ul,
 #cab2 ul,
 #cab3 ul,
@@ -307,19 +292,17 @@ textarea {
 	height: 400px;
 } */
 
-.container {
-	/* margin: auto; */
-	/* padding: 30px; */
+/* .container {
 	height: 90%;
-}
+} */
 
 .content-all {
 	width: 100%;
-	height: 70%;
+	/* height: 100%; */
 	display: flex;
-	margin: auto;
-	overflow: hidden;
-	perspective: 100%;
+	/* margin: auto; */
+	/* overflow: hidden; */
+	/* perspective: 100%; */
 
 	/* box-shadow: 0 20px 40px 0 white; */
 }
@@ -330,7 +313,8 @@ textarea {
 	height: 100%;
 	position: absolute;
 	left: 0px;
-	transform: translateX(-100%); /*rotateY(360deg) para que gire imagen al cambiar*/
+	transform: translateX(-100%);
+	/*rotateY(360deg) para que gire imagen al cambiar*/
 	opacity: 0;
 	transition: all 2s;
 }
@@ -346,7 +330,9 @@ textarea {
 }
 
 .content-img img {
-	width: 100%;
+	display: flex;
+	margin: 0 15%;
+	width: 70%;
 	height: 100%;
 }
 
@@ -358,14 +344,14 @@ textarea {
 
 .bxs-chevron-right {
 	position: absolute;
-	top: 50%;
+	top: 40%;
 	right: 0;
 	font-size: 55px;
 }
 
 .bxs-chevron-left {
 	position: absolute;
-	top: 50%;
+	top: 40%;
 	left: 0;
 	font-size: 55px;
 }
@@ -829,18 +815,9 @@ html {
 		font-size: 10pt;
 	}
 
-	/* .whatsapp {
-		width: 25px;
-	} */
-
-	/* .whatsapp:hover {
-		transform: scale(1.1);
-	} */
-
 	p#menu {
 		margin-left: -2px;
 	}
-
 
 	#footer .developer .link:hover {
 		color: #ffffff;
@@ -890,7 +867,6 @@ a {
 	-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 	-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 	transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-	/* border-bottom: dotted 1px rgba(255, 255, 255, 0.5); */
 	text-decoration: none;
 	color: inherit;
 }
@@ -909,17 +885,6 @@ em,
 i {
 	font-style: italic;
 }
-
-/* p {
-	margin: 0 0 2rem 0;
-} */
-
-/* h1 {
-  font-family: "Parkinsans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-} */
 
 h2,
 h3,
@@ -964,11 +929,6 @@ h1 {
 	letter-spacing: 0.2rem;
 	font-weight: 600;
 	font-family: serif;
-	/* font-size: 3rem;
-	line-height: 1;
-	letter-spacing: 0.1rem;
-	font-family: cursive;
-	font-weight: 600; */
 }
 
 h2 {
@@ -2430,8 +2390,14 @@ body.is-preload #header .content .inner {
 
 	.container #go-back {
 		margin: 30px 4% 0 0;
-
 	}
+
+	.content-img img {
+		margin: 0;
+		width: 100%;
+		height: 80%;
+	}
+
 
 	.del_pinar,
 	.del_solar,
@@ -2715,10 +2681,6 @@ body.is-preload #header .content .inner {
 	#guirnalda-cabanias {
 		top: -40px;
 	}
-
-	.content-img {
-		height: 90%;
-	}
 	
 	#des2 {
 		opacity: 0;
@@ -2934,7 +2896,7 @@ body.is-preload #header .content .inner {
 	}
 
 	#informacion {
-		display: block;
+		display: none;
 		padding-top: 3.5rem;
 	}
 
@@ -3033,9 +2995,6 @@ body.is-preload #header .content .inner {
 
 
 @media screen and (max-width: 375px) {
-	/* .drop {
-		top: 44.2rem;
-	} */
 
 	#go-back,
 	.btn-reserva,
@@ -3043,19 +3002,9 @@ body.is-preload #header .content .inner {
 		zoom: 67%;
 	}
 
-	/* .content-all {
-		width: 290px;
-		height: 290px;
-	} */
-
-
 }
 
 @media screen and (max-width: 366px) {
-	/* .drop {
-		top: 44rem;
-	} */
-
 	#go-back,
 	.btn-reserva,
 	.btn-fotos {
@@ -3064,49 +3013,11 @@ body.is-preload #header .content .inner {
 }
 
 @media screen and (max-width: 360px) {
-	/* .drop {
-		top: 44rem;
-	} */
-
-	/* #cab1 img,
-	#cab2 img,
-	#cab3 img,
-	#cab4 img {
-		height: 330px;
-	} */
-
-	/* .div-buttons {
-		position: absolute;
-		margin: 375px 0 0 30%;
-		align-items: center;
-	} */
-
-	/* .content-all {
-		width: 280px;
-		height: 280px;
-	} */
+	#main article p {
+		font-size: small;
+	}
 
 }
-
-@media screen and (max-width: 343px) {
-	/* .drop {
-		top: 44rem;
-	} */
-
-	/* #cab1 img,
-	#cab2 img,
-	#cab3 img,
-	#cab4 img {
-		height: 310px;
-	} */
-
-	/* .content-all {
-		width: 260px;
-		height: 250px;
-	} */
-
-}
-
 
 /* Main */
 
@@ -3235,6 +3146,10 @@ article label {
 	text-align: center;
 }
 
+#main article p {
+	font-size: large;
+}
+
 #main article.active {
 	-moz-transform: translateY(0);
 	-webkit-transform: translateY(0);
@@ -3297,12 +3212,20 @@ article label {
 		background-size: 14px 14px;
 	}
 
+	#main article p {
+		font-size: medium;
+	}
+
 }
 
 @media screen and (max-width: 480px) {
 
 	#main article {
 		padding: 3rem 1.5rem 0.5rem 1.5rem;
+	}
+
+	#main article p {
+		font-size: medium;
 	}
 
 }
