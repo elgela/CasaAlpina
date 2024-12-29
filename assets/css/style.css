@@ -292,10 +292,6 @@ textarea {
 	height: 400px;
 } */
 
-/* .container {
-	height: 90%;
-} */
-
 .content-all {
 	width: 100%;
 	/* height: 100%; */
@@ -482,9 +478,9 @@ p#interior {
 	border-radius: 7%;
 }
 
-.container #go-back {
+/* .container #go-back {
 	margin: 30px 2% 0 0;
-}
+} */
 
 .volver-cab_fotos {
 	position: absolute;
