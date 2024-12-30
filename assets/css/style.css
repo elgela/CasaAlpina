@@ -523,7 +523,7 @@ p#interior {
 .redes {
 	display: grid;
 	grid-template-columns: 5fr 1fr;
-	width: 50%;
+	/* width: 50%; */
 }
 
 .bxl-whatsapp {
