@@ -522,25 +522,24 @@ p#interior {
 
 .redes {
 	display: grid;
-	grid-template-columns: 5fr 1fr;
-	/* width: 50%; */
+	grid-template-columns: 1fr 1fr;
+	width: 100%;
+	text-align: center;
 }
 
 .bxl-whatsapp {
 	font-size: 300%;
-	display: block;
 	cursor: pointer;
 	color: rgba(153, 205, 50, 0.58);
 	margin-left: 5px;
 }
 
-
 .bx-mail-send {
 	font-size: 300%;
-	display: block;
+	position: relative;
 	cursor: pointer;
 	color: rgba(245, 222, 179, 0.639);
-	margin-left: -5px;
+	margin-left: 5px;
 }
 
 .bxl-whatsapp:hover,
